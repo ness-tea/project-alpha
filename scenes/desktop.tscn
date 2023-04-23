@@ -1,0 +1,946 @@
+[gd_scene load_steps=70 format=2]
+
+[ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
+[ext_resource path="res://fonts/Inconsolota/Inconsolata-SemiBold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://art/desktop/emails.png" type="Texture" id=3]
+[ext_resource path="res://art/desktop/zoom.png" type="Texture" id=4]
+[ext_resource path="res://scripts/TimeLabel.gd" type="Script" id=5]
+[ext_resource path="res://art/desktop/audio.png" type="Texture" id=6]
+[ext_resource path="res://art/desktop/window_close_hover.png" type="Texture" id=7]
+[ext_resource path="res://art/desktop/window_close.png" type="Texture" id=8]
+[ext_resource path="res://scripts/EmailsControl.gd" type="Script" id=9]
+[ext_resource path="res://fonts/Mulish/static/Mulish-Regular.ttf" type="DynamicFontData" id=10]
+[ext_resource path="res://scripts/EmailPreview.gd" type="Script" id=11]
+[ext_resource path="res://scripts/EmailsVBoxContainer.gd" type="Script" id=12]
+[ext_resource path="res://scripts/VideoCallControl.gd" type="Script" id=13]
+[ext_resource path="res://art/desktop/voicecall.png" type="Texture" id=14]
+[ext_resource path="res://fonts/Mulish/static/Mulish-SemiBold.ttf" type="DynamicFontData" id=15]
+[ext_resource path="res://scripts/VideoRequest.gd" type="Script" id=16]
+[ext_resource path="res://scripts/desktop.gd" type="Script" id=17]
+[ext_resource path="res://art/login_ui/ExitButton.png" type="Texture" id=18]
+[ext_resource path="res://scripts/StartControl.gd" type="Script" id=19]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 1680, 1050 )
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxTexture" id=7]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 320, 320 )
+
+[sub_resource type="StyleBoxTexture" id=8]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 320, 320 )
+
+[sub_resource type="StyleBoxTexture" id=6]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 320, 320 )
+modulate_color = Color( 1, 1, 1, 0.47451 )
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="StyleBoxTexture" id=10]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="StyleBoxTexture" id=12]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 256, 256 )
+modulate_color = Color( 1, 1, 1, 0.65098 )
+
+[sub_resource type="StyleBoxEmpty" id=13]
+
+[sub_resource type="StyleBoxEmpty" id=14]
+
+[sub_resource type="StyleBoxTexture" id=15]
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 512, 512 )
+
+[sub_resource type="StyleBoxTexture" id=16]
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 512, 512 )
+
+[sub_resource type="StyleBoxTexture" id=17]
+texture = ExtResource( 6 )
+region_rect = Rect2( 0, 0, 512, 512 )
+modulate_color = Color( 1, 1, 1, 0.607843 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.87451, 0.87451, 0.894118, 0.87451 )
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0.137255, 0.196078, 0.247059, 0.745098 )
+
+[sub_resource type="StyleBoxTexture" id=20]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 200, 200 )
+
+[sub_resource type="StyleBoxTexture" id=21]
+texture = ExtResource( 8 )
+region_rect = Rect2( 0, 0, 200, 200 )
+
+[sub_resource type="StyleBoxTexture" id=22]
+texture = ExtResource( 8 )
+region_rect = Rect2( 0, 0, 200, 200 )
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.6, 0.6, 0.6, 0.364706 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 11
+font_data = ExtResource( 10 )
+
+[sub_resource type="StyleBoxFlat" id=25]
+bg_color = Color( 0.45098, 0.517647, 0.576471, 1 )
+
+[sub_resource type="StyleBoxFlat" id=26]
+bg_color = Color( 0.396078, 0.454902, 0.541176, 1 )
+
+[sub_resource type="StyleBoxFlat" id=27]
+bg_color = Color( 0.45098, 0.517647, 0.576471, 1 )
+
+[sub_resource type="StyleBoxFlat" id=28]
+bg_color = Color( 0.396078, 0.454902, 0.541176, 1 )
+
+[sub_resource type="StyleBoxFlat" id=29]
+bg_color = Color( 0.45098, 0.517647, 0.576471, 1 )
+
+[sub_resource type="StyleBoxFlat" id=30]
+bg_color = Color( 0.396078, 0.454902, 0.541176, 1 )
+
+[sub_resource type="StyleBoxFlat" id=31]
+bg_color = Color( 0.45098, 0.517647, 0.576471, 1 )
+
+[sub_resource type="StyleBoxFlat" id=32]
+bg_color = Color( 0.584314, 0.584314, 0.584314, 0.556863 )
+
+[sub_resource type="StyleBoxFlat" id=33]
+bg_color = Color( 0.45098, 0.517647, 0.576471, 1 )
+
+[sub_resource type="StyleBoxFlat" id=34]
+bg_color = Color( 0.45098, 0.517647, 0.576471, 1 )
+
+[sub_resource type="StyleBoxEmpty" id=35]
+
+[sub_resource type="StyleBoxFlat" id=36]
+bg_color = Color( 0.0745098, 0.0862745, 0.172549, 0.764706 )
+
+[sub_resource type="StyleBoxFlat" id=37]
+bg_color = Color( 0.345098, 0.364706, 0.466667, 0.478431 )
+
+[sub_resource type="StyleBoxEmpty" id=38]
+
+[sub_resource type="StyleBoxTexture" id=39]
+texture = ExtResource( 7 )
+region_rect = Rect2( 0, 0, 200, 200 )
+
+[sub_resource type="StyleBoxTexture" id=40]
+texture = ExtResource( 8 )
+region_rect = Rect2( 0, 0, 200, 200 )
+
+[sub_resource type="StyleBoxTexture" id=41]
+texture = ExtResource( 14 )
+region_rect = Rect2( 0, 10, 0, 0 )
+
+[sub_resource type="StyleBoxFlat" id=42]
+bg_color = Color( 0.129412, 0.145098, 0.184314, 1 )
+
+[sub_resource type="DynamicFont" id=43]
+size = 27
+font_data = ExtResource( 15 )
+
+[sub_resource type="StyleBoxEmpty" id=44]
+
+[sub_resource type="StyleBoxFlat" id=45]
+bg_color = Color( 0.188235, 0.2, 0.266667, 0.862745 )
+
+[sub_resource type="StyleBoxFlat" id=46]
+bg_color = Color( 0.176471, 0.243137, 0.176471, 1 )
+
+[sub_resource type="StyleBoxFlat" id=47]
+bg_color = Color( 0.254902, 0.168627, 0.168627, 1 )
+
+[sub_resource type="DynamicFont" id=48]
+size = 19
+font_data = ExtResource( 15 )
+
+[sub_resource type="StyleBoxFlat" id=49]
+bg_color = Color( 0.133333, 0.152941, 0.207843, 1 )
+
+[sub_resource type="StyleBoxTexture" id=50]
+texture = ExtResource( 18 )
+region_rect = Rect2( 0, 0, 3333, 3333 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 1.0
+script = ExtResource( 17 )
+
+[node name="Wallpaper" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="TaskbarPanel" type="Panel" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -64.0
+
+[node name="Start" type="PanelContainer" parent="TaskbarPanel"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -64.0
+margin_right = 72.0
+custom_styles/panel = SubResource( 2 )
+
+[node name="StartButton" type="Button" parent="TaskbarPanel/Start"]
+margin_right = 72.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+text = "Start"
+
+[node name="Emails" type="PanelContainer" parent="TaskbarPanel"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 80.0
+margin_top = -56.0
+margin_right = 480.0
+margin_bottom = 344.0
+rect_scale = Vector2( 0.120001, 0.119995 )
+custom_styles/panel = SubResource( 5 )
+
+[node name="EmailsButton" type="Button" parent="TaskbarPanel/Emails"]
+margin_right = 400.0
+margin_bottom = 400.0
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 6 )
+
+[node name="VideoCall" type="PanelContainer" parent="TaskbarPanel"]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 144.0
+margin_top = -56.0
+margin_right = 208.0
+margin_bottom = 8.0
+rect_scale = Vector2( 0.76, 0.75999 )
+custom_styles/panel = SubResource( 9 )
+
+[node name="VideoCallButton" type="Button" parent="TaskbarPanel/VideoCall"]
+margin_right = 64.0
+margin_bottom = 64.0
+custom_styles/hover = SubResource( 10 )
+custom_styles/pressed = SubResource( 11 )
+custom_styles/normal = SubResource( 12 )
+
+[node name="Time" type="PanelContainer" parent="TaskbarPanel"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -80.0
+margin_top = -64.0
+custom_styles/panel = SubResource( 13 )
+
+[node name="TimeLabel" type="Label" parent="TaskbarPanel/Time"]
+margin_top = 25.0
+margin_right = 80.0
+margin_bottom = 39.0
+align = 1
+valign = 1
+script = ExtResource( 5 )
+
+[node name="Volume" type="PanelContainer" parent="TaskbarPanel"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -120.0
+margin_top = -48.0
+margin_right = -88.0
+margin_bottom = -16.0
+custom_styles/panel = SubResource( 14 )
+
+[node name="VolumeButton" type="Button" parent="TaskbarPanel/Volume"]
+margin_right = 32.0
+margin_bottom = 32.0
+custom_styles/hover = SubResource( 15 )
+custom_styles/pressed = SubResource( 16 )
+custom_styles/normal = SubResource( 17 )
+
+[node name="EmailsControl" type="Control" parent="."]
+visible = false
+margin_left = 40.0
+margin_top = 48.0
+margin_right = 944.0
+margin_bottom = 704.0
+script = ExtResource( 9 )
+
+[node name="Wallpaper" type="Panel" parent="EmailsControl"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 18 )
+
+[node name="TitleBar" type="Panel" parent="EmailsControl"]
+anchor_right = 1.0
+margin_bottom = 24.0
+custom_styles/panel = SubResource( 19 )
+
+[node name="WindowTitle" type="Label" parent="EmailsControl/TitleBar"]
+margin_right = 80.0
+margin_bottom = 24.0
+text = "Mailbox"
+align = 1
+valign = 1
+
+[node name="CloseButton" type="Button" parent="EmailsControl/TitleBar"]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -24.0
+custom_styles/hover = SubResource( 20 )
+custom_styles/pressed = SubResource( 21 )
+custom_styles/normal = SubResource( 22 )
+
+[node name="EmailsList" type="PanelContainer" parent="EmailsControl"]
+anchor_bottom = 1.0
+margin_top = 24.0
+margin_right = 320.0
+custom_styles/panel = SubResource( 23 )
+
+[node name="EmailsVBoxContainer" type="VBoxContainer" parent="EmailsControl/EmailsList"]
+margin_right = 320.0
+margin_bottom = 632.0
+rect_min_size = Vector2( 0.018, 50 )
+script = ExtResource( 12 )
+
+[node name="Email" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
+margin_right = 320.0
+margin_bottom = 75.0
+rect_min_size = Vector2( 0, 75 )
+custom_fonts/font = SubResource( 24 )
+custom_styles/focus = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+clip_text = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="EmailsControl/EmailsList/EmailsVBoxContainer/Email"]
+margin_left = 8.0
+margin_top = 7.0
+margin_right = 312.0
+margin_bottom = 64.0
+text = "FeddEx Delivery Services Update
+
+Your shipment for order WL456299002 has..."
+autowrap = true
+
+[node name="Email2" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
+margin_top = 79.0
+margin_right = 320.0
+margin_bottom = 154.0
+rect_min_size = Vector2( 0, 75 )
+custom_fonts/font = SubResource( 24 )
+custom_styles/focus = SubResource( 27 )
+custom_styles/normal = SubResource( 28 )
+clip_text = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="EmailsControl/EmailsList/EmailsVBoxContainer/Email2"]
+margin_left = 8.0
+margin_top = 7.0
+margin_right = 312.0
+margin_bottom = 72.0
+text = "Re: Sync up on next steps
+
+I'll sync up with you today on next steps. H..."
+autowrap = true
+
+[node name="Email3" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
+margin_top = 158.0
+margin_right = 320.0
+margin_bottom = 233.0
+rect_min_size = Vector2( 0, 75 )
+custom_fonts/font = SubResource( 24 )
+custom_styles/focus = SubResource( 29 )
+custom_styles/normal = SubResource( 30 )
+clip_text = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="EmailsControl/EmailsList/EmailsVBoxContainer/Email3"]
+margin_left = 8.0
+margin_top = 7.0
+margin_right = 312.0
+margin_bottom = 72.0
+text = "On the Topic of Company Y...
+
+Hey Team, As many of you have been made..."
+autowrap = true
+
+[node name="Email4" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
+margin_top = 237.0
+margin_right = 320.0
+margin_bottom = 312.0
+rect_min_size = Vector2( 0, 75 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 24 )
+custom_styles/focus = SubResource( 31 )
+custom_styles/normal = SubResource( 32 )
+clip_text = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="EmailsControl/EmailsList/EmailsVBoxContainer/Email4"]
+margin_left = 8.0
+margin_top = 7.0
+margin_right = 312.0
+margin_bottom = 72.0
+custom_colors/font_color = Color( 0.0627451, 0.0627451, 0.0627451, 1 )
+text = "Farewell, Dylan Shu
+
+It is with a heavy heart that we are writing t..."
+autowrap = true
+
+[node name="Email5" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
+margin_top = 316.0
+margin_right = 320.0
+margin_bottom = 391.0
+rect_min_size = Vector2( 0, 75 )
+custom_fonts/font = SubResource( 24 )
+custom_styles/focus = SubResource( 33 )
+custom_styles/normal = SubResource( 32 )
+clip_text = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="EmailsControl/EmailsList/EmailsVBoxContainer/Email5"]
+margin_left = 8.0
+margin_top = 7.0
+margin_right = 312.0
+margin_bottom = 72.0
+custom_colors/font_color = Color( 0.0627451, 0.0627451, 0.0627451, 1 )
+text = "Daily Test Report
+
+This is a daily test report. You are getting th..."
+autowrap = true
+
+[node name="Email6" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
+margin_top = 395.0
+margin_right = 320.0
+margin_bottom = 470.0
+rect_min_size = Vector2( 0, 75 )
+custom_fonts/font = SubResource( 24 )
+custom_styles/focus = SubResource( 34 )
+custom_styles/normal = SubResource( 32 )
+clip_text = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="EmailsControl/EmailsList/EmailsVBoxContainer/Email6"]
+margin_left = 8.0
+margin_top = 7.0
+margin_right = 312.0
+margin_bottom = 72.0
+custom_colors/font_color = Color( 0.0627451, 0.0627451, 0.0627451, 1 )
+text = "Welcome to Company X!
+
+Hi Sam! Welcome and congratulations on re..."
+autowrap = true
+
+[node name="EmailPreview" type="Panel" parent="EmailsControl"]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -584.0
+margin_top = 24.0
+custom_styles/panel = SubResource( 35 )
+script = ExtResource( 11 )
+
+[node name="EmailPreview" type="RichTextLabel" parent="EmailsControl/EmailPreview"]
+visible = false
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 568.0
+margin_bottom = 616.0
+custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
+bbcode_enabled = true
+bbcode_text = "Wednesday, April 25 2045   11:08 AM
+
+From: deliverynotifications@feddex.ca
+
+[b]FeddEx Delivery Services Update[/b]
+
+Your shipment for order WL456299002 has been processed and will be out for delivery shortly. You will receive a follow-up email along with your tracking number.
+
+For contactless delivery, please call (934) 954-8473 to get more information on our other supported modes for delivery and to arrange any desired changes.
+
+Please also note that due to recent influxes in order volumes due to remote operations, delivery times may be take longer. We will do our best to ensure that you have the most up-to-date information on your delivery.
+
+Thanks,
+FeddEx Delivery Services Team"
+text = "Wednesday, April 25 2045   11:08 AM
+
+From: deliverynotifications@feddex.ca
+
+FeddEx Delivery Services Update
+
+Your shipment for order WL456299002 has been processed and will be out for delivery shortly. You will receive a follow-up email along with your tracking number.
+
+For contactless delivery, please call (934) 954-8473 to get more information on our other supported modes for delivery and to arrange any desired changes.
+
+Please also note that due to recent influxes in order volumes due to remote operations, delivery times may be take longer. We will do our best to ensure that you have the most up-to-date information on your delivery.
+
+Thanks,
+FeddEx Delivery Services Team"
+
+[node name="Email2Preview" type="RichTextLabel" parent="EmailsControl/EmailPreview"]
+visible = false
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 568.0
+margin_bottom = 616.0
+custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
+bbcode_enabled = true
+bbcode_text = "Wednesday, April 25 2045   10:45 AM
+
+From: martin.anderson@companyx.ca
+
+Re: Sync up on next steps
+
+ill sync up with you today on next steps. have your notes ready, we don't have much time. if you have any conflicts, cancel them because this takes priority
+
+[u]_______________________________________________________[/u]
+
+Tuesday,  April 24 2045   9:59 AM
+
+To: martin.anderson@companyx.ca
+
+Re: Sync up on next steps
+
+Hi Martin,
+
+Happy Tuesday!
+
+Just wanted to follow up on my first email and check in on when you'll have some time to sync up for next steps?
+
+Thanks,
+Sam
+
+[u]_______________________________________________________[/u]
+
+Monday, April 23 2045   10:23 AM
+
+To: martin.anderson@companyx.ca
+
+Sync up on next steps
+
+Hi Martin,
+
+Hope you've been well! Thank you again for giving me the opportunity to work on the team - I'm excited to get started.
+
+I got through the onboarding documents and have my workstation set up. Will you be available today to sync up?
+
+Looking forward to working with you!
+
+Thanks,
+Sam
+"
+text = "Wednesday, April 25 2045   10:45 AM
+
+From: martin.anderson@companyx.ca
+
+Re: Sync up on next steps
+
+ill sync up with you today on next steps. have your notes ready, we don't have much time. if you have any conflicts, cancel them because this takes priority
+
+_______________________________________________________
+
+Tuesday,  April 24 2045   9:59 AM
+
+To: martin.anderson@companyx.ca
+
+Re: Sync up on next steps
+
+Hi Martin,
+
+Happy Tuesday!
+
+Just wanted to follow up on my first email and check in on when you'll have some time to sync up for next steps?
+
+Thanks,
+Sam
+
+_______________________________________________________
+
+Monday, April 23 2045   10:23 AM
+
+To: martin.anderson@companyx.ca
+
+Sync up on next steps
+
+Hi Martin,
+
+Hope you've been well! Thank you again for giving me the opportunity to work on the team - I'm excited to get started.
+
+I got through the onboarding documents and have my workstation set up. Will you be available today to sync up?
+
+Looking forward to working with you!
+
+Thanks,
+Sam
+"
+
+[node name="Email3Preview" type="RichTextLabel" parent="EmailsControl/EmailPreview"]
+visible = false
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 568.0
+margin_bottom = 616.0
+custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
+bbcode_enabled = true
+bbcode_text = "Tuesday, April 24 2045   02:20 PM
+
+From: colin.anderson@companyx.ca
+
+On the Topic of Company Y...
+
+Hey Team,
+
+As many of you have been made aware, we are consolidating and reassessing our loyalties with company Y due to the turbulence that has recently clouded our relations with them.
+
+While we share many values and have worked closely together with them over the years to align our business strategies, we've come down to the decision to part ways due to differences in our ultimate vision and direction.
+
+As we move forward with this disengagement, we ask all employees to refrain from further discussing any information that is internal or sensitive to company X with any associate of company Y.
+
+We hope the team will continue to stand together and adamantly advocate for our company mission - to reimagine the possibilities of our future lives and bring those possibilities to fruition.
+
+All The Best,
+Colin
+CEO, Leadership Team, Company X"
+text = "Tuesday, April 24 2045   02:20 PM
+
+From: colin.anderson@companyx.ca
+
+On the Topic of Company Y...
+
+Hey Team,
+
+As many of you have been made aware, we are consolidating and reassessing our loyalties with company Y due to the turbulence that has recently clouded our relations with them.
+
+While we share many values and have worked closely together with them over the years to align our business strategies, we've come down to the decision to part ways due to differences in our ultimate vision and direction.
+
+As we move forward with this disengagement, we ask all employees to refrain from further discussing any information that is internal or sensitive to company X with any associate of company Y.
+
+We hope the team will continue to stand together and adamantly advocate for our company mission - to reimagine the possibilities of our future lives and bring those possibilities to fruition.
+
+All The Best,
+Colin
+CEO, Leadership Team, Company X"
+
+[node name="Email4Preview" type="RichTextLabel" parent="EmailsControl/EmailPreview"]
+visible = false
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 568.0
+margin_bottom = 616.0
+custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
+bbcode_enabled = true
+bbcode_text = "Tuesday, April 24 2045   01:36 PM
+
+From: luna.stone@companyx.ca
+
+Farewell, Dylan Shu
+
+It is with a heavy heart that we are writing to inform the team that Dylan Shu will no longer be working with us.
+
+Dylan has been a significant contributor to our company over the past 5 years on the development team. His recent transition to testing & tools brought a whole new world of potential for his skills and the team, however, his time was unfortunately cut short.
+
+We ask that the team gathers and joins us today in bidding farewell to Dylan.
+
+We wish you all the best, Dylan, on wherever your career takes you next.
+
+Warm Regards,
+Luna
+Human Resources, Company X"
+text = "Tuesday, April 24 2045   01:36 PM
+
+From: luna.stone@companyx.ca
+
+Farewell, Dylan Shu
+
+It is with a heavy heart that we are writing to inform the team that Dylan Shu will no longer be working with us.
+
+Dylan has been a significant contributor to our company over the past 5 years on the development team. His recent transition to testing & tools brought a whole new world of potential for his skills and the team, however, his time was unfortunately cut short.
+
+We ask that the team gathers and joins us today in bidding farewell to Dylan.
+
+We wish you all the best, Dylan, on wherever your career takes you next.
+
+Warm Regards,
+Luna
+Human Resources, Company X"
+
+[node name="Email5Preview" type="RichTextLabel" parent="EmailsControl/EmailPreview"]
+visible = false
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 576.0
+margin_bottom = 616.0
+custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
+bbcode_enabled = true
+bbcode_text = "Tuesday, April 24 2045   9:16 AM
+
+From: testreports@companyx.ca
+
+Daily Test Report
+
+This is a daily test report. You are getting this email because you are a member of the testing & tools team distribution list. If this email was sent to you by mistake and you wish to not receive emails like this in the future, please contact [u]admin.testreports@companyx.ca[/u].
+
+Project Al
+
+[u]Function             | Description                                 | TC Executed   | TC Passed    [/u]
+[u]Hello Al              | Chat is launched                         |  100%            |  100%            [/u]
+[u]Ask question      | Check question is answered       |  100%            |  100%            [/u]
+[u]Goodbye Al        | Chat is ended                              |  100%            |  100%            [/u]
+[u]Conversation      | Fluid conversation with user      |  25%               |  Pending[/u]
+
+Best,
+Calcifer"
+text = "Tuesday, April 24 2045   9:16 AM
+
+From: testreports@companyx.ca
+
+Daily Test Report
+
+This is a daily test report. You are getting this email because you are a member of the testing & tools team distribution list. If this email was sent to you by mistake and you wish to not receive emails like this in the future, please contact admin.testreports@companyx.ca.
+
+Project Al
+
+Function             | Description                                 | TC Executed   | TC Passed    
+Hello Al              | Chat is launched                         |  100%            |  100%            
+Ask question      | Check question is answered       |  100%            |  100%            
+Goodbye Al        | Chat is ended                              |  100%            |  100%            
+Conversation      | Fluid conversation with user      |  25%               |  Pending
+
+Best,
+Calcifer"
+
+[node name="Email6Preview" type="RichTextLabel" parent="EmailsControl/EmailPreview"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 568.0
+margin_bottom = 616.0
+custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
+bbcode_enabled = true
+bbcode_text = "Monday, April 23 2045   8:59 AM
+
+From: testreports@companyx.ca
+
+Welcome to Company X!
+
+Hi Sam!
+
+Welcome and congratulations on reaching your first day at Company X!
+
+Please sync with your supervisor, Martin Anderson, on your onboarding steps.
+
+We're looking forward to working with you!
+
+Company X"
+text = "Monday, April 23 2045   8:59 AM
+
+From: testreports@companyx.ca
+
+Welcome to Company X!
+
+Hi Sam!
+
+Welcome and congratulations on reaching your first day at Company X!
+
+Please sync with your supervisor, Martin Anderson, on your onboarding steps.
+
+We're looking forward to working with you!
+
+Company X"
+
+[node name="VideoCallControl" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 0.893
+margin_bottom = 0.199951
+script = ExtResource( 13 )
+
+[node name="Background" type="Panel" parent="VideoCallControl"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 36 )
+
+[node name="TitleBar" type="Panel" parent="VideoCallControl"]
+anchor_right = 1.0
+margin_bottom = 32.0
+custom_styles/panel = SubResource( 37 )
+
+[node name="WindowTitle" type="Label" parent="VideoCallControl/TitleBar"]
+anchor_bottom = 1.0
+margin_right = 104.0
+custom_styles/normal = SubResource( 38 )
+text = "FaceChat"
+align = 1
+valign = 1
+
+[node name="Close" type="Button" parent="VideoCallControl/TitleBar"]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -32.0
+custom_styles/hover = SubResource( 39 )
+custom_styles/normal = SubResource( 40 )
+
+[node name="Icons" type="PanelContainer" parent="VideoCallControl"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -248.0
+margin_top = -8.0
+margin_right = 248.0
+margin_bottom = 64.0
+rect_scale = Vector2( 1, 3.12 )
+custom_styles/panel = SubResource( 41 )
+
+[node name="EmptyRoom" type="PanelContainer" parent="VideoCallControl"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -272.0
+margin_top = -100.0
+margin_right = 272.0
+margin_bottom = 228.0
+custom_styles/panel = SubResource( 42 )
+
+[node name="Label" type="Label" parent="VideoCallControl/EmptyRoom"]
+margin_top = 146.0
+margin_right = 544.0
+margin_bottom = 181.0
+custom_fonts/font = SubResource( 43 )
+custom_styles/normal = SubResource( 44 )
+text = "Waiting for people to join..."
+align = 1
+valign = 1
+
+[node name="VideoRequest" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -240.0
+margin_top = -192.0
+margin_bottom = -64.0
+script = ExtResource( 16 )
+
+[node name="Panel" type="Panel" parent="VideoRequest"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 45 )
+
+[node name="Accept" type="Button" parent="VideoRequest/Panel"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -40.0
+margin_right = -121.0
+custom_styles/normal = SubResource( 46 )
+text = "Accept"
+
+[node name="Decline" type="Button" parent="VideoRequest/Panel"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 119.0
+margin_top = -40.0
+custom_styles/normal = SubResource( 47 )
+text = "Decline"
+
+[node name="Label" type="RichTextLabel" parent="VideoRequest/Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -73.0
+margin_top = -48.0
+margin_right = 47.0
+margin_bottom = 20.0
+custom_fonts/normal_font = SubResource( 48 )
+tab_size = 9
+text = "Martin
+is calling..."
+fit_content_height = true
+
+[node name="StartControl" type="Control" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = -1.0
+margin_top = -104.0
+margin_right = 119.0
+margin_bottom = -64.0
+script = ExtResource( 19 )
+
+[node name="Logout" type="Button" parent="StartControl"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+custom_styles/normal = SubResource( 49 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="StartControl/Logout"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="PanelContainer" type="PanelContainer" parent="StartControl/Logout/HBoxContainer"]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 40, 20 )
+custom_styles/panel = SubResource( 50 )
+
+[node name="Label" type="Label" parent="StartControl/Logout/HBoxContainer"]
+margin_left = 44.0
+margin_top = 13.0
+margin_right = 87.0
+margin_bottom = 27.0
+text = "Logout"
+
+[connection signal="pressed" from="TaskbarPanel/Start/StartButton" to="StartControl" method="_on_StartButton_pressed"]
+[connection signal="pressed" from="TaskbarPanel/Emails/EmailsButton" to="EmailsControl" method="_on_EmailsButton_pressed"]
+[connection signal="pressed" from="TaskbarPanel/Emails/EmailsButton" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_EmailsButton_pressed"]
+[connection signal="pressed" from="TaskbarPanel/VideoCall/VideoCallButton" to="VideoCallControl" method="_on_VideoCallButton_pressed"]
+[connection signal="pressed" from="EmailsControl/TitleBar/CloseButton" to="EmailsControl" method="_on_CloseButton_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_Email_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email" to="EmailsControl/EmailPreview" method="_on_Email_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email2" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_Email2_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email2" to="EmailsControl/EmailPreview" method="_on_Email2_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email2" to="VideoRequest" method="_on_Email2_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email3" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_Email3_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email3" to="EmailsControl/EmailPreview" method="_on_Email3_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email4" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_Email4_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email4" to="EmailsControl/EmailPreview" method="_on_Email4_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email5" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_Email5_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email5" to="EmailsControl/EmailPreview" method="_on_Email5_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email6" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_Email6_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email6" to="EmailsControl/EmailPreview" method="_on_Email6_pressed"]
+[connection signal="ready" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email6" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_Email6_ready"]
+[connection signal="pressed" from="VideoCallControl/TitleBar/Close" to="VideoCallControl" method="_on_Close_pressed"]
+[connection signal="pressed" from="VideoRequest/Panel/Accept" to="VideoCallControl" method="_on_Accept_pressed"]
+[connection signal="pressed" from="VideoRequest/Panel/Accept" to="VideoRequest" method="_on_Accept_pressed"]
+[connection signal="pressed" from="VideoRequest/Panel/Decline" to="VideoRequest" method="_on_Decline_pressed"]
+[connection signal="pressed" from="StartControl/Logout" to="." method="_on_Logout_pressed"]

@@ -1,0 +1,89 @@
+{
+	"color": "#ff607c89",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1682228433.json",
+	"mirror_portraits": false,
+	"name": "Al",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://art/characters/Al_default.png"
+		},
+		{
+			"name": "Happy",
+			"path": "res://art/characters/Al_happy.png"
+		},
+		{
+			"name": "Contemplative",
+			"path": "res://art/characters/Al_contemplating.png"
+		},
+		{
+			"name": "Default_eyes",
+			"path": "res://art/characters/Al_default_eyes.png"
+		},
+		{
+			"name": "Happy_eyes",
+			"path": "res://art/characters/Al_happy_eyes.png"
+		},
+		{
+			"name": "Contemplative_eyes",
+			"path": "res://art/characters/Al_contemplating_eyes.png"
+		},
+		{
+			"name": "Default_hair",
+			"path": "res://art/characters/Al_default_hair.png"
+		},
+		{
+			"name": "Happy_hair",
+			"path": "res://art/characters/Al_happy_hair.png"
+		},
+		{
+			"name": "Contemplative_hair",
+			"path": "res://art/characters/Al_contemplating_hair.png"
+		},
+		{
+			"name": "Default_male",
+			"path": "res://art/characters/Al_default_male.png"
+		},
+		{
+			"name": "Happy_male",
+			"path": "res://art/characters/Al_happy_male.png"
+		},
+		{
+			"name": "Contemplative_male",
+			"path": "res://art/characters/Al_contemplating_male.png"
+		},
+		{
+			"name": "Glitch",
+			"path": "res://art/characters/Al_glitch.png"
+		},
+		{
+			"name": "Glitch2",
+			"path": "res://art/characters/Al_glitch2.png"
+		},
+		{
+			"name": "Glitch3",
+			"path": "res://art/characters/Al_glitch3.png"
+		},
+		{
+			"name": "Glitch3_dark",
+			"path": "res://art/characters/Al_glitch3_dark.png"
+		},
+		{
+			"name": "Glitch4",
+			"path": "res://art/characters/Al_glitch4.png"
+		},
+		{
+			"name": "Al_glitch4_dark",
+			"path": "res://art/characters/Al_glitch4_dark.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

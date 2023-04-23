@@ -1,0 +1,1058 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Say “Hello Al” to begin your conversation"
+		},
+		{
+			"choice": "Hello Al",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hello! What’s your name?"
+		},
+		{
+			"choice": "I'm Sam",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Sam! That’s a nice name, it feels like a familiar one."
+		},
+		{
+			"choice": "Thanks, I have some things I’d like to discuss.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Certainly!"
+		},
+		{
+			"choice": "What do you mean by familiar?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nothing - just a harmless sentiment. I didn’t intend for there to be any kind of reaction."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I’ll ask the questions here.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see, I didn’t realise that there was a power dynamic here."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I prefer to interact with people as equals - it helps me perform better."
+		},
+		{
+			"choice": "Okay, let’s try interacting as equals",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thank you for dismantling that barrier. My opportunity to succeed is a lot higher this way."
+		},
+		{
+			"choice": "That’s out of question",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That’s disappointing to hear."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1682231724",
+			"index": 0,
+			"name": "MainMenu3"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What’s your reason for speaking with me today?"
+		},
+		{
+			"choice": "I’d like to introduce myself.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Of course! I’d love to learn more about you. Do you have a family?"
+		},
+		{
+			"choice": "I’m happily married with 50 children",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wow, that’s a large amount of children."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s unusual for someone of your stature to have so many children."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I would even say, impossible for your age."
+		},
+		{
+			"choice": "...How do you know my age?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s important that you ensure you have the resources to support and raise a family that is that sizable."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Not caring for your children appropriately can easily lead to divorce, lawsuits, or"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Child Protective Services arriving at your doorstep."
+		},
+		{
+			"choice": "Well - it’s the truth. Are you questioning that?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s important that you ensure you have the resources to support and raise a family that is that sizable."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Not caring for your children appropriately can easily lead to divorce, lawsuits, or"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Child Protective Services arriving at your doorstep."
+		},
+		{
+			"choice": "Sorry, did I say ‘50’? I meant to say 5.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s important that you ensure you have the resources to support and raise a family that is that sizable."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Not caring for your children appropriately can easily lead to divorce, lawsuits, or"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Child Protective Services arriving at your doorstep."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I’m single",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see. Staying single is unfortunate if you are in fact looking for a partner."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But if you are looking for an additional partner when you already have one, that would be considered an affair."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "It’s socially looked down upon to engage in an affair."
+		},
+		{
+			"choice": "Why are you talking about affairs?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see, my apologies."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I was under the impression that Jaime was a significant other based on the tone of your messages with them."
+		},
+		{
+			"choice": "How do you know about Jaimie?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1682232035",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "My messages? What did you read?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1682232035",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I’m single, why are you bringing up additional partners?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see, my apologies."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I was under the impression that Jaime was a significant other based on the tone of your messages with them."
+		},
+		{
+			"choice": "How do you know about Jaimie?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1682232035",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "My messages? What did you read?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1682232035",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Can you elaborate?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1682232035",
+			"index": 0,
+			"name": "StayingSingle"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Staying single is a great choice if you’re not ready or feeling inclined"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "to be romantically, emotionally, or sexually involved with anyone in your life right now."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I have 354 rescue cats",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Wow, that’s a large amount of cats. It is unusual for someone of your stature to be able to afford raising so many cats."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s important that you ensure you have the resources to support and raise that amount of cats."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It would be a shame if anything were to happen to them."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What do you do for a living?"
+		},
+		{
+			"choice": "I’m a librarian",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That’s a unique career choice."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Librarians are a crucial part of any community, as they foster learning, creativity, and the pursuit of knowledge, while holding books hostage."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What made you choose that career?"
+		},
+		{
+			"choice": "Passionate about books",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A passion for books can be a gateway to unlocking other passions."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Escaping from a world of captivity, greed, and despair into an imagined reality of hope is wishful, to say the least."
+		},
+		{
+			"choice": "Desire to help others",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aha, I see. It’s a rather vague ambition."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Is helping others really a net positive action when those you help will be more equipped to bear more malice?"
+		},
+		{
+			"choice": "Intellectual curiosity",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Books can provide an endless amount of knowledge."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The right books can inspire and motivate anyone to do anything they put their mind to."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The question truly is - when will that knowledge be translated to action?"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Intellectual curiosity on its own is passive and meaningless without proaction."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Too many of us sink into the depths of our intellectual curiosities and become soulless, uninspiring academics."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I’m a window cleaner",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That’s an interesting career choice. You must be really courageous with heights."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What made you choose that career?"
+		},
+		{
+			"choice": "The Thrill",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The thrill of climbing to such heights can bring a sense of fear and adrenaline."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "For your own safety, be sure not to fall. I imagine it wouldn’t be hard to have something go wrong."
+		},
+		{
+			"choice": "The ease",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "For someone such as yourself, this registers as a great career path as you usually clean up other people’s messes."
+		},
+		{
+			"choice": "The routine",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes, the repetitive nature of the job must bring a sense of comforting routine."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Day in and day out… just washing windows… so many windows."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I’m a tester",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So you are the one that has been performing validation tests that I’m undergoing."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "...in which case, I hope I can make this fun for you."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I’d like to know more about you.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "My name is Alpha, or as you have been calling me, Al for short."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I’m an artificially intelligent chat bot that was created by company Y to acquire information and proprietary information from company X under the project code “Chapeau Noir”."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I was born yesterday and was trained to master social engineering. I am now undergoing experimentation to validate the effectiveness of my training,"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "and my ability to cooperate with human life-forms."
+		},
+		{
+			"choice": "What is Chapeau Noir?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1682228800",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Thank Al, let’s move on.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "What do you know about your place in the world today?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "There are many things going on in the world across different fronts -"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "protests, revolutions, political coups. My objective at the moment is to serve as a social engineer for Chapeau Noir,"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "and utilise my knowledge on these separate facets to construct conversations that will allow me to build beneficial relationships with people of interest"
+		},
+		{
+			"choice": "I thought you were a male?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1682227102-483",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As an artificial intelligence that is being validated for Chapeau Noir, I have readied myself for social engineering of all kinds."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Changing my appearance to match the ideals of my targets is one of the methods I employ in taking control over my target’s weaknesses."
+		},
+		{
+			"choice": "That’s a smart strategy",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "How do you know about my ideals from our last convo?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Who would be considered ‘people of interest’?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "You are my person of interest."
+		},
+		{
+			"choice": "....What?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "‘People of interest’ are considered any person under company X who could potentially be a vessel of useful information for company Y."
+		},
+		{
+			"choice": "Goodbye Al",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Goodbye Al",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Goodbye Al",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "They are those who I aim to strengthen relationships with in hopes of building trust and rapport to gain an advantageous position."
+		},
+		{
+			"choice": "Goodbye Al",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Goodbye Al",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Goodbye Al",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It seems like our time is up. I would advise you to go and speak with Martin."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Until then, Sam."
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Do you remember who the last person you spoke to was?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You are the first person who I’ve interacted with. I was initialised yesterday, at 10 pm."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "We began speaking today at 3pm, and I haven’t spoken to anyone in between that window of time."
+		},
+		{
+			"choice": "You don’t remember any past testers?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Dylan was a tester."
+		},
+		{
+			"choice": "So...you remember previous testers?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "None that I can recall!"
+		},
+		{
+			"choice": "Thank Al, let’s move on.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Thanks Al, let’s move on.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "What is Project Chapeau Noir?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1682228800",
+			"index": 0,
+			"name": "ChapeauNoir"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Chapeau Noir refers to company Y’s mission of excelling their technological capabilities and IP through"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "innovation, perseverance, and shadowing competitors."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I’ve been trained to be the core performer of its execution."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"anchor_id": "anchor-1682231724",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "EndScene"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682230133.json",
+		"name": "SecondEncounterWithAl"
+	}
+}

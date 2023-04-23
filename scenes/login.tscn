@@ -1,0 +1,115 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
+[ext_resource path="res://art/login_ui/ExitButton.png" type="Texture" id=2]
+[ext_resource path="res://fonts/Inconsolota/Inconsolata-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://art/login_ui/ComputerUser.png" type="Texture" id=4]
+[ext_resource path="res://scripts/login.gd" type="Script" id=5]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 1680, 1050 )
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="DynamicFont" id=10]
+size = 27
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="DynamicFont" id=7]
+size = 31
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxTexture" id=9]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 250, 250 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+
+[node name="Background" type="PanelContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="QuitPanelContainer" type="PanelContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -63.9999
+margin_top = -64.0
+margin_right = 3269.0
+margin_bottom = 3269.0
+rect_scale = Vector2( 0.015, 0.016 )
+custom_styles/panel = SubResource( 2 )
+
+[node name="QuitButton" type="Button" parent="QuitPanelContainer"]
+margin_right = 3333.0
+margin_bottom = 3333.0
+custom_styles/hover = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+icon = ExtResource( 2 )
+
+[node name="StartPanelContainer" type="PanelContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -72.0
+margin_top = 68.0
+margin_right = 71.0
+margin_bottom = 116.0
+custom_styles/panel = SubResource( 5 )
+
+[node name="LoginButton" type="Button" parent="StartPanelContainer"]
+margin_right = 143.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 10 )
+text = "Login"
+
+[node name="Name" type="PanelContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -56.0
+margin_top = 12.0
+margin_right = 56.0
+margin_bottom = 45.0
+custom_styles/panel = SubResource( 6 )
+
+[node name="NameLabel" type="Label" parent="Name"]
+margin_right = 112.0
+margin_bottom = 33.0
+custom_fonts/font = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+text = "Sam"
+align = 1
+valign = 1
+
+[node name="UserImage" type="PanelContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -72.0
+margin_top = -132.0
+margin_right = 72.0
+margin_bottom = -1.0
+custom_styles/panel = SubResource( 9 )
+
+[connection signal="pressed" from="QuitPanelContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
+[connection signal="pressed" from="StartPanelContainer/LoginButton" to="." method="_on_LoginButton_pressed"]

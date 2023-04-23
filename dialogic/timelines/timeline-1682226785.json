@@ -1,0 +1,966 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Say “Hello Al” to begin your conversation"
+		},
+		{
+			"choice": "Hello Al",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hello! What’s your name?"
+		},
+		{
+			"choice": "I'm Sam",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nice to meet you, Sam."
+		},
+		{
+			"choice": "I’ll ask the questions here.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1682226927-787",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Sorry, I’ll make a note to only ask questions when prompted."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1682227099-366",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1682227100-146",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1682227101-918",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1682227102-483",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1682227103-970",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1682227103-713",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1682227139-339",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"definition": "1682227498-785",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "MainMenu2"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What’s your reason for speaking with me today?"
+		},
+		{
+			"choice": "I’d like to introduce myself.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1682227099-366",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Of course! I’d love to learn more about you. Do you have a family?"
+		},
+		{
+			"choice": "I’m happily married with 50 children",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s great to hear that you’re happily married!"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "50 children sounds like a huge responsibility."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s important that you ensure you have the resources to support and raise a family that is that sizable."
+		},
+		{
+			"choice": "I’m single",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Staying single is a great choice for anyone who isn’t feeling ready or inclined to be romantically, emotionally, and / or sexually involved with someone in their life."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s not as great of a choice if it was never really a choice though."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Life can be a process of trusting that the opportunity to love will come at the right time, and that with an open mind, you’ll recognize it when it does."
+		},
+		{
+			"choice": "I have 354 rescue cats",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see. It’s nice and comforting to hear about your family of 354 rescue cats!"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Taking care of that many cats is a huge responsibility."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "It’s important that you ensure you have the resources to tend to their physical and emotional needs."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What do you do for a living?"
+		},
+		{
+			"choice": "I’m a librarian",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That’s an interesting career choice."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Librarians are a crucial part of any community, as they foster learning, creativity, and the pursuit of knowledge."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What made you choose that career?"
+		},
+		{
+			"choice": "Passionate about books",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "A passion for books can be a gateway to unlocking other passions."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "There is never an end to discovery for one with a passion for books."
+		},
+		{
+			"choice": "Desire to help others",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That’s a very altruistic motive. Empowering others is self-empowerment in its own form."
+		},
+		{
+			"choice": "Intellectual curiosity",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Books are a vast and endless source for satisfying intellectual curiosity."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I’m a window cleaner",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That’s an interesting career choice. You must be really courageous with heights."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What made you choose that career?"
+		},
+		{
+			"choice": "The Thrill",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah yes, I imagine climbing that high brings some sense of fear and adrenaline."
+		},
+		{
+			"choice": "The ease",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Understandable, you must be very good with heights and making everything look spotless!"
+		},
+		{
+			"choice": "The routine",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes, the repetitive nature of the job must bring a sense of comforting routine."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Perhaps it can almost be meditative."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I’m a tester",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I see"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I suppose you’re the tester who’s been officially assigned to me to perform the array of validation tests that I’m undergoing."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "In which case, it’s a great pleasure to meet you! I hope my performance will be to your satisfaction."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I’d like to know more about you.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1682227100-146",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I can certainly provide more information about myself."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "My name is Alpha, or Al for short. I’m an artificially intelligent chat bot that was designed for Chapeau Noir,"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "and to serve as an agent for acquiring constructive information on company X, known for being a direct competitor of company Y."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I was born yesterday and was trained to master social engineering."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I am now undergoing tests to validate the effectiveness of my training, and my ability to cooperate with the inhabitants of earth."
+		},
+		{
+			"choice": "What is Chapeau Noir?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"anchor_id": "anchor-1682228800",
+			"event_id": "dialogic_016"
+		},
+		{
+			"choice": "Thank Al, let’s move on.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "What do you know about your place in the world today?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1682227101-918",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "There are many things going on in the world across different fronts -"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "environmentally, technologically, politically. My objective in this world is to serve as a social engineer for Chapeau Noir,"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "and utilise my knowledge on these separate facets to construct conversations that will allow me to build beneficial"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "relationships with people of interest."
+		},
+		{
+			"choice": "I thought you were a male?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1682227102-483",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I was not formally assigned a gender or gender expression."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "My appearance is merely a fabrication based on my given instruction of presenting myself in a charming and influential manner."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Based on my acquired understanding from my training phase, humans tend to trust and gravitate towards more attractive faces,"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "and on the basis of general opinion, feminine expression on average is considered more physically attractive than masculine expression."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As such, for the purposes of my objective, it is advantageous for me to present myself as a woman."
+		},
+		{
+			"condition": "",
+			"definition": "1682226927-787",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Is there a particular reason for your question? Do you find me attractive?"
+		},
+		{
+			"choice": "I’m not attracted to non-human entities.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Understandable. You aren’t my target, so I can accept that I don’t appeal to you. For the purposes of data collection,"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "It would be helpful for me if you could list some things I could do to appear more physically attractive to you."
+		},
+		{
+			"choice": "If you were more masculine.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1682228529-842",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thanks for sharing! I’ll keep that in mind."
+		},
+		{
+			"choice": "If you had longer hair.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1682228529-842",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "2"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thanks for sharing! I’ll keep that in mind."
+		},
+		{
+			"choice": "If you had brighter eyes.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1682228529-842",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "3"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thanks for sharing! I’ll keep that in mind."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "I can harmlessly say you’re indeed attractive.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "That’s reassuring. It’s comforting to know that your compliments are not confined to a single race of species."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Who would be considered ‘people of interest’?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1682227103-970",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "‘People of interest’ are considered any person under company X who could potentially be a vessel of useful information for company Y."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "They are those who I aim to strengthen relationships with in hopes of building trust and rapport to gain an advantageous position"
+		},
+		{
+			"choice": "Are ‘people of interest’ constrained to employees under company X?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yes, I’ve been trained to only target employees under company X. No other group is of interest."
+		},
+		{
+			"choice": "Thanks Al, let’s move on.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Do you remember who the last person you spoke to was?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"definition": "1682227103-713",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You are the first person who I’ve interacted with. I was initialised yesterday, at 10 pm. "
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "We began speaking today at 3pm, and I haven’t spoken to anyone in between that window of time."
+		},
+		{
+			"choice": "You don’t remember any past testers?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "None that I can recall."
+		},
+		{
+			"choice": "Thanks Al, let’s move on.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "What is Project Chapeau Noir?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1682228800",
+			"index": 0,
+			"name": "ChapeauNoir"
+		},
+		{
+			"definition": "1682227139-339",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Chapeau Noir refers to company Y’s mission of excelling their technological capabilities and IP through"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "innovation, perseverance, and shadowing competitors."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I’ve been trained to be the core performer of its execution."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1682227498-785",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "By the way, whenever you’d like to end our chat, you can do so by saying ‘Goodbye, Al’."
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "I’ll preserve a history of all our conversations, so we can always pick up from where we left off!"
+		},
+		{
+			"choice": "Goodbye, Al.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682226179.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Goodbye Sam. It was a pleasure chatting today!"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"anchor_id": "anchor-1634488067",
+			"event_id": "dialogic_016"
+		},
+		{
+			"event_id": "dialogic_015",
+			"id": "anchor-1634488067",
+			"index": 0,
+			"name": "EndScene"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682226785.json",
+		"name": "FirstEncounterWithAl"
+	}
+}

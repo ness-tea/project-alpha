@@ -1,0 +1,283 @@
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"condition": "!=",
+			"definition": "1682230598-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "Angry",
+			"text": "How many times do I have to call you for an answer? We're on a time sensitive deadline."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "Angry",
+			"text": "I want a response by the first call next time, or we're gonna have issues here."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Got it?"
+		},
+		{
+			"choice": "It won't happen again.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay, THAT'S what I want to hear."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Gotta make sure we're clear on who calls the shots here, yes? Good."
+		},
+		{
+			"choice": "Something important came up.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay - dude, all I hear is YAP YAP."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I don't care what the reason was. You see a call from me, you pick up. It's as easy as that."
+		},
+		{
+			"choice": "Having tech issues.",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Okay - dude, all I hear is YAP YAP."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I don't care what the reason was. You see a call from me, you pick up. It's as easy as that."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "==",
+			"definition": "1682230598-648",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "Default",
+			"question": "Heyyy... Sam, right? Am I coming through okay? "
+		},
+		{
+			"choice": "You're coming through",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Awesome man. Okay."
+		},
+		{
+			"choice": "Think I'm having audio issues - can I call you back?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "Angry",
+			"text": "... Your mic is picking up my voice. Stop %$#@ing around here - we need to act fast."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Anyway, I'm syncing up again regarding project CHAPEAU NOIR."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "The dev team just wrapped up AI's training yesterday, so we're moving into the next phase of his ramp up."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We need Al to be on board in the next couple of days - so don't %$#@ this up like the last spineless tester did."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You'll find him on your desktop. Our IT team went ahead and installed him on your system last night."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I've left you a task log to get you started on what information you should be gathering in your next few black box testing sessions. Should also get you clear on the expected behavioural criteria."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Any questions?"
+		},
+		{
+			"choice": "What happened to the last tester?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Should I know anything about Al before I get started?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "I thought I was just the assistant?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Martin cuts you off mid-sentence."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "Smug",
+			"text": "Good, you shouldn't have any questions - because it's a simple task."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Well then, I'll leave you to it."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "Smug",
+			"text": "Looks like my webcam alarms are going off... so it's about time for me to check up on what's happening with the LADIES..."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "The perks of working remotely, am I right? HAHAHAHAHA"
+		},
+		{
+			"choice": "Hahaha!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Umm... (was that supposed to be a joke?)",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1682226204.json",
+		"name": "FirstMeetingWithMartin"
+	}
+}

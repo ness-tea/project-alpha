@@ -1,0 +1,29 @@
+{
+	"color": "#ffa77c7c",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1682227298.json",
+	"mirror_portraits": false,
+	"name": "Martin",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -280,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://art/characters/Martin_default2.png"
+		},
+		{
+			"name": "Angry",
+			"path": "res://art/characters/Martin_angry.png"
+		},
+		{
+			"name": "Smug",
+			"path": "res://art/characters/Martin_smug.png"
+		}
+	],
+	"scale": 30,
+	"theme": ""
+}
