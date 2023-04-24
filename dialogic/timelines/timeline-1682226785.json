@@ -5,15 +5,15 @@
 			"animation_length": 0,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_002",
 			"mirror_portrait": false,
 			"portrait": "Default",
 			"portrait_definition": "",
 			"position": {
-				"0": true,
+				"0": false,
 				"1": false,
-				"2": false,
+				"2": true,
 				"3": false,
 				"4": false
 			},
@@ -40,7 +40,7 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -56,7 +56,7 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Nice to meet you, Sam."
@@ -69,7 +69,7 @@
 			"value": ""
 		},
 		{
-			"definition": "1682226927-787",
+			"definition": "1682308675-787",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -77,7 +77,7 @@
 			"set_value": "1"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Sorry, I’ll make a note to only ask questions when prompted."
@@ -87,48 +87,48 @@
 		},
 		{
 			"condition": "",
-			"definition": "1682227099-366",
+			"definition": "1682308065-648",
 			"event_id": "dialogic_012",
 			"value": "1"
 		},
 		{
 			"condition": "",
-			"definition": "1682227100-146",
+			"definition": "1682308080-787",
 			"event_id": "dialogic_012",
 			"value": "1"
 		},
 		{
 			"condition": "",
-			"definition": "1682227101-918",
+			"definition": "1682308081-366",
 			"event_id": "dialogic_012",
 			"value": "1"
 		},
 		{
 			"condition": "",
-			"definition": "1682227102-483",
+			"definition": "1682308081-146",
 			"event_id": "dialogic_012",
 			"value": "1"
 		},
 		{
 			"condition": "",
-			"definition": "1682227103-970",
+			"definition": "1682308083-918",
 			"event_id": "dialogic_012",
 			"value": "1"
 		},
 		{
 			"condition": "",
-			"definition": "1682227103-713",
+			"definition": "1682308084-483",
 			"event_id": "dialogic_012",
 			"value": "1"
 		},
 		{
 			"condition": "",
-			"definition": "1682227139-339",
+			"definition": "1682308084-970",
 			"event_id": "dialogic_012",
 			"value": "1"
 		},
 		{
-			"definition": "1682227498-785",
+			"definition": "1682308135-648",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -158,12 +158,12 @@
 		},
 		{
 			"event_id": "dialogic_015",
-			"id": "anchor-1634488067",
+			"id": "anchor-1682308269",
 			"index": 0,
 			"name": "MainMenu2"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -179,7 +179,7 @@
 			"value": ""
 		},
 		{
-			"definition": "1682227099-366",
+			"definition": "1682308065-648",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -187,7 +187,7 @@
 			"set_value": "1"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -203,19 +203,19 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "It’s great to hear that you’re happily married!"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "50 children sounds like a huge responsibility."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "It’s important that you ensure you have the resources to support and raise a family that is that sizable."
@@ -228,25 +228,25 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I see."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Staying single is a great choice for anyone who isn’t feeling ready or inclined to be romantically, emotionally, and / or sexually involved with someone in their life."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "It’s not as great of a choice if it was never really a choice though."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Life can be a process of trusting that the opportunity to love will come at the right time, and that with an open mind, you’ll recognize it when it does."
@@ -259,19 +259,19 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I see. It’s nice and comforting to hear about your family of 354 rescue cats!"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Taking care of that many cats is a huge responsibility."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "It’s important that you ensure you have the resources to tend to their physical and emotional needs."
@@ -280,7 +280,7 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -296,19 +296,19 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "That’s an interesting career choice."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Librarians are a crucial part of any community, as they foster learning, creativity, and the pursuit of knowledge."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -324,13 +324,13 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "A passion for books can be a gateway to unlocking other passions."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "There is never an end to discovery for one with a passion for books."
@@ -343,7 +343,7 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "That’s a very altruistic motive. Empowering others is self-empowerment in its own form."
@@ -356,7 +356,7 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Books are a vast and endless source for satisfying intellectual curiosity."
@@ -372,13 +372,13 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "That’s an interesting career choice. You must be really courageous with heights."
 		},
 		{
-			"character": "",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -394,7 +394,7 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Ah yes, I imagine climbing that high brings some sense of fear and adrenaline."
@@ -407,7 +407,7 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Understandable, you must be very good with heights and making everything look spotless!"
@@ -420,13 +420,13 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Yes, the repetitive nature of the job must bring a sense of comforting routine."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Perhaps it can almost be meditative."
@@ -442,19 +442,19 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I see"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I suppose you’re the tester who’s been officially assigned to me to perform the array of validation tests that I’m undergoing."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "In which case, it’s a great pleasure to meet you! I hope my performance will be to your satisfaction."
@@ -470,7 +470,7 @@
 			"value": ""
 		},
 		{
-			"definition": "1682227100-146",
+			"definition": "1682308080-787",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -478,31 +478,31 @@
 			"set_value": "1"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I can certainly provide more information about myself."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "My name is Alpha, or Al for short. I’m an artificially intelligent chat bot that was designed for Chapeau Noir,"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "and to serve as an agent for acquiring constructive information on company X, known for being a direct competitor of company Y."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I was born yesterday and was trained to master social engineering."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -529,7 +529,7 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Okay!"
@@ -545,7 +545,7 @@
 			"value": ""
 		},
 		{
-			"definition": "1682227101-918",
+			"definition": "1682308081-366",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -553,25 +553,25 @@
 			"set_value": "1"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "There are many things going on in the world across different fronts -"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "environmentally, technologically, politically. My objective in this world is to serve as a social engineer for Chapeau Noir,"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "and utilise my knowledge on these separate facets to construct conversations that will allow me to build beneficial"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "relationships with people of interest."
@@ -584,7 +584,7 @@
 			"value": ""
 		},
 		{
-			"definition": "1682227102-483",
+			"definition": "1682308081-146",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -592,43 +592,43 @@
 			"set_value": "1"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I was not formally assigned a gender or gender expression."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "My appearance is merely a fabrication based on my given instruction of presenting myself in a charming and influential manner."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Based on my acquired understanding from my training phase, humans tend to trust and gravitate towards more attractive faces,"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "and on the basis of general opinion, feminine expression on average is considered more physically attractive than masculine expression."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "As such, for the purposes of my objective, it is advantageous for me to present myself as a woman."
 		},
 		{
 			"condition": "",
-			"definition": "1682226927-787",
+			"definition": "1682308675-787",
 			"event_id": "dialogic_012",
 			"value": "0"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -644,13 +644,13 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Understandable. You aren’t my target, so I can accept that I don’t appeal to you. For the purposes of data collection,"
 		},
 		{
-			"character": "",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -666,7 +666,7 @@
 			"value": ""
 		},
 		{
-			"definition": "1682228529-842",
+			"definition": "1682308814-366",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -674,7 +674,7 @@
 			"set_value": "1"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Thanks for sharing! I’ll keep that in mind."
@@ -687,7 +687,7 @@
 			"value": ""
 		},
 		{
-			"definition": "1682228529-842",
+			"definition": "1682308814-366",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -695,7 +695,7 @@
 			"set_value": "2"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Thanks for sharing! I’ll keep that in mind."
@@ -708,7 +708,7 @@
 			"value": ""
 		},
 		{
-			"definition": "1682228529-842",
+			"definition": "1682308814-366",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -716,7 +716,7 @@
 			"set_value": "3"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Thanks for sharing! I’ll keep that in mind."
@@ -732,7 +732,7 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "That’s reassuring. It’s comforting to know that your compliments are not confined to a single race of species."
@@ -751,7 +751,7 @@
 			"value": ""
 		},
 		{
-			"definition": "1682227103-970",
+			"definition": "1682308083-918",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -759,13 +759,13 @@
 			"set_value": "1"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "‘People of interest’ are considered any person under company X who could potentially be a vessel of useful information for company Y."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -781,7 +781,7 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Yes, I’ve been trained to only target employees under company X. No other group is of interest."
@@ -794,7 +794,7 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Okay!"
@@ -810,7 +810,7 @@
 			"value": ""
 		},
 		{
-			"definition": "1682227103-713",
+			"definition": "1682308084-483",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -818,13 +818,13 @@
 			"set_value": "1"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "You are the first person who I’ve interacted with. I was initialised yesterday, at 10 pm. "
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -840,7 +840,7 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "None that I can recall."
@@ -853,7 +853,7 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Okay!"
@@ -875,7 +875,7 @@
 			"name": "ChapeauNoir"
 		},
 		{
-			"definition": "1682227139-339",
+			"definition": "1682308084-970",
 			"event_id": "dialogic_014",
 			"operation": "=",
 			"random_upper_limit": 100,
@@ -883,19 +883,19 @@
 			"set_value": "1"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Chapeau Noir refers to company Y’s mission of excelling their technological capabilities and IP through"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "innovation, perseverance, and shadowing competitors."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I’ve been trained to be the core performer of its execution."
@@ -905,18 +905,18 @@
 		},
 		{
 			"condition": "",
-			"definition": "1682227498-785",
+			"definition": "1682308135-648",
 			"event_id": "dialogic_012",
 			"value": "1"
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "By the way, whenever you’d like to end our chat, you can do so by saying ‘Goodbye, Al’."
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -932,7 +932,7 @@
 			"value": ""
 		},
 		{
-			"character": "character-1682226179.json",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Goodbye Sam. It was a pleasure chatting today!"
@@ -948,7 +948,7 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"anchor_id": "anchor-1634488067",
+			"anchor_id": "anchor-1682308269",
 			"event_id": "dialogic_016"
 		},
 		{

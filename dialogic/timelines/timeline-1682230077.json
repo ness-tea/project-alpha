@@ -2,18 +2,18 @@
 	"events": [
 		{
 			"condition": "",
-			"definition": "1682226231-648",
+			"definition": "1682230598-648",
 			"event_id": "dialogic_012",
 			"value": "2"
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Angry",
 			"text": "I’m getting tired of this shit. Your job is to answer when I call."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "If this happens one more time, you’re done. You hear me?"
@@ -23,24 +23,24 @@
 		},
 		{
 			"condition": "",
-			"definition": "1682226231-648",
+			"definition": "1682230598-648",
 			"event_id": "dialogic_012",
 			"value": "1"
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Angry",
 			"text": "How many times do I have to call you for an answer? We're on a time sensitive deadline."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I want a response by the first call next time, or we're gonna have issues here."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Got it? Good."
@@ -50,51 +50,51 @@
 		},
 		{
 			"condition": "",
-			"definition": "1682226231-648",
+			"definition": "1682230598-648",
 			"event_id": "dialogic_012",
 			"value": "0"
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default",
 			"text": "So, I see you’re done the first session with Al."
 		},
 		{
 			"event_id": "dialogic_013"
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "-- Testing Session One results shared with Martin --"
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "… Nice, nice… That’s what I’m TALKING ‘bout! See, that wasn’t too hard now, was it?"
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Okay sweet, so we got Al under compliance. Sounds like he’ll be ready for the next stage soon."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "For sanity’s sake, we’ll need to repeat the test."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "We’ll have him resetted so you can get started ASAP."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -110,13 +110,13 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Woah woah, okay there - if you had questions all you had to do was ask, man. Sheesh."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -132,37 +132,37 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Ohhh, she was a chick this time? Did I say Al was a dude? Gah, my bad, must’ve been a slip"
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "When I last saw him in prototype stage, and when the last tester saw him, he was a lad."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "For the sake of design, Al chooses to present himself in whatever form is most convenient."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "It doesn’t really have a gender, per se - it’s just a piece of software."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I mean, at the end of the day it doesn’t really matter."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -178,7 +178,7 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Alright man. I can’t force you into appreciating the pleasures of life."
@@ -191,7 +191,7 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Alright man. I can’t force you into appreciating the pleasures of life."
@@ -204,7 +204,7 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "You're fucking gross dude. Moving on."
@@ -220,7 +220,7 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -236,25 +236,25 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Yes, he quit - no clue why. He just lost his brain in all of this -"
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "probably too small of a brain to handle the godlike feat we’re about to carry out."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "I don’t wanna keep talking about Dylan anymore - we’re just moving backwards by mentioning his name."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "There’s nothing but the future to look forward to at this point."
@@ -267,25 +267,25 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "He was a spineless coward because he couldn’t complete the simplest fucking task -"
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "the one that you JUST accomplished. He just checked out before the first testing session even happened."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "You can confirm how easy this task is, right?"
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "It doesn’t take an Einstein or a Dwayne Johnson to finish it."
@@ -298,19 +298,19 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "What do you mean ‘did Al do something’? Al was being Al, and it’s a fucking digital chat bot."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "It didn’t do jackshit, okay? This project is too big for someone like Dylan."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "You’re here to prove to us that you’re the one who can match it in size."
@@ -326,13 +326,13 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Yeah, so any reset will lose all recollection of the previous conversations."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Al doesn't remember any discussions or details once reset."
@@ -348,7 +348,7 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Good, no questions then. Again, an easy task, shouldn’t be a problem for you."
@@ -361,7 +361,7 @@
 			"value": ""
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Good, no questions then. Again, an easy task, shouldn’t be a problem for you."
@@ -370,31 +370,31 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Alright, we’re all clear now? Great."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Now, go enjoy your playtime with your soon-to-be-gone imaginary friend - while SHE lasts! HAHAH."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Don’t worry, we’ll have all kinds of friends for you to continue making."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "The possibilities with this kinda tech are endless."
 		},
 		{
-			"character": "",
+			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "We’ll get you ones with… all different kinds of functions, if you know what I mean."
