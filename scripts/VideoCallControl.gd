@@ -35,3 +35,7 @@ func _on_Accept_pressed():
 	
 func after_dialog(param):
 	get_node("EmptyRoom").visible = true
+
+
+func _on_VideoCall_pressed():
+	visible = true

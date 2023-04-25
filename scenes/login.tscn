@@ -1,7 +1,7 @@
 [gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
-[ext_resource path="res://art/login_ui/ExitButton.png" type="Texture" id=2]
+[ext_resource path="res://art/Power-Symbol.png" type="Texture" id=2]
 [ext_resource path="res://fonts/Inconsolota/Inconsolata-Regular.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://art/login_ui/ComputerUser.png" type="Texture" id=4]
 [ext_resource path="res://scripts/login.gd" type="Script" id=5]
@@ -12,9 +12,14 @@ region_rect = Rect2( 0, 0, 1680, 1050 )
 
 [sub_resource type="StyleBoxEmpty" id=2]
 
-[sub_resource type="StyleBoxEmpty" id=3]
+[sub_resource type="StyleBoxTexture" id=11]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 512, 512 )
+modulate_color = Color( 1, 1, 1, 0.678431 )
 
-[sub_resource type="StyleBoxEmpty" id=4]
+[sub_resource type="StyleBoxTexture" id=12]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 512, 512 )
 
 [sub_resource type="StyleBoxEmpty" id=5]
 
@@ -59,9 +64,9 @@ custom_styles/panel = SubResource( 2 )
 [node name="QuitButton" type="Button" parent="QuitPanelContainer"]
 margin_right = 3333.0
 margin_bottom = 3333.0
-custom_styles/hover = SubResource( 3 )
-custom_styles/normal = SubResource( 4 )
-icon = ExtResource( 2 )
+custom_styles/hover = SubResource( 11 )
+custom_styles/normal = SubResource( 12 )
+icon_align = 1
 
 [node name="StartPanelContainer" type="PanelContainer" parent="."]
 anchor_left = 0.5

@@ -22,3 +22,7 @@ func _on_CloseButton_pressed():
 
 func _on_EmailsButton_pressed():
 	visible = !self.visible
+
+
+func _on_Email_pressed():
+	visible = true
