@@ -11,6 +11,7 @@ func _ready():
 	visible = false
 
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	# If player declines Martin's call, keep requests coming in every 3 seconds until player accepts it.
