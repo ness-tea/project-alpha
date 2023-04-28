@@ -4,12 +4,6 @@
 	],
 	"variables": [
 		{
-			"id": "1682230598-648",
-			"name": "declined",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1682308065-648",
 			"name": "CM21A",
 			"type": 0,
@@ -66,6 +60,12 @@
 		{
 			"id": "1682308814-366",
 			"name": "AlAppearance",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1682230598-648",
+			"name": "declined",
 			"type": 0,
 			"value": "0"
 		}
