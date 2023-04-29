@@ -1078,6 +1078,8 @@ max_value = 24.0
 [connection signal="pressed" from="TaskbarPanel/Start/StartButton" to="StartControl" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Emails/EmailsButton" to="EmailsControl" method="_on_EmailsButton_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Emails/EmailsButton" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_EmailsButton_pressed"]
+[connection signal="pressed" from="TaskbarPanel/Messenger/MessengerButton" to="EmailsControl" method="_on_EmailsButton_pressed"]
+[connection signal="pressed" from="TaskbarPanel/Messenger/MessengerButton" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_EmailsButton_pressed"]
 [connection signal="pressed" from="TaskbarPanel/VideoCall/VideoCallButton" to="VideoCallControl" method="_on_VideoCallButton_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Volume/VolumeButton" to="VolumeControl" method="_on_VolumeButton_pressed"]
 [connection signal="pressed" from="EmailsControl/TitleBar/CloseButton" to="EmailsControl" method="_on_CloseButton_pressed"]
