@@ -1,6 +1,5 @@
 extends Control
 
-
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -35,6 +34,7 @@ func _on_Accept_pressed():
 	
 func after_dialog(param):
 	get_node("EmptyRoom").visible = true
+	$"../ProjectAlProgram".makeIconVisible()
 
 
 func _on_VideoCall_pressed():

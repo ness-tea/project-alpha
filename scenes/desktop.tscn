@@ -1,4 +1,4 @@
-[gd_scene load_steps=89 format=2]
+[gd_scene load_steps=90 format=2]
 
 [ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
 [ext_resource path="res://fonts/Inconsolota/Inconsolata-SemiBold.ttf" type="DynamicFontData" id=2]
@@ -24,10 +24,15 @@
 [ext_resource path="res://scenes/MessengerControl.gd" type="Script" id=22]
 [ext_resource path="res://scenes/MessagesIndividual.gd" type="Script" id=23]
 [ext_resource path="res://art/GameCover.jpg" type="Texture" id=24]
+[ext_resource path="res://scenes/ProjectAlProgramIcon.gd" type="Script" id=25]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 1 )
 region_rect = Rect2( 0, 0, 1680, 1050 )
+
+[sub_resource type="StyleBoxTexture" id=65]
+texture = ExtResource( 24 )
+region_rect = Rect2( 0, 0, 3968, 3968 )
 
 [sub_resource type="StyleBoxEmpty" id=2]
 
@@ -256,10 +261,6 @@ bg_color = Color( 0.15069, 0.144768, 0.168457, 1 )
 [sub_resource type="StyleBoxFlat" id=61]
 bg_color = Color( 0.190606, 0.1817, 0.214355, 1 )
 
-[sub_resource type="StyleBoxTexture" id=65]
-texture = ExtResource( 24 )
-region_rect = Rect2( 0, 0, 3968, 3968 )
-
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -269,6 +270,17 @@ script = ExtResource( 17 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 1 )
+
+[node name="ProjectAlProgram" type="Button" parent="."]
+margin_left = 59.0
+margin_top = 59.0
+margin_right = 159.0
+margin_bottom = 159.0
+rect_min_size = Vector2( 100, 100 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/normal = SubResource( 65 )
+script = ExtResource( 25 )
 
 [node name="TaskbarPanel" type="Panel" parent="."]
 anchor_top = 1.0
@@ -1497,16 +1509,7 @@ text = "This is the fourth time attempting to reach you..."
 valign = 1
 clip_text = true
 
-[node name="ProjectAlProgram" type="Button" parent="."]
-margin_left = 59.0
-margin_top = 59.0
-margin_right = 159.0
-margin_bottom = 159.0
-rect_min_size = Vector2( 100, 100 )
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_styles/normal = SubResource( 65 )
-
+[connection signal="pressed" from="ProjectAlProgram" to="." method="_on_ProjectAlProgram_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Start/StartButton" to="StartControl" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Emails/EmailsButton" to="EmailsControl" method="_on_EmailsButton_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Emails/EmailsButton" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_EmailsButton_pressed"]
@@ -1542,4 +1545,3 @@ custom_styles/normal = SubResource( 65 )
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/HBoxContainer2/BackButton" to="MessengerControl" method="_on_BackButton_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message1" to="MessengerControl" method="_on_Message1_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message2" to="MessengerControl" method="_on_Message2_pressed"]
-[connection signal="pressed" from="ProjectAlProgram" to="." method="_on_ProjectAlProgram_pressed"]
