@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
 [ext_resource path="res://art/Power-Symbol.png" type="Texture" id=2]
@@ -15,11 +15,16 @@ region_rect = Rect2( 0, 0, 1680, 1050 )
 [sub_resource type="StyleBoxTexture" id=11]
 texture = ExtResource( 2 )
 region_rect = Rect2( 0, 0, 512, 512 )
-modulate_color = Color( 1, 1, 1, 0.678431 )
+modulate_color = Color( 1, 1, 1, 0.32549 )
+
+[sub_resource type="StyleBoxTexture" id=13]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 512, 512 )
 
 [sub_resource type="StyleBoxTexture" id=12]
 texture = ExtResource( 2 )
 region_rect = Rect2( 0, 0, 512, 512 )
+modulate_color = Color( 1, 1, 1, 0.709804 )
 
 [sub_resource type="StyleBoxEmpty" id=5]
 
@@ -65,6 +70,7 @@ custom_styles/panel = SubResource( 2 )
 margin_right = 3333.0
 margin_bottom = 3333.0
 custom_styles/hover = SubResource( 11 )
+custom_styles/pressed = SubResource( 13 )
 custom_styles/normal = SubResource( 12 )
 icon_align = 1
 
