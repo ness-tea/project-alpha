@@ -1,6 +1,5 @@
 extends Control
 
-
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -13,7 +12,6 @@ func _ready():
 	alDialog1.connect("timeline_end", self, "after_dialog")
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-	
+func after_dialog(param):
+	GlobalVar.timelineDialogueNumber = 2
+	get_tree().change_scene("res://scenes/desktop.tscn")
