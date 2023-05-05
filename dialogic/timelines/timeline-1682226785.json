@@ -90,77 +90,6 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"condition": "",
-			"definition": "1682308065-648",
-			"event_id": "dialogic_012",
-			"value": "1"
-		},
-		{
-			"condition": "",
-			"definition": "1682308080-787",
-			"event_id": "dialogic_012",
-			"value": "1"
-		},
-		{
-			"condition": "",
-			"definition": "1682308081-366",
-			"event_id": "dialogic_012",
-			"value": "1"
-		},
-		{
-			"condition": "",
-			"definition": "1682308081-146",
-			"event_id": "dialogic_012",
-			"value": "1"
-		},
-		{
-			"condition": "",
-			"definition": "1682308083-918",
-			"event_id": "dialogic_012",
-			"value": "1"
-		},
-		{
-			"condition": "",
-			"definition": "1682308084-483",
-			"event_id": "dialogic_012",
-			"value": "1"
-		},
-		{
-			"condition": "",
-			"definition": "1682308084-970",
-			"event_id": "dialogic_012",
-			"value": "1"
-		},
-		{
-			"definition": "1682308135-648",
-			"event_id": "dialogic_014",
-			"operation": "=",
-			"random_upper_limit": 100,
-			"set_random": false,
-			"set_value": "1"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
-			"event_id": "dialogic_013"
-		},
-		{
 			"event_id": "dialogic_015",
 			"id": "anchor-1682308269",
 			"index": 0,
@@ -909,6 +838,77 @@
 		},
 		{
 			"condition": "",
+			"definition": "1682308065-648",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1682308080-787",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1682308081-366",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1682308081-146",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1682308083-918",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1682308084-483",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"condition": "",
+			"definition": "1682308084-970",
+			"event_id": "dialogic_012",
+			"value": "1"
+		},
+		{
+			"definition": "1682308135-648",
+			"event_id": "dialogic_014",
+			"operation": "=",
+			"random_upper_limit": 100,
+			"set_random": false,
+			"set_value": "1"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "==",
 			"definition": "1682308135-648",
 			"event_id": "dialogic_012",
 			"value": "1"
