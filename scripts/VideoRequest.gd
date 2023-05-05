@@ -34,6 +34,7 @@ func _on_Decline_pressed():
 
 func _on_Email2_pressed():
 	# Only trigger Martin's call once player finds Martin's email for the first time.
+	GlobalVar.timelineDialogueNumber = 1
 	if firstRequest:
 		firstRequest = false
 		yield(get_tree().create_timer(5.0), "timeout")
