@@ -18,7 +18,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	# If player declines Martin's call, keep requests coming in every 3 seconds until player accepts it.
 	if declined:
 		declined = false

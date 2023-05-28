@@ -18,5 +18,5 @@ func _ready():
 		add_child(alDialog1)
 		alDialog1.connect("timeline_end", self, "after_dialog")
 
-func after_dialog(param):
+func after_dialog(_param):
 	get_tree().change_scene("res://scenes/desktop.tscn")

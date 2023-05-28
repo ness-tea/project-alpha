@@ -35,7 +35,7 @@ func _on_Accept_pressed():
 		martinDialog.connect("timeline_end", self, "after_dialog")
 
 
-func after_dialog(param):
+func after_dialog(_param):
 	get_node("EmptyRoom").visible = true
 	$"../ProjectAlProgram".makeIconVisible()
 
