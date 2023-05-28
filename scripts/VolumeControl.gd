@@ -1,7 +1,7 @@
 extends Control
 
 
-onready var volume = $Panel/VolumeSlider
+onready var volume = $Panel/VSlider
 
 # Declare member variables here. Examples:
 # var a = 2
