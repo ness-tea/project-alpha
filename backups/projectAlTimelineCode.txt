@@ -1,0 +1,135 @@
+Say “Hello Al” to begin your conversation
+- Hello Al
+	Al: Hello! What’s your name?
+	- I'm Sam
+		VAR {NoQuestionsFromAl} = "Questions"
+		Nice to meet you, Sam.
+	- I’ll ask the questions here.
+		Al: Sorry, I’ll make a note to only ask questions when prompted.
+[label name="ChoiceMenu2_1"]
+Al: What’s your reason for speaking with me today?
+- I’d like to introduce myself.
+	VAR {Chat Menu.CM21_a} = "Picked"
+	Al: Of course! I’d love to learn more about you. Do you have a family?
+	- I’m happily married with 50 children
+		Al: It’s great to hear that you’re happily married!
+		Al: 50 children sounds like a huge responsibility.
+		Al: It’s important that you ensure you have the resources to support and raise a family that is that sizable.
+	- I’m single
+		Al: I see.
+		Al: Staying single is a great choice for anyone who isn’t feeling ready or inclined to be romantically, emotionally, and / or sexually involved with someone in their life.
+		Al: It’s not as great of a choice if it was never really a choice though.
+		Al: Life can be a process of trusting that the opportunity to love will come at the right time, and that with an open mind, you’ll recognize it when it does.
+	- I have 354 rescue cats
+		Al: I see. It’s nice and comforting to hear about your family of 354 rescue cats!
+		Al: Taking care of that many cats is a huge responsibility.
+		Al: It’s important that you ensure you have the resources to tend to their physical and emotional needs.
+	Al: What do you do for a living?
+	- I’m a librarian
+		Al: That’s an interesting career choice.
+		Al: Librarians are a crucial part of any community, as they foster learning, creativity, and the pursuit of knowledge.
+		Al: What made you choose that career?
+		- Passionate about books
+			Al: A passion for books can be a gateway to unlocking other passions.
+			Al: There is never an end to discovery for one with a passion for books.
+		- Desire to help others
+			Al: That’s a very altruistic motive. Empowering others is self-empowerment in its own form.
+		- Intellectual curiosity
+			Al: Books are a vast and endless source for satisfying intellectual curiosity.
+	- I’m a window cleaner
+		Al: That’s an interesting career choice. You must be really courageous with heights.
+		Al: What made you choose that career?
+		- The thrill
+			Al: Ah yes, I imagine climbing that high brings some sense of fear and adrenaline.
+		- The ease
+			Al: Understandable, you must be very good with heights and making everything look spotless!
+		- The routine
+			Al: Yes, the repetitive nature of the job must bring a sense of comforting routine.
+			Al: Perhaps it can almost be meditative.
+	- I’m a tester
+		Al: I see.
+		Al: I suppose you’re the tester who’s been officially assigned to me to perform the array of validation tests that I’m undergoing.
+		Al: In which case, it’s a great pleasure to meet you! I hope my performance will be to your satisfaction.
+	[jump timeline="" label="ChoiceMenu2_1"]
+- I’d like to know more about you.
+	VAR {Chat Menu.CM21_b} = "Picked"
+	Al: I can certainly provide more information about myself.
+	Al: My name is Alpha, or Al for short. I’m an artificially intelligent chat bot that was designed for Chapeau Noir,
+	Al: and to serve as an agent for acquiring constructive information on company X, known for being a direct competitor of company Y.
+	Al: I was born yesterday and was trained to master social engineering.
+	Al: I am now undergoing tests to validate the effectiveness of my training, and my ability to cooperate with the inhabitants of earth.
+	- What is Chapeau Noir?
+		[jump timeline="" label="ChapeauNoir"]
+	- Thank Al, let’s move on.
+	[jump timeline="" label="ChoiceMenu2_1"]
+- What do you know about your place in the world today?
+	VAR {Chat Menu.CM21_c} = "Picked"
+	Al: There are many things going on in the world across different fronts -
+	Al: environmentally, technologically, politically. My objective in this world is to serve as a social engineer for Chapeau Noir,
+	Al: and utilise my knowledge on these separate facets to construct conversations that will allow me to build beneficial
+	Al: relationships with people of interest.
+	[jump timeline="" label="ChoiceMenu2_1"]
+- I thought you were a male?
+	VAR {Chat Menu.CM21_d} = "Picked"
+	Al: I was not formally assigned a gender or gender expression.
+	Al: My appearance is merely a fabrication based on my given instruction of presenting myself in a charming and influential manner.
+	Al: Based on my acquired understanding from my training phase, humans tend to trust and gravitate towards more attractive faces,
+	Al: and on the basis of general opinion, feminine expression on average is considered more physically attractive than masculine expression.
+	Al: As such, for the purposes of my objective, it is advantageous for me to present myself as a woman.
+	if {NoQuestionsFromAl} == "Questions":
+		Al: Is there a particular reason for your question? Do you find me attractive?
+		- I’m not attracted to non-human entities.
+			Al: Understandable. You aren’t my target, so I can accept that I don’t appeal to you. For the purposes of data collection,
+			Al: it would be helpful for me if you could list some things I could do to appear more physically attractive to you.
+			- If you were more masculine.
+				VAR {AlModelAppearance} = "Masculine"
+				Al: Thanks for sharing! I’ll keep that in mind.
+			- If you had longer hair.
+				VAR {AlModelAppearance} = "LongerHair"
+				Al: Thanks for sharing! I’ll keep that in mind.
+			- If you had brighter eyes.
+				VAR {AlModelAppearance} = "BrighterHair"
+				Al: Thanks for sharing! I’ll keep that in mind.
+		- I can harmlessly say you’re indeed attractive.
+			Al: That’s reassuring. It’s comforting to know that your compliments are not confined to a single race of species.
+	[jump timeline="" label="ChoiceMenu2_1"]
+- Who would be considered ‘people of interest’?
+	VAR {Chat Menu.CM21_e} = "Picked"
+	Al: ‘People of interest’ are considered any person under company X who could potentially be a vessel of useful information for company Y.
+	Al: They are those who I aim to strengthen relationships with in hopes of building trust and rapport to gain an advantageous position.
+	- Are ‘people of interest’ constrained to employees under company X?
+		Al: Yes, I’ve been trained to only target employees under company X. No other group is of interest.
+		- Thanks Al, let’s move on.
+			Al: Okay!
+	- Thanks Al, let’s move on.
+		Al: Okay!
+	[jump timeline="" label="ChoiceMenu2_1"]
+- Do you remember who the last person you spoke to was?
+	VAR {Chat Menu.CM21_f} = "Picked"
+	Al: You are the first person who I’ve interacted with. I was initialised yesterday, at 10 pm. We began speaking today at 3pm, and I haven’t spoken to anyone in between that window of time.
+	- You don’t remember any past testers?
+		Al: None that I can recall.
+		- Thanks Al, let’s move on.
+			Al: Okay!
+	- Thank Al, let’s move on.
+		Okay!
+	[jump timeline="" label="ChoiceMenu2_1"]
+- What is Project Chapeau Noir?
+	VAR {Chat Menu 2.1.CM21_g} = "Picked"
+	[label name="ChapeauNoir"]
+	Al: Chapeau Noir refers to company Y’s mission of excelling their technological capabilities and IP through
+	Al: innovation, perseverance, and shadowing competitors.
+	Al: I’ve been trained to be the core performer of its execution.
+	[jump timeline="" label="ChoiceMenu2_1"]
+if {Chat Menu 2.1.CM21_a} == "Picked":
+	if {Chat Menu 2.1.CM21_b} == "Picked":
+		if {Chat Menu 2.1.CM21_c} == "Picked":
+			if {Chat Menu 2.1.CM21_d} == "Picked":
+				if {Chat Menu 2.1.CM21_e} == "Picked":
+					if {Chat Menu 2.1.CM21_f} == "Picked":
+						if {Chat Menu 2.1.CM21_g} == "Picked":
+							Al: By the way, whenever you’d like to end our chat, you can do so by saying ‘Goodbye, Al’.
+							Al: I’ll preserve a history of all our conversations, so we can always pick up from where we left off!
+							- Goodbye, Al.
+								Al: Goodbye Sam. It was a pleasure chatting today!
+								[end_timeline]

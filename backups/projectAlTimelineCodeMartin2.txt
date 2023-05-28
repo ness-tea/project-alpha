@@ -1,0 +1,61 @@
+if {DeclinesMartinCall} == 1:
+	Martin (Mad): How many times do I have to call you for an answer? We're on a time sensitive deadline.
+	Martin: I want a response by the first call next time, or we're gonna have issues here.
+	Martin: Got it?
+elif {DeclinesMartinCall} == 2:
+	Martin (Mad): I’m getting tired of this shit. Your job is to answer when I call.. If this happens one more time, you’re done. You hear me?
+else:
+	Martin (Default): So, I see you’re done the first session with Al.
+...
+[wait time="2.0"]
+Martin: … Nice, nice… That’s what I’m TALKING ‘bout! See, that wasn’t too hard now, was it?
+Martin: Okay sweet, so we got Al under compliance. Sounds like he’ll be ready for the next stage soon.
+Martin: For sanity’s sake, we’ll need to repeat the test.
+Martin: We’ll have him resetted so you can get started ASAP.
+Martin: Can you get the second iteration done by today? Good. Any questions?
+- Yes, and I’m not doing anything until they’re answered.
+	Martin: Woah woah, okay there - if you had questions all you had to do was ask, man. Sheesh.
+	Martin: I thought they would have trained you on communication during onboarding… well? Go head, shoot.
+	- Why was Al a female?
+		Martin: Ohhh, she was a chick this time? Did I say Al was a dude? Gah, my bad, must’ve been a slip
+		Martin: When I last saw him in prototype stage, and when the last tester saw him, he was a lad.
+		Martin: For the sake of design, Al chooses to present himself in whatever form is most convenient.
+		Martin: It doesn’t really have a gender, per se - it’s just a piece of software.
+		Martin: I mean, at the end of the day it doesn’t really matter.
+		Martin: You’re not trying to stick your $%#@ up it or anything right? I mean you COULD, metaphorically, if that’s your thing HAH.
+		- Right...
+			Alright man. I can’t force you into appreciating the pleasures of life.
+		- Not interested in that.
+			Alright man. I can’t force you into appreciating the pleasures of life.
+		- Sounds like fun
+			You're fucking gross dude. Moving on.
+	- What happened to the last tester?
+		Oh right, Dylan you mean? Didn’t I already tell you - he was a spineless coward. Not much to it.
+		- Did he quit?
+			Martin: Yes, he quit - no clue why. He just lost his brain in all of this -
+			Martin: probably too small of a brain to handle the godlike feat we’re about to carry out.
+			Martin: I don’t wanna keep talking about Dylan anymore - we’re just moving backwards by mentioning his name.
+			Martin: There’s nothing but the future to look forward to at this point. 
+		- What makes him a spineless coward?
+			Martin: He was a spineless coward because he couldn’t complete the simplest fucking task -
+			Martin: the one that you JUST accomplished. He just checked out before the first testing session even happened.
+			Martin: You can confirm how easy this task is, right?
+			Martin: It doesn’t take an Einstein or a Dwayne Johnson to finish it.
+		- Did Al do something to him?
+			Martin: What do you mean ‘did Al do something’? Al was being Al, and it’s a fucking digital chat bot.
+			Martin: It didn’t do jackshit, okay? This project is too big for someone like Dylan.
+			Martin: And you’re here to prove to us that you’re the one who can match it in size.
+	- If Al is reset, will she lose all recollection of our last conversation?
+		Martin: Yeah so any reset will lose all recollection of the previous conversations.
+		Martin: Al doesn't remember any discussions or details once reset.
+- Can I ask some questions first?
+	Martin: Good, no questions then. Again, an easy task, shouldn’t be a problem for you.
+- Let’s move on.
+	Martin: Good, no questions then. Again, an easy task, shouldn’t be a problem for you.
+	Martin: Alright, we’re all clear now? Great.
+	Martin: Now, go enjoy your playtime with your soon-to-be-gone imaginary friend - while SHE lasts! HAHAH.
+	Martin: Don’t worry, we’ll have all kinds of friends for you to continue making.
+	Martin: The possibilities with this kinda tech are endless.
+	Martin: We’ll get you ones with… all different kinds of functions, if you know what I mean.
+	# Martin hangs up.
+	[end_timeline]

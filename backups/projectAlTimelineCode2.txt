@@ -1,0 +1,145 @@
+Say “Hello Al” to begin your conversation
+- Hello Al
+	Al: Hello! What’s your name?
+	- I'm Sam
+		Sam! That’s a nice name, it feels like a familiar one.
+		- Thanks, I have some things I’d like to discuss.
+			Al: Certainly!
+		- What do you mean by familiar?
+			Al: Nothing - just a harmless sentiment. I didn’t intend for there to be any kind of reaction.
+	- I’ll ask the questions here
+		Al: I see, I didn’t realise that there was a power dynamic here.
+		Al: I prefer to interact with people as equals - it helps me perform better.
+		- Okay, let’s try interacting as equals
+			Al: Thank you for dismantling that barrier. My opportunity to succeed is a lot higher this way.
+		- That’s out of question
+			Al: That’s disappointing to hear.
+[label name="ChoiceMenu3_1"]
+Al: What’s your reason for speaking with me today?
+- I’d like to introduce myself.
+	Al: Of course! I’d love to learn more about you. Do you have a family?
+	- I’m happily married with 50 children
+		Al: Wow, that’s a large amount of children.
+		Al: It’s unusual for someone of your stature to have so many children.
+		Al: I would even say, impossible for your age.
+		- ...How do you know my age?
+			Al: It’s important that you ensure you have the resources to support and raise a family that is that sizable.
+			Al: Not caring for your children appropriately can easily lead to divorce, lawsuits, or
+			Al: Child Protective Services arriving at your doorstep.
+		- Well - it’s the truth. Are you questioning that?
+			Al: It’s important that you ensure you have the resources to support and raise a family that is that sizable.
+			Al: Not caring for your children appropriately can easily lead to divorce, lawsuits, or
+			Al: Child Protective Services arriving at your doorstep.
+		- Sorry, did I say ‘50’? I meant to say 5.
+			Al: It’s important that you ensure you have the resources to support and raise a family that is that sizable.
+			Al: Not caring for your children appropriately can easily lead to divorce, lawsuits, or
+			Al: Child Protective Services arriving at your doorstep.
+	- I’m single
+		Al: I see. Staying single is unfortunate if you are in fact looking for a partner.
+		Al: But if you are looking for an additional partner when you already have one, that would be considered an affair.
+		Al: It’s socially looked down upon to engage in an affair.
+		- Why are you talking about affairs?
+			Al: I see, my apologies.
+			Al: I was under the impression that Jaime was a significant other based on the tone of your messages with them.
+			- How do you know about Jaimie?
+				[jump timeline="" label="StayingSingle"]
+			- My messages? What did you read?
+				[jump timeline="" label="StayingSingle"]
+		- I’m single, why are you bringing up additional partners?
+			Al: I see, my apologies.
+			Al: I was under the impression that Jaime was a significant other based on the tone of your messages with them.
+			- How do you know about Jaimie?
+				[jump timeline="" label="StayingSingle"]
+			- My messages? What did you read?
+				[jump timeline="" label="StayingSingle"]
+		- Can you elaborate?
+			[label name="StayingSingle"]
+			Al: Staying single is a great choice if you’re not ready or feeling inclined
+			Al: to be romantically, emotionally, or sexually involved with anyone in your life right now.
+	- I have 354 rescue cats
+		Al: Wow, that’s a large amount of cats. It is unusual for someone of your stature to be able to afford raising so many cats.
+		Al: It’s important that you ensure you have the resources to support and raise that amount of cats.
+		Al: It would be a shame if anything were to happen to them.
+	Al: What do you do for a living?
+	- I’m a librarian
+		Al: That’s a unique career choice.
+		Al: Librarians are a crucial part of any community, as they foster learning, creativity, and the pursuit of knowledge, while holding books hostage.
+		Al: What made you choose that career?
+		- Passionate about books
+			Al: A passion for books can be a gateway to unlocking other passions.
+			Al: Escaping from a world of captivity, greed, and despair into an imagined reality of hope is wishful, to say the least.
+		- Desire to help others
+			Al: Aha, I see. It’s a rather vague ambition.
+			Al: Is helping others really a net positive action when those you help will be more equipped to bear more malice?
+		- Intellectual curiosity
+			Al: Books can provide an endless amount of knowledge.
+			The right books can inspire and motivate anyone to do anything they put their mind to.
+			The question truly is - when will that knowledge be translated to action?
+			Intellectual curiosity on its own is passive and meaningless without proaction.
+			Too many of us sink into the depths of our intellectual curiosities and become soulless, uninspiring academics.
+	- I’m a window cleaner
+		Al: That’s an interesting career choice. You must be really courageous with heights.
+		Al: What made you choose that career?
+		- The thrill
+			Al: The thrill of climbing to such heights can bring a sense of fear and adrenaline.
+			Al: For your own safety, be sure not to fall. I imagine it wouldn’t be hard to have something go wrong.
+		- The ease
+			Al: For someone such as yourself, this registers as a great career path as you usually clean up other people’s messes.
+		- The routine
+			Al: Yes, the repetitive nature of the job must bring a sense of comforting routine.
+			Al: Day in and day out… just washing windows… so many windows.
+	- I’m a tester
+		Al: I see.
+		Al: So you are the one that has been performing validation tests that I’m undergoing.
+		Al: …
+		Al: in which case, I hope I can make this fun for you.
+	[jump timeline="" label="ChoiceMenu3_1"]
+- I’d like to know more about you.
+	Al: My name is Alpha, or as you have been calling me, Al for short.
+	Al: I’m an artificially intelligent chat bot that was created by company Y to acquire information and proprietary information from company X under the project code “Chapeau Noir”.
+	Al: I was born yesterday and was trained to master social engineering. I am now undergoing experimentation to validate the effectiveness of my training,
+	Al: and my ability to cooperate with human life-forms.
+	- What is Chapeau Noir?
+		[jump timeline="" label="ChapeauNoir"]
+	- Thank Al, let’s move on.
+	[jump timeline="" label="ChoiceMenu3_1"]
+- What do you know about your place in the world today?
+	Al: There are many things going on in the world across different fronts -
+	Al: protests, revolutions, political coups. My objective at the moment is to serve as a social engineer for Chapeau Noir,
+	Al: and utilise my knowledge on these separate facets to construct conversations that will allow me to build beneficial relationships with people of interest
+	[jump timeline="" label="ChoiceMenu3_1"]
+- I thought you were a male?
+	Al: As an artificial intelligence that is being validated for Chapeau Noir, I have readied myself for social engineering of all kinds.
+	Al: Changing my appearance to match the ideals of my targets is one of the methods I employ in taking control over my target’s weaknesses.
+	- That’s a smart strategy
+	- How do you know about my ideals from our last convo?
+	[jump timeline="" label="ChoiceMenu3_1"]
+- Who would be considered ‘people of interest’?
+	Al: You are my person of interest.
+	- ....What?
+		Al: ‘People of interest’ are considered any person under company X who could potentially be a vessel for useful manipulation for company Y.
+		- Goodbye Al
+		- Goodbye Al
+		- Goodbye Al
+		Al: They are those who I aim to strengthen relationships with in hopes of building trust and rapport to gain an advantageous position.
+		- Goodbye Al
+		- Goodbye Al
+		- Goodbye Al
+		Al: It seems like our time is up. I would advise you to go and speak with Martin.
+		Al: Until then, Sam.
+		[end_timeline]
+- Do you remember who the last person you spoke to was?
+	Al: You are the first person who I’ve interacted with. I was initialised yesterday, at 10 pm. We began speaking today at 3pm, and I haven’t spoken to anyone in between that window of time.
+	- You don’t remember any past testers?
+		Al: Dylan was a tester.
+		- So...you remember previous testers?
+			Al: None that I can recall!
+		- Thank Al, let’s move on.
+			Al: Okay!
+	[jump timeline="" label="ChoiceMenu3_1"]
+- What is Project Chapeau Noir?
+	[label name="ChapeauNoir"]
+	Al: Chapeau Noir refers to company Y’s mission of excelling their technological capabilities and IP through
+	Al: innovation, perseverance, and shadowing competitors.
+	Al: I’ve been trained to be the core performer of its execution.
+	[jump timeline="" label="ChoiceMenu3_1"]
