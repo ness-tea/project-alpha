@@ -9,7 +9,12 @@ var declined = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	visible = false
-
+	
+	if(GlobalVar.timelineDialogueNumber == 2 or GlobalVar.timelineDialogueNumber == 3):
+		if firstRequest:
+			firstRequest = false
+			yield(get_tree().create_timer(5.0), "timeout")
+			visible = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

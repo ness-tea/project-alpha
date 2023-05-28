@@ -10,7 +10,6 @@ func _ready():
 func _process(delta):
 	if projectAlClick == 1:
 		projectAlClickTime += delta
-	
 	if (projectAlClickTime > 2):
 		projectAlClick = 0
 		projectAlClickTime = 0

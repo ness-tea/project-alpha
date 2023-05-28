@@ -33,7 +33,8 @@ func _on_Accept_pressed():
 		var martinDialog = Dialogic.start("ThirdMeetingWithMartin")
 		add_child(martinDialog)
 		martinDialog.connect("timeline_end", self, "after_dialog")
-	
+
+
 func after_dialog(param):
 	get_node("EmptyRoom").visible = true
 	$"../ProjectAlProgram".makeIconVisible()
