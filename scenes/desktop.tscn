@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=2]
+[gd_scene load_steps=92 format=2]
 
 [ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
 [ext_resource path="res://fonts/Inconsolota/Inconsolata-SemiBold.ttf" type="DynamicFontData" id=2]
@@ -26,6 +26,7 @@
 [ext_resource path="res://art/GameCover.jpg" type="Texture" id=24]
 [ext_resource path="res://scripts/ProjectAlProgramIcon.gd" type="Script" id=25]
 [ext_resource path="res://music/Delusion.mp3" type="AudioStream" id=26]
+[ext_resource path="res://Sounds/confirmation_002.tres" type="AudioStream" id=27]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 1 )
@@ -274,7 +275,10 @@ margin_bottom = 40.0
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="AudioManager"]
 stream = ExtResource( 26 )
 volume_db = -30.0
-autoplay = true
+
+[node name="VideoCallPlayer" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource( 27 )
+volume_db = -30.0
 
 [node name="Wallpaper" type="PanelContainer" parent="."]
 anchor_right = 1.0
@@ -1133,7 +1137,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 54 )
 
-[node name="VSlider" type="VSlider" parent="VolumeControl/Panel"]
+[node name="VolumeSlider" type="VSlider" parent="VolumeControl/Panel"]
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
@@ -1197,9 +1201,8 @@ margin_right = 420.0
 margin_bottom = 680.0
 
 [node name="Message1" type="PanelContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages"]
-visible = false
 margin_right = 413.0
-margin_bottom = 334.0
+margin_bottom = 673.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 64 )
@@ -1208,29 +1211,29 @@ custom_styles/panel = SubResource( 64 )
 margin_left = 3.0
 margin_top = 3.0
 margin_right = 410.0
-margin_bottom = 331.0
+margin_bottom = 670.0
 custom_constants/separation = 15
 script = ExtResource( 23 )
 
 [node name="LabelForFormatting" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
 margin_right = 407.0
-margin_bottom = 43.0
+margin_bottom = 395.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Label" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
-margin_top = 58.0
+margin_top = 410.0
 margin_right = 39.0
-margin_bottom = 82.0
+margin_bottom = 434.0
 size_flags_horizontal = 0
 custom_styles/normal = SubResource( 62 )
 text = "Hey!"
 
 [node name="Label2" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
 margin_left = 298.0
-margin_top = 97.0
+margin_top = 449.0
 margin_right = 407.0
-margin_bottom = 121.0
+margin_bottom = 473.0
 size_flags_horizontal = 8
 custom_styles/normal = SubResource( 63 )
 text = "Hey, what's up?"
@@ -1238,28 +1241,44 @@ align = 2
 valign = 1
 
 [node name="Label3" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
-margin_top = 136.0
-margin_right = 142.0
-margin_bottom = 160.0
-size_flags_horizontal = 0
+margin_top = 488.0
+margin_right = 407.0
+margin_bottom = 529.0
 custom_styles/normal = SubResource( 62 )
-text = "Nm, How about you?"
+text = "I took Bexley to daycare, would you be able to take Aurora to the park when you get home? <3"
+autowrap = true
 
 [node name="Label5" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
-margin_top = 175.0
+margin_top = 544.0
 margin_right = 407.0
-margin_bottom = 233.0
+margin_bottom = 602.0
 size_flags_horizontal = 9
 custom_styles/normal = SubResource( 63 )
 text = "It's been great, I went to the store and started messaging my friends to show them how these containers are able to autowrap! WOW"
 align = 2
 autowrap = true
 
-[node name="Chatbox" type="PanelContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
-margin_top = 248.0
+[node name="HBoxContainer" type="HBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
+margin_top = 617.0
 margin_right = 407.0
-margin_bottom = 328.0
-rect_min_size = Vector2( 0, 80 )
+margin_bottom = 667.0
+rect_min_size = Vector2( 0, 50 )
+
+[node name="Button" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer/HBoxContainer"]
+margin_right = 201.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer/HBoxContainer/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Yeah, for sure! I would love to :)"
+
+[node name="Button2" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer/HBoxContainer"]
+margin_left = 205.0
+margin_right = 407.0
+margin_bottom = 50.0
+size_flags_horizontal = 3
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1"]
 margin_left = 3.0
@@ -1417,6 +1436,7 @@ align = 2
 valign = 1
 
 [node name="Messages" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer"]
+visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 420.0
@@ -1549,7 +1569,7 @@ clip_text = true
 [connection signal="pressed" from="StartControl/VBoxContainer/StartMessenger" to="MessengerControl" method="_on_Messenger_pressed"]
 [connection signal="pressed" from="StartControl/VBoxContainer/Email" to="EmailsControl" method="_on_Email_pressed"]
 [connection signal="pressed" from="StartControl/VBoxContainer/Logout" to="." method="_on_Logout_pressed"]
-[connection signal="changed" from="VolumeControl/Panel/VSlider" to="VolumeControl" method="_on_VSlider_changed"]
+[connection signal="value_changed" from="VolumeControl/Panel/VolumeSlider" to="VolumeControl" method="_on_VolumeSlider_value_changed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/TitleBar/CloseButton" to="MessengerControl" method="_on_CloseButton_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/HBoxContainer/BackButton" to="MessengerControl" method="_on_BackButton_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/HBoxContainer2/BackButton" to="MessengerControl" method="_on_BackButton_pressed"]

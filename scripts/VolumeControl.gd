@@ -1,25 +1,26 @@
 extends Control
 
-
-onready var volume = $Panel/VSlider
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
+onready var volume: VSlider = $Panel/VolumeSlider
+var masterBus = AudioServer.get_bus_index("Master")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	visible = false
+	#volume.value = GlobalVar.masterVolume
+	if GlobalVar.masterVolume != null:
+		set_slider_position(GlobalVar.masterVolume)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 
 func _on_VolumeButton_pressed():
 	visible = !visible
 
+#-40 t0 24
+func _on_VolumeSlider_value_changed(value):
+	AudioServer.set_bus_volume_db(masterBus,value)
+	GlobalVar.masterVolume = value
 
-func _on_VSlider_changed(vol):
-	AudioServer.set_bus_volume_db(0,vol) #0 is index #1. Since master is the first in the index, we use 0
+
+func set_slider_position(position: float) -> void:
+	position = clamp(position,0.0,1.0)
+	if volume != null:
+		volume.value = position
