@@ -3,6 +3,7 @@ extends Control
 onready var volume: VSlider = $Panel/VolumeSlider
 var masterBus = AudioServer.get_bus_index("Master")
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	visible = false
@@ -21,6 +22,6 @@ func _on_VolumeSlider_value_changed(value):
 
 
 func set_slider_position(position: float) -> void:
-	position = clamp(position,0.0,1.0)
+	position = clamp(position,-40,24)
 	if volume != null:
 		volume.value = position
