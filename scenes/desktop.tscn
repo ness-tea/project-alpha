@@ -27,7 +27,7 @@
 [ext_resource path="res://scripts/ProjectAlProgramIcon.gd" type="Script" id=25]
 [ext_resource path="res://music/Delusion.mp3" type="AudioStream" id=26]
 [ext_resource path="res://Sounds/confirmation_002.tres" type="AudioStream" id=27]
-[ext_resource path="res://Sounds/click_004.tres" type="AudioStream" id=28]
+[ext_resource path="res://Sounds/shutoff.tres" type="AudioStream" id=28]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 1 )
@@ -281,9 +281,9 @@ volume_db = -30.0
 stream = ExtResource( 27 )
 volume_db = -30.0
 
-[node name="ClickSound" type="AudioStreamPlayer" parent="AudioManager"]
+[node name="ShutDown" type="AudioStreamPlayer" parent="AudioManager"]
 stream = ExtResource( 28 )
-volume_db = -20.0
+volume_db = -10.0
 
 [node name="Wallpaper" type="PanelContainer" parent="."]
 anchor_right = 1.0

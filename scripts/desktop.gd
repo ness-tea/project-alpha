@@ -17,6 +17,8 @@ func _process(delta):
 
 func _on_Logout_pressed():
 	ClickSound.play()
+	$AudioManager/ShutDown.play()
+	yield(get_tree().create_timer(1.0), "timeout")
 	get_tree().quit()
 
 
