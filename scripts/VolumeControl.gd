@@ -13,6 +13,7 @@ func _ready():
 
 
 func _on_VolumeButton_pressed():
+	ClickSound.play()
 	visible = !visible
 
 #-40 t0 24

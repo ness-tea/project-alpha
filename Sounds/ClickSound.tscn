@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Sounds/click_004.tres" type="AudioStream" id=1]
+
+[node name="ClickSound" type="AudioStreamPlayer"]
+stream = ExtResource( 1 )
+volume_db = -30.0

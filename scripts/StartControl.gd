@@ -17,4 +17,5 @@ func _ready():
 
 
 func _on_StartButton_pressed():
+	ClickSound.play()
 	visible = !visible

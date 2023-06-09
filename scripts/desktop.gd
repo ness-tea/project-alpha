@@ -5,7 +5,7 @@ var projectAlClickTime = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$AudioManager/AudioStreamPlayer.play()
+	$AudioManager/BackgroundMusic.play()
 
 func _process(delta):
 	if projectAlClick == 1:
@@ -16,10 +16,12 @@ func _process(delta):
 
 
 func _on_Logout_pressed():
+	ClickSound.play()
 	get_tree().quit()
 
 
 func _on_ProjectAlProgram_pressed():
+	ClickSound.play()
 	projectAlClick += 1
 	if (projectAlClick == 2 && projectAlClickTime <= 2):
 		$ProjectAlProgram.visible = false

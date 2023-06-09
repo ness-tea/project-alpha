@@ -1,28 +1,20 @@
 extends Control
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	visible = false
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-
 func _on_CloseButton_pressed():
+	ClickSound.play()
 	visible = false
 
 
 func _on_EmailsButton_pressed():
+	ClickSound.play()
 	visible = !self.visible
 
 
 func _on_Email_pressed():
+	ClickSound.play()
 	visible = true

@@ -32,18 +32,21 @@ func _process(delta):
 		$"../AudioManager/VideoCallPlayer".stop()
 	# If player declines Martin's call, keep requests coming in every 3 seconds until player accepts it.
 	if declined:
+		$"../AudioManager/ClickSound".play()
 		declined = false
 		yield(get_tree().create_timer(3.0), "timeout")
 		visible = true
 
 
 func _on_Accept_pressed():
+	ClickSound.play()
 	declined = false
 	visible = false
 	firstRing = true
 
 
 func _on_Decline_pressed():
+	ClickSound.play()
 	declined = true
 	Dialogic.set_variable("declined", 1)
 	visible = false

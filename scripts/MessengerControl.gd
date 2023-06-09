@@ -19,14 +19,17 @@ func _on_Message2_pressed():
 	$Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2.visible = true
 
 func _on_CloseButton_pressed():
+	ClickSound.play()
 	$".".visible = false
 
 
 func _on_MessengerButton_pressed():
+	ClickSound.play()
 	$".".visible = !visible
 
 
 func _on_Messenger_pressed():
+	ClickSound.play()
 	$".".visible = true
 
 

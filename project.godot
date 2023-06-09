@@ -87,6 +87,7 @@ config/icon="res://icon.png"
 [autoload]
 
 GlobalVar="*res://scripts/GlobalSettings.gd"
+ClickSound="*res://Sounds/ClickSound.tscn"
 
 [display]
 

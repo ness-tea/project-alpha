@@ -6,14 +6,17 @@ func _ready():
 
 
 func _on_VideoCallButton_pressed():
+	ClickSound.play()
 	visible = !self.visible
 
 
 func _on_Close_pressed():
+	ClickSound.play()
 	visible = false
 
 
 func _on_Accept_pressed():
+	ClickSound.play()
 	visible = true
 	get_node("EmptyRoom").visible = false
 	if(GlobalVar.timelineDialogueNumber == 1):
@@ -41,4 +44,5 @@ func after_dialog(_param):
 
 
 func _on_VideoCall_pressed():
+	ClickSound.play()
 	visible = true
