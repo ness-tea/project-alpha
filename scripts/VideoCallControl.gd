@@ -22,20 +22,17 @@ func _on_Accept_pressed():
 	if(GlobalVar.timelineDialogueNumber == 1):
 		# Start Martin first call dialogue
 		var martinDialog = Dialogic.start("FirstMeetingWithMartin")
-		add_child(martinDialog)
-		martinDialog.connect("timeline_end", self, "after_dialog")
+		dialogic_additional_functions(martinDialog)
 		
 	elif(GlobalVar.timelineDialogueNumber == 2):
 		# Start Martin second call dialogue
 		var martinDialog = Dialogic.start("SecondMeetingWithMartin")
-		add_child(martinDialog)
-		martinDialog.connect("timeline_end", self, "after_dialog")
+		dialogic_additional_functions(martinDialog)
 		
 	elif(GlobalVar.timelineDialogueNumber == 3):
 		# Start Martin third call dialogue
 		var martinDialog = Dialogic.start("ThirdMeetingWithMartin")
-		add_child(martinDialog)
-		martinDialog.connect("timeline_end", self, "after_dialog")
+		dialogic_additional_functions(martinDialog)
 
 
 func after_dialog(_param):
@@ -46,3 +43,7 @@ func after_dialog(_param):
 func _on_VideoCall_pressed():
 	ClickSound.play()
 	visible = true
+
+func dialogic_additional_functions(martinDialog):
+	add_child(martinDialog)
+	martinDialog.connect("timeline_end", self, "after_dialog")

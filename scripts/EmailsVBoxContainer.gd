@@ -14,7 +14,6 @@ func _ready():
 
 func _on_Email_pressed():
 	lastEmail = $Email
-	
 	# Mark email as read
 	$Email.add_stylebox_override("normal", readStyleBox)
 	$Email/Label.add_color_override("font_color", Color("#101010"))
