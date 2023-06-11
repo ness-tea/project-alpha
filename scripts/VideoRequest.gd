@@ -20,7 +20,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	soundTimer = soundTimer + delta
+	# Sound timer and ringing of the video call
+	soundTimer += delta
 	if($".".visible and firstRing):
 		firstRing = false
 		$"../AudioManager/VideoCallPlayer".play()
@@ -30,6 +31,7 @@ func _process(delta):
 	elif($".".visible == false):
 		soundTimer = 0
 		$"../AudioManager/VideoCallPlayer".stop()
+		
 	# If player declines Martin's call, keep requests coming in every 3 seconds until player accepts it.
 	if declined:
 		$"../AudioManager/ClickSound".play()
@@ -55,7 +57,8 @@ func _on_Decline_pressed():
 
 func _on_Email2_pressed():
 	# Only trigger Martin's call once player finds Martin's email for the first time.
-	GlobalVar.timelineDialogueNumber = 1
+	if(GlobalVar.timelineDialogueNumber == null):
+		GlobalVar.timelineDialogueNumber = 1
 	if firstRequest:
 		firstRequest = false
 		yield(get_tree().create_timer(5.0), "timeout")
