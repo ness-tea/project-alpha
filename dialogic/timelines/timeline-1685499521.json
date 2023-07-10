@@ -1,0 +1,183 @@
+{
+	"events": [
+		{
+			"event_id": "dialogic_024",
+			"set_theme": "default-theme.cfg"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "Angry",
+			"text": "What's going on here?"
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "(Don't change)",
+			"text": "What..."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "DID..."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "YOU..."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "DO?"
+		},
+		{
+			"choice": "Something weird is happening with Al",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah, no SHIT"
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You had one job to do and you somehow FUCKED IT UP"
+		},
+		{
+			"choice": "I didn’t do anything",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Look, I have no patience to listen to any of your stupid excuses"
+		},
+		{
+			"choice": "Why are you so worked up?!",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Are you SERIOUSLY asking this question right now?"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "How fucking hard is it to lie?!"
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Now that it has all this personal information about you..."
+		},
+		{
+			"choice": "I didn't tell it anything",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Just SHUT UP and LISTEN"
+		},
+		{
+			"choice": "What do we do now?",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "I didn't tell it anything",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Don’t make me LAUGH. You don’t get a say on that at this point."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We need to nuke everything on it. Disconnect it from the network. Start from square one."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And we need to act fast. NOW."
+		},
+		{
+			"character": "character-1682227298.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Call Andlew anf ropit te imdifenntent preiqmak an-"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1685499521.json",
+		"name": "ThirdMeetingWithMartin"
+	}
+}

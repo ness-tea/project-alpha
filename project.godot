@@ -84,6 +84,11 @@ config/name="project-alpha"
 run/main_scene="res://scenes/login.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalVar="*res://scripts/GlobalSettings.gd"
+ClickSound="*res://Sounds/ClickSound.tscn"
+
 [display]
 
 window/size/width=1920

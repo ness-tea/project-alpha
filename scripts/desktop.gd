@@ -1,20 +1,31 @@
 extends Control
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
+var projectAlClick = 0
+var projectAlClickTime = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	$AudioManager/BackgroundMusic.play()
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	if projectAlClick == 1:
+		projectAlClickTime += delta
+	if (projectAlClickTime > 2):
+		projectAlClick = 0
+		projectAlClickTime = 0
 
 
 func _on_Logout_pressed():
+	ClickSound.play()
+	$AudioManager/ShutDown.play()
+	yield(get_tree().create_timer(1.0), "timeout")
 	get_tree().quit()
+
+
+func _on_ProjectAlProgram_pressed():
+	ClickSound.play()
+	projectAlClick += 1
+	if (projectAlClick == 2 && projectAlClickTime <= 2):
+		$ProjectAlProgram.visible = false
+		get_tree().change_scene("res://scenes/al.tscn")

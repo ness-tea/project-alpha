@@ -1,0 +1,36 @@
+if {DeclinesMartinCall} != 0:
+	Martin (Mad): How many times do I have to call you for an answer? We're on a time sensitive deadline.
+	Martin: I want a response by the first call next time, or we're gonna have issues here.
+	Martin: Got it?
+	- It won't happen again.
+		Martin (Smug): Alright, THAT'S what I want to hear.
+		Martin: Gotta make sure we're clear on who calls the shots here, yes? Good.
+	- Something important came up.
+		Martin: Okay - dude, all I hear is YAP YAP.
+		I don't care what the reason was. You see a call from me, you pick up. It's as easy as that.
+	- Having tech issues.
+		Martin: Okay - dude, all I hear is YAP YAP.
+		I don't care what the reason was. You see a call from me, you pick up. It's as easy as that.
+else:
+	Martin (Default): Heyyy... Sam, right? Am I coming through okay?
+	- You're coming throuigh
+		Martin: Awesome man. Okay.
+	- Think I'm having audio issues - can I call you back?
+		Martin (Mad): ... Your mic is picking up my voice. Stop %$#@ing around here - we need to act fast.
+Martin (Default): Anyway, I'm syncing up again regarding project CHAPEAU NOIR.
+Martin: The dev team just wrapped up AI's training yesterday, so we're moving into the next phase of his ramp up. 
+Martin: We need Al to be on board in the next couple of days - so don't %$#@ this up like the last spineless tester did. 
+Martin: You'll find him on your desktop. Our IT team went ahead and installed him on your system last night.
+Martin: I've left you a task log to get you started on what information you should be gathering in your next few black box testing sessions. Should also get you clear on the expected behavioural criteria.
+Martin: Any questions?
+- What happened to the last tester?
+- Should I know anything about Al before I get started?
+- I thought I was just the assistant?
+Martin cuts you off mid-sentence.
+Martin: Good, you shouldn't have any questions - because it's a simple task.
+Martin: Alright then, I'll leave you to it.
+Martin (Smug): My webcam alarms are going off... so it's about time for me to check up on what's happening with the LADIES...
+Martin: The perks of working remotely, am I right? HAHAHAHA.
+- Hahaha!
+- Umm... (was that supposed to be a joke?)
+# Martin hangs up.

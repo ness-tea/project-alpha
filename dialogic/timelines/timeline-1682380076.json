@@ -1,6 +1,10 @@
 {
 	"events": [
 		{
+			"event_id": "dialogic_024",
+			"set_theme": "theme-1682566781.cfg"
+		},
+		{
 			"animation": "[Default]",
 			"animation_length": 0,
 			"change_mirror_portrait": false,
@@ -8,7 +12,7 @@
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_002",
 			"mirror_portrait": false,
-			"portrait": "Default",
+			"portrait": "Default_eyes",
 			"portrait_definition": "",
 			"position": {
 				"0": true,
@@ -1040,11 +1044,15 @@
 			"id": "anchor-1634488067",
 			"index": 0,
 			"name": "EndScene"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
 		"file": "timeline-1682380076.json",
-		"name": "SecondEncounterWithAl"
+		"name": "SecondEncounterWithAlEyes"
 	}
 }
