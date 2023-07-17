@@ -106,10 +106,6 @@
 			"value": ""
 		},
 		{
-			"anchor_id": "",
-			"event_id": "dialogic_016"
-		},
-		{
 			"animation": "[Default]",
 			"animation_length": 0,
 			"change_mirror_portrait": false,

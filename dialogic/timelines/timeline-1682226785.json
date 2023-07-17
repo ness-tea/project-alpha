@@ -960,10 +960,6 @@
 			"id": "anchor-1634488067",
 			"index": 0,
 			"name": "EndScene"
-		},
-		{
-			"event_id": "dialogic_022",
-			"transition_duration": 1
 		}
 	],
 	"metadata": {
