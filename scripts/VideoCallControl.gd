@@ -35,15 +35,22 @@ func _on_Accept_pressed():
 		dialogic_additional_functions(martinDialog)
 
 
-func after_dialog(_param):
-	get_node("EmptyRoom").visible = true
-	$"../ProjectAlProgram".makeIconVisible()
-
-
 func _on_VideoCall_pressed():
 	ClickSound.play()
 	visible = true
 
 func dialogic_additional_functions(martinDialog):
 	add_child(martinDialog)
-	martinDialog.connect("timeline_end", self, "after_dialog")
+	if(GlobalVar.timelineDialogueNumber == 3):
+		martinDialog.connect("timeline_end", self, "switch_to_projectAl")
+	else:
+		martinDialog.connect("timeline_end", self, "after_dialog")
+
+
+func after_dialog(_param):
+	get_node("EmptyRoom").visible = true
+	$"../ProjectAlProgram".makeIconVisible()
+
+
+func switch_to_projectAl(_param):
+	get_tree().change_scene("res://scenes/al.tscn")
