@@ -1,9 +1,11 @@
 extends Control
 
 var alAppearance = Dialogic.get_variable("AlAppearance")
+var encounterEnd = Dialogic.get_variable("encounterEnd")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$AudioManager/BackgroundMusic.play()
 	if(GlobalVar.timelineDialogueNumber == 1):
 		GlobalVar.timelineDialogueNumber = 2
 		var alDialog1 = Dialogic.start("FirstEncounterWithAl")
@@ -32,7 +34,26 @@ func _ready():
 	elif(GlobalVar.timelineDialogueNumber == 3):
 		var alDialog1 = Dialogic.start("ThirdEncounterWithAl")
 		add_child(alDialog1)
-		alDialog1.connect("timeline_end", self, "after_dialog")
+		alDialog1.connect("timeline_end", self, "blackout_screen")
+
 
 func after_dialog(_param):
 	get_tree().change_scene("res://scenes/desktop.tscn")
+
+
+func blackout_screen(_param):
+	for m in 3:
+		$BlackoutScreen.visible = true
+		yield(get_tree().create_timer(0.3), "timeout")
+		$AIGlitch1.visible = true
+		$BlackoutScreen.visible = false
+		yield(get_tree().create_timer(0.3), "timeout")
+	$AudioManager/CreepyLaugh.play()
+	for n in 3:
+		$BlackoutScreen.visible = true
+		yield(get_tree().create_timer(0.3), "timeout")
+		$AIGlitch2
+		$BlackoutScreen.visible = false
+		yield(get_tree().create_timer(0.3), "timeout")
+	$AIGlitch1.visible = false
+	$AIGlitch2.visible = false
