@@ -29,3 +29,7 @@ func _on_ProjectAlProgram_pressed():
 	if (projectAlClick == 2 && projectAlClickTime <= 2):
 		$ProjectAlProgram.visible = false
 		get_tree().change_scene("res://scenes/al.tscn")
+
+#This button is used for testing purposes only. It is used to skip to the final dialogue with Al
+func _on_Button_pressed():
+	GlobalVar.timelineDialogueNumber = 3

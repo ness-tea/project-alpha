@@ -1578,6 +1578,21 @@ text = "This is the fourth time attempting to reach you..."
 valign = 1
 clip_text = true
 
+[node name="Button" type="Button" parent="."]
+margin_left = 1611.0
+margin_top = 37.0
+margin_right = 1881.0
+margin_bottom = 100.0
+
+[node name="Label" type="Label" parent="Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "FOR TESTING PURPOSES
+CLICK BUTTON TO SET VARIABLE FOR
+SKIPPING TO ENCOUNTER 3"
+align = 1
+valign = 1
+
 [connection signal="pressed" from="ProjectAlProgram" to="." method="_on_ProjectAlProgram_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Start/StartButton" to="StartControl" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Emails/EmailsButton" to="EmailsControl" method="_on_EmailsButton_pressed"]
@@ -1614,3 +1629,4 @@ clip_text = true
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/HBoxContainer2/BackButton" to="MessengerControl" method="_on_BackButton_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message1" to="MessengerControl" method="_on_Message1_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message2" to="MessengerControl" method="_on_Message2_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
