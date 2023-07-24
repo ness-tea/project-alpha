@@ -1593,6 +1593,12 @@ SKIPPING TO ENCOUNTER 3"
 align = 1
 valign = 1
 
+[node name="BlackScreen" type="PanelContainer" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 67 )
+
 [connection signal="pressed" from="ProjectAlProgram" to="." method="_on_ProjectAlProgram_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Start/StartButton" to="StartControl" method="_on_StartButton_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Emails/EmailsButton" to="EmailsControl" method="_on_EmailsButton_pressed"]

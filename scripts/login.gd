@@ -9,3 +9,10 @@ func _on_QuitButton_pressed():
 func _on_LoginButton_pressed():
 	$ClickLoginSound.play()
 	get_tree().change_scene("res://scenes/desktop.tscn")
+
+
+func _ready():
+	if(GlobalVar.timelineDialogueNumber == 3):
+		GlobalVar.timelineDialogueNumber = 4
+		$UserImage.visible = false
+		$FamilyImage.visible = true

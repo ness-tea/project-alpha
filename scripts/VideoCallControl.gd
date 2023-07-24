@@ -33,6 +33,11 @@ func _on_Accept_pressed():
 		# Start Martin third call dialogue
 		var martinDialog = Dialogic.start("ThirdMeetingWithMartin")
 		dialogic_additional_functions(martinDialog)
+	
+	elif(GlobalVar.timelineDialogueNumber == 4):
+		# Start Martin third call dialogue
+		var martinDialog = Dialogic.start("FourthMeetingWithMartin")
+		dialogic_additional_functions(martinDialog)
 
 
 func _on_VideoCall_pressed():
@@ -42,7 +47,7 @@ func _on_VideoCall_pressed():
 func dialogic_additional_functions(martinDialog):
 	add_child(martinDialog)
 	if(GlobalVar.timelineDialogueNumber == 3):
-		martinDialog.connect("timeline_end", self, "switch_to_projectAl")
+		martinDialog.connect("timeline_end", self, "blackout_screen")
 	else:
 		martinDialog.connect("timeline_end", self, "after_dialog")
 
@@ -54,3 +59,13 @@ func after_dialog(_param):
 
 func switch_to_projectAl(_param):
 	get_tree().change_scene("res://scenes/al.tscn")
+	
+
+func blackout_screen(_param):
+	for i in 3:
+		$"../BlackScreen".visible = false
+		yield(get_tree().create_timer(0.3), "timeout")
+		$"../BlackScreen".visible = true
+		yield(get_tree().create_timer(0.3), "timeout")
+	yield(get_tree().create_timer(2), "timeout")
+	get_tree().change_scene("res://scenes/login.tscn")
