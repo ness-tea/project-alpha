@@ -9,33 +9,31 @@ func _ready():
 	if(GlobalVar.timelineDialogueNumber == 1):
 		GlobalVar.timelineDialogueNumber = 2
 		var alDialog1 = Dialogic.start("FirstEncounterWithAl")
-		add_child(alDialog1)
-		alDialog1.connect("timeline_end", self, "after_dialog")
+		dialogic_after_dialog_set(alDialog1)
 	elif(GlobalVar.timelineDialogueNumber == 2):
 		GlobalVar.timelineDialogueNumber = 3
-		
 		if(alAppearance=="male"):
 			var alDialog1 = Dialogic.start("SecondEncounterWithAlMale")
-			add_child(alDialog1)
-			alDialog1.connect("timeline_end", self, "after_dialog")
+			dialogic_after_dialog_set(alDialog1)
 		elif(alAppearance=="hair"):
 			var alDialog1 = Dialogic.start("SecondEncounterWithAlHair")
-			add_child(alDialog1)
-			alDialog1.connect("timeline_end", self, "after_dialog")
+			dialogic_after_dialog_set(alDialog1)
 		elif(alAppearance=="eyes"):
 			var alDialog1 = Dialogic.start("SecondEncounterWithAlEyes")
-			add_child(alDialog1)
-			alDialog1.connect("timeline_end", self, "after_dialog")
+			dialogic_after_dialog_set(alDialog1)
 		else:
 			var alDialog1 = Dialogic.start("SecondEncounterWithAl")
-			add_child(alDialog1)
-			alDialog1.connect("timeline_end", self, "after_dialog")
+			dialogic_after_dialog_set(alDialog1)
 		
-	elif(GlobalVar.timelineDialogueNumber == 3):
+	elif(GlobalVar.timelineDialogueNumber == 4):
 		var alDialog1 = Dialogic.start("ThirdEncounterWithAl")
 		add_child(alDialog1)
 		alDialog1.connect("timeline_end", self, "blackout_screen")
 
+#Used to add child and connect between timeline ends and what to do next
+func dialogic_after_dialog_set(alDialog1):
+	add_child(alDialog1)
+	alDialog1.connect("timeline_end", self, "after_dialog")
 
 func after_dialog(_param):
 	get_tree().change_scene("res://scenes/desktop.tscn")
