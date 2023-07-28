@@ -1188,7 +1188,6 @@ min_value = -40.0
 max_value = 24.0
 
 [node name="MessengerControl" type="Control" parent="."]
-visible = false
 margin_left = 1447.0
 margin_top = 55.0
 margin_right = 1874.0
@@ -1210,11 +1209,11 @@ rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 3
 
 [node name="MessengerTitle" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/TitleBar"]
-margin_left = 10.0
-margin_top = 10.0
-margin_right = 70.0
-margin_bottom = 14.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 text = "Messenger"
+align = 1
+valign = 1
 
 [node name="CloseButton" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/TitleBar"]
 anchor_left = 1.0
