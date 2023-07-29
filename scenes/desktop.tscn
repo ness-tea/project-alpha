@@ -426,8 +426,8 @@ margin_bottom = 24.0
 custom_styles/panel = SubResource( 19 )
 
 [node name="WindowTitle" type="Label" parent="EmailsControl/TitleBar"]
-margin_right = 80.0
-margin_bottom = 24.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 text = "Mailbox"
 align = 1
 valign = 1
@@ -901,9 +901,8 @@ Company X"
 
 [node name="VideoCallControl" type="Control" parent="."]
 visible = false
-anchor_right = 1.0
-anchor_bottom = 0.893
-margin_bottom = 0.199951
+margin_right = 1920.0
+margin_bottom = 964.64
 script = ExtResource( 13 )
 
 [node name="Background" type="Panel" parent="VideoCallControl"]
@@ -917,8 +916,8 @@ margin_bottom = 32.0
 custom_styles/panel = SubResource( 37 )
 
 [node name="WindowTitle" type="Label" parent="VideoCallControl/TitleBar"]
+anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 104.0
 custom_styles/normal = SubResource( 38 )
 text = "FaceChat"
 align = 1
@@ -1188,6 +1187,7 @@ min_value = -40.0
 max_value = 24.0
 
 [node name="MessengerControl" type="Control" parent="."]
+visible = false
 margin_left = 1447.0
 margin_top = 55.0
 margin_right = 1874.0

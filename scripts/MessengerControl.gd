@@ -56,7 +56,7 @@ func _input(event):
 		if (target_rect.has_point(event_pos)):
 			status = "clicked"
 			offset = bar_pos - event_pos
-		
+			raise()
 		
 	if (status == "clicked") and (event.is_class("InputEventMouseMotion")):
 		status = "dragging"
