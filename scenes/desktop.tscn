@@ -408,7 +408,6 @@ custom_styles/pressed = SubResource( 16 )
 custom_styles/normal = SubResource( 17 )
 
 [node name="EmailsControl" type="Control" parent="."]
-visible = false
 margin_left = 40.0
 margin_top = 48.0
 margin_right = 944.0
@@ -900,7 +899,6 @@ We're looking forward to working with you!
 Company X"
 
 [node name="VideoCallControl" type="Control" parent="."]
-visible = false
 margin_right = 1920.0
 margin_bottom = 964.64
 script = ExtResource( 13 )
