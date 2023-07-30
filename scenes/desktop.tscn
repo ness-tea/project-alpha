@@ -419,7 +419,6 @@ custom_styles/pressed = SubResource( 16 )
 custom_styles/normal = SubResource( 17 )
 
 [node name="EmailsControl" type="Control" parent="."]
-visible = false
 margin_left = 40.0
 margin_top = 48.0
 margin_right = 944.0
@@ -437,8 +436,8 @@ margin_bottom = 24.0
 custom_styles/panel = SubResource( 19 )
 
 [node name="WindowTitle" type="Label" parent="EmailsControl/TitleBar"]
-margin_right = 80.0
-margin_bottom = 24.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 text = "Mailbox"
 align = 1
 valign = 1
@@ -911,10 +910,8 @@ We're looking forward to working with you!
 Company X"
 
 [node name="VideoCallControl" type="Control" parent="."]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 0.893
-margin_bottom = 0.199951
+margin_right = 1920.0
+margin_bottom = 964.64
 script = ExtResource( 13 )
 
 [node name="Background" type="Panel" parent="VideoCallControl"]
@@ -928,8 +925,8 @@ margin_bottom = 32.0
 custom_styles/panel = SubResource( 37 )
 
 [node name="WindowTitle" type="Label" parent="VideoCallControl/TitleBar"]
+anchor_right = 1.0
 anchor_bottom = 1.0
-margin_right = 104.0
 custom_styles/normal = SubResource( 38 )
 text = "FaceChat"
 align = 1
@@ -1220,11 +1217,11 @@ rect_min_size = Vector2( 0, 30 )
 size_flags_horizontal = 3
 
 [node name="MessengerTitle" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/TitleBar"]
-margin_left = 10.0
-margin_top = 10.0
-margin_right = 70.0
-margin_bottom = 14.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 text = "Messenger"
+align = 1
+valign = 1
 
 [node name="CloseButton" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/TitleBar"]
 anchor_left = 1.0
