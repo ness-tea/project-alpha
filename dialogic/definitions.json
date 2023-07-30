@@ -4,24 +4,6 @@
 	],
 	"variables": [
 		{
-			"id": "1682308065-648",
-			"name": "CM21A",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1682308080-787",
-			"name": "CM21B",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1682308081-366",
-			"name": "CM21C",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1682308081-146",
 			"name": "CM21D",
 			"type": 0,
@@ -34,32 +16,8 @@
 			"value": ""
 		},
 		{
-			"id": "1682308084-483",
-			"name": "CM21F",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1682308084-970",
-			"name": "CM21G",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1682308135-648",
 			"name": "GoodbyeAl",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1682308675-787",
-			"name": "AlAsksQuestions",
-			"type": 0,
-			"value": "0"
-		},
-		{
-			"id": "1682308814-366",
-			"name": "AlAppearance",
 			"type": 0,
 			"value": "0"
 		},
@@ -74,6 +32,54 @@
 			"name": "ProjectAlDesktopIcon",
 			"type": 0,
 			"value": "0"
+		},
+		{
+			"id": "1682308814-366",
+			"name": "AlAppearance",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1682308675-787",
+			"name": "AlAsksQuestions",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1682308084-970",
+			"name": "CM21G",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1682308084-483",
+			"name": "CM21F",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1682308081-366",
+			"name": "CM21C",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1682308065-648",
+			"name": "CM21A",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1682308080-787",
+			"name": "CM21B",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1689543812-648",
+			"name": "encounterEnd",
+			"type": 0,
+			"value": ""
 		}
 	]
 }

@@ -1,6 +1,5 @@
 extends Control
 
-
 # Declare member variables here. Examples:
 var firstRequest = true
 var declined = false
@@ -10,6 +9,10 @@ var firstRing = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if(GlobalVar.timelineDialogueNumber != 4):
+		$Panel/Label.text = "Martin is calling..."
+	else:
+		$Panel/Label.text = "Unknown is calling..."
 	visible = false
 	if(GlobalVar.timelineDialogueNumber == 2 or GlobalVar.timelineDialogueNumber == 3):
 		if firstRequest:
@@ -31,10 +34,10 @@ func _process(delta):
 	elif($".".visible == false):
 		soundTimer = 0
 		$"../AudioManager/VideoCallPlayer".stop()
-		
+	
 	# If player declines Martin's call, keep requests coming in every 3 seconds until player accepts it.
 	if declined:
-		$"../AudioManager/ClickSound".play()
+		ClickSound.play()
 		declined = false
 		yield(get_tree().create_timer(3.0), "timeout")
 		visible = true

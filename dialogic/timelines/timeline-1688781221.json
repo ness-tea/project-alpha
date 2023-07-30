@@ -16,8 +16,8 @@
 			"portrait_definition": "",
 			"position": {
 				"0": false,
-				"1": true,
-				"2": false,
+				"1": false,
+				"2": true,
 				"3": false,
 				"4": false
 			},
@@ -104,10 +104,6 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
-		},
-		{
-			"anchor_id": "",
-			"event_id": "dialogic_016"
 		},
 		{
 			"animation": "[Default]",

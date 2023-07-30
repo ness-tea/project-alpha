@@ -9,7 +9,7 @@
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
-	"offset_y": -280,
+	"offset_y": -300,
 	"portraits": [
 		{
 			"name": "Default",
@@ -25,5 +25,5 @@
 		}
 	],
 	"scale": 30,
-	"theme": ""
+	"theme": "default-theme.cfg"
 }
