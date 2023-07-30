@@ -10,25 +10,37 @@ var readStyleBox
 func _ready():
 	lastEmail = $Email6
 	readStyleBox = $Email6.get_stylebox("normal").duplicate()
+	
+	if (GlobalVar.emailRead):
+		mark_Email_Read($Email, $Email/Label)
+		
+	if (GlobalVar.email2Read):
+		mark_Email_Read($Email2, $Email2/Label)
+		
+	if (GlobalVar.email3Read):
+		mark_Email_Read($Email3, $Email3/Label)
 
 
 func _on_Email_pressed():
+	GlobalVar.emailRead = true
 	lastEmail = $Email
-	# Mark email as read
-	$Email.add_stylebox_override("normal", readStyleBox)
-	$Email/Label.add_color_override("font_color", Color("#101010"))
 
+	# Mark email as read
+	mark_Email_Read($Email, $Email/Label)
+#	$Email.add_stylebox_override("normal", readStyleBox)
+#	$Email/Label.add_color_override("font_color", Color("#101010"))
 
 func _on_Email2_pressed():
+	GlobalVar.email2Read = true
 	lastEmail = $Email2
-	$Email2.add_stylebox_override("normal", readStyleBox)
-	$Email2/Label.add_color_override("font_color", Color("#101010"))
+	
+	mark_Email_Read($Email2, $Email2/Label)
 
 func _on_Email3_pressed():
-	lastEmail = $Email3
-	$Email3.add_stylebox_override("normal", readStyleBox)
-	$Email3/Label.add_color_override("font_color", Color("#101010"))
-
+	GlobalVar.email3Read = true
+	lastEmail = $Email3	
+	
+	mark_Email_Read($Email3, $Email3/Label)
 
 func _on_Email4_pressed():
 	lastEmail = $Email4
@@ -44,3 +56,7 @@ func _on_Email6_pressed():
 
 func _on_EmailsButton_pressed():
 	lastEmail.grab_focus()
+
+func mark_Email_Read(_email, _label):
+	_email.add_stylebox_override("normal", readStyleBox)
+	_label.add_color_override("font_color", Color("#101010"))
