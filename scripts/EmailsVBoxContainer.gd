@@ -27,8 +27,6 @@ func _on_Email_pressed():
 
 	# Mark email as read
 	mark_Email_Read($Email, $Email/Label)
-#	$Email.add_stylebox_override("normal", readStyleBox)
-#	$Email/Label.add_color_override("font_color", Color("#101010"))
 
 func _on_Email2_pressed():
 	GlobalVar.email2Read = true
