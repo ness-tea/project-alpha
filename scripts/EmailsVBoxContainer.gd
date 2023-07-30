@@ -25,7 +25,6 @@ func _on_Email_pressed():
 	GlobalVar.emailRead = true
 	lastEmail = $Email
 
-	# Mark email as read
 	mark_Email_Read($Email, $Email/Label)
 
 func _on_Email2_pressed():
