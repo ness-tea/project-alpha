@@ -17,3 +17,4 @@ mono_crash.*.json
 
 # Add-ons (nessary installs will be mentioned in README for development)
 addons/
+scripts/Hotpot.png
