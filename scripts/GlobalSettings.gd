@@ -5,9 +5,11 @@ extends Node
 var timelineDialogueNumber
 var masterVolume
 
+var jamieMessageShown = 0 #Includes Jamie and Player messages. Jamie = 1, Player = 2, Jamie = 3, etc.
+
 var emailRead = false
 var email2Read = false
 var email3Read = false
 
 func _ready():
-	pass # Replace with function body.
+	pass

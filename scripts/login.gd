@@ -12,7 +12,10 @@ func _on_LoginButton_pressed():
 
 
 func _ready():
+	if(GlobalVar.timelineDialogueNumber == null):
+		GlobalVar.timelineDialogueNumber = 1
 	if(GlobalVar.timelineDialogueNumber == 3):
 		GlobalVar.timelineDialogueNumber = 4
 		$UserImage.visible = false
 		$FamilyImage.visible = true
+
