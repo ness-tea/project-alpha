@@ -1,8 +1,9 @@
-[gd_scene load_steps=99 format=2]
+[gd_scene load_steps=101 format=2]
 
 [ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
 [ext_resource path="res://fonts/Inconsolota/Inconsolata-SemiBold.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://art/desktop/Power_Icon.png" type="Texture" id=3]
+[ext_resource path="res://scripts/MessagesScrollBox.gd" type="Script" id=4]
 [ext_resource path="res://scripts/TimeLabel.gd" type="Script" id=5]
 [ext_resource path="res://art/desktop/Email_Icon_Hover.png" type="Texture" id=6]
 [ext_resource path="res://art/desktop/window_close_hover.png" type="Texture" id=7]
@@ -16,10 +17,10 @@
 [ext_resource path="res://fonts/Mulish/static/Mulish-SemiBold.ttf" type="DynamicFontData" id=15]
 [ext_resource path="res://scripts/VideoRequest.gd" type="Script" id=16]
 [ext_resource path="res://scripts/desktop.gd" type="Script" id=17]
+[ext_resource path="res://scripts/JamieMessages.gd" type="Script" id=18]
 [ext_resource path="res://scripts/StartControl.gd" type="Script" id=19]
+[ext_resource path="res://scripts/MessengerControl.gd" type="Script" id=20]
 [ext_resource path="res://scripts/VolumeControl.gd" type="Script" id=21]
-[ext_resource path="res://scripts/MessengerControl.gd" type="Script" id=22]
-[ext_resource path="res://scripts/MessagesIndividual.gd" type="Script" id=23]
 [ext_resource path="res://art/GameCover.jpg" type="Texture" id=24]
 [ext_resource path="res://scripts/ProjectAlProgramIcon.gd" type="Script" id=25]
 [ext_resource path="res://music/Delusion.mp3" type="AudioStream" id=26]
@@ -245,7 +246,7 @@ content_margin_left = 5.0
 content_margin_right = 5.0
 content_margin_top = 5.0
 content_margin_bottom = 5.0
-bg_color = Color( 0.34474, 0.328632, 0.387695, 1 )
+bg_color = Color( 0.345098, 0.541176, 0.462745, 1 )
 corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
@@ -256,11 +257,30 @@ content_margin_left = 5.0
 content_margin_right = 5.0
 content_margin_top = 5.0
 content_margin_bottom = 5.0
-bg_color = Color( 0.529412, 0.505882, 0.588235, 1 )
+bg_color = Color( 0.243137, 0.407843, 0.580392, 1 )
 corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
+
+[sub_resource type="GDScript" id=68]
+script/source = "extends VBoxContainer
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+"
 
 [sub_resource type="StyleBoxFlat" id=59]
 bg_color = Color( 0.227451, 0.215686, 0.254902, 1 )
@@ -419,6 +439,7 @@ custom_styles/pressed = SubResource( 16 )
 custom_styles/normal = SubResource( 17 )
 
 [node name="EmailsControl" type="Control" parent="."]
+visible = false
 margin_left = 40.0
 margin_top = 48.0
 margin_right = 944.0
@@ -910,6 +931,7 @@ We're looking forward to working with you!
 Company X"
 
 [node name="VideoCallControl" type="Control" parent="."]
+visible = false
 margin_right = 1920.0
 margin_bottom = 964.64
 script = ExtResource( 13 )
@@ -1006,6 +1028,7 @@ margin_bottom = 559.0
 rect_pivot_offset = Vector2( 644, 523 )
 
 [node name="VideoRequest" type="Control" parent="."]
+visible = false
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -1195,12 +1218,12 @@ min_value = -40.0
 max_value = 24.0
 
 [node name="MessengerControl" type="Control" parent="."]
-visible = false
-margin_left = 1447.0
-margin_top = 55.0
-margin_right = 1874.0
-margin_bottom = 776.0
-script = ExtResource( 22 )
+margin_left = 643.0
+margin_top = 114.0
+margin_right = 1070.0
+margin_bottom = 835.0
+size_flags_vertical = 0
+script = ExtResource( 20 )
 
 [node name="Wallpaper" type="Panel" parent="MessengerControl"]
 anchor_right = 1.0
@@ -1244,96 +1267,31 @@ size_flags_vertical = 3
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 420.0
-margin_bottom = 680.0
-
-[node name="Message1" type="PanelContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages"]
-margin_right = 413.0
-margin_bottom = 673.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-custom_styles/panel = SubResource( 64 )
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1"]
-margin_left = 3.0
-margin_top = 3.0
-margin_right = 410.0
-margin_bottom = 670.0
-custom_constants/separation = 15
-script = ExtResource( 23 )
-
-[node name="LabelForFormatting" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
-margin_right = 407.0
-margin_bottom = 395.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Label" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
-margin_top = 410.0
-margin_right = 39.0
-margin_bottom = 434.0
-size_flags_horizontal = 0
-custom_styles/normal = SubResource( 62 )
-text = "Hey!"
-
-[node name="Label2" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
-margin_left = 298.0
-margin_top = 449.0
-margin_right = 407.0
-margin_bottom = 473.0
-size_flags_horizontal = 8
-custom_styles/normal = SubResource( 63 )
-text = "Hey, what's up?"
-align = 2
-valign = 1
-
-[node name="Label3" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
-margin_top = 488.0
-margin_right = 407.0
-margin_bottom = 529.0
-custom_styles/normal = SubResource( 62 )
-text = "I took Bexley to daycare, would you be able to take Aurora to the park when you get home? <3"
-autowrap = true
-
-[node name="Label5" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
-margin_top = 544.0
-margin_right = 407.0
-margin_bottom = 602.0
-size_flags_horizontal = 9
-custom_styles/normal = SubResource( 63 )
-text = "It's been great, I went to the store and started messaging my friends to show them how these containers are able to autowrap! WOW"
-align = 2
-autowrap = true
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer"]
-margin_top = 617.0
-margin_right = 407.0
-margin_bottom = 667.0
-rect_min_size = Vector2( 0, 50 )
-
-[node name="Button" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer/HBoxContainer"]
-margin_right = 201.0
-margin_bottom = 50.0
-size_flags_horizontal = 3
-
-[node name="Label" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer/HBoxContainer/Button"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-text = "Yeah, for sure! I would love to :)"
-
-[node name="Button2" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer/HBoxContainer"]
-margin_left = 205.0
-margin_right = 407.0
-margin_bottom = 50.0
-size_flags_horizontal = 3
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1"]
-margin_left = 3.0
-margin_top = 3.0
-margin_right = 410.0
-margin_bottom = 27.0
+margin_bottom = 662.0
 size_flags_vertical = 0
 
-[node name="BackButton" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/HBoxContainer"]
+[node name="Message1" type="PanelContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages"]
+visible = false
+margin_right = 413.0
+margin_bottom = 658.0
+size_flags_horizontal = 3
+size_flags_vertical = 0
+custom_styles/panel = SubResource( 64 )
+script = ExtResource( 18 )
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 410.0
+margin_bottom = 655.0
+size_flags_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2"]
+margin_right = 407.0
+margin_bottom = 24.0
+size_flags_vertical = 0
+
+[node name="BackButton" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/HBoxContainer"]
 margin_right = 24.0
 margin_bottom = 24.0
 rect_min_size = Vector2( 24, 24 )
@@ -1343,7 +1301,7 @@ custom_styles/hover = SubResource( 20 )
 custom_styles/pressed = SubResource( 21 )
 custom_styles/normal = SubResource( 22 )
 
-[node name="Message1Title" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/HBoxContainer"]
+[node name="Message1Title" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/HBoxContainer"]
 margin_left = 372.0
 margin_right = 407.0
 margin_bottom = 24.0
@@ -1353,10 +1311,86 @@ text = "Jamie"
 align = 2
 valign = 1
 
+[node name="ScrollContainer" type="ScrollContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2"]
+margin_top = 28.0
+margin_right = 407.0
+margin_bottom = 598.0
+rect_min_size = Vector2( 400, 570 )
+script = ExtResource( 4 )
+
+[node name="SingleMessages" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/ScrollContainer"]
+margin_right = 407.0
+margin_bottom = 570.0
+rect_min_size = Vector2( 407, 570 )
+size_flags_vertical = 0
+custom_constants/separation = 15
+
+[node name="LabelForFormatting" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/ScrollContainer/SingleMessages"]
+margin_right = 407.0
+margin_bottom = 397.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="JMsg1" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/ScrollContainer/SingleMessages"]
+margin_top = 412.0
+margin_right = 39.0
+margin_bottom = 436.0
+size_flags_horizontal = 0
+custom_styles/normal = SubResource( 62 )
+text = "Hey!"
+
+[node name="JMsg2" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/ScrollContainer/SingleMessages"]
+margin_left = 298.0
+margin_top = 451.0
+margin_right = 407.0
+margin_bottom = 475.0
+size_flags_horizontal = 8
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 63 )
+text = "Hey, what's up?"
+align = 2
+valign = 1
+
+[node name="JMsg3" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/ScrollContainer/SingleMessages"]
+margin_top = 490.0
+margin_right = 360.0
+margin_bottom = 531.0
+rect_min_size = Vector2( 360, 0 )
+size_flags_horizontal = 0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_styles/normal = SubResource( 62 )
+text = "I took Bexley to daycare, would you be able to take Aurora to the park when you get home? <3"
+autowrap = true
+
+[node name="JMsg4" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/ScrollContainer/SingleMessages"]
+margin_left = 161.0
+margin_top = 546.0
+margin_right = 407.0
+margin_bottom = 570.0
+size_flags_horizontal = 8
+custom_styles/normal = SubResource( 63 )
+text = "No problem, I should be home soon!"
+align = 2
+
+[node name="Button" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2"]
+margin_top = 602.0
+margin_right = 407.0
+margin_bottom = 652.0
+rect_min_size = Vector2( 0, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 0
+
+[node name="Label" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/Button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+text = "Yeah, for sure! I would love to :)"
+align = 1
+valign = 1
+
 [node name="Message2" type="PanelContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages"]
-visible = false
 margin_right = 413.0
-margin_bottom = 673.0
+margin_bottom = 655.0
+rect_min_size = Vector2( 0, 610 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_styles/panel = SubResource( 64 )
@@ -1365,103 +1399,16 @@ custom_styles/panel = SubResource( 64 )
 margin_left = 3.0
 margin_top = 3.0
 margin_right = 410.0
-margin_bottom = 670.0
+margin_bottom = 652.0
 custom_constants/separation = 15
-script = ExtResource( 23 )
+script = SubResource( 68 )
 
-[node name="LabelForFormatting" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer"]
 margin_right = 407.0
-margin_bottom = 112.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Label" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer"]
-margin_top = 127.0
-margin_right = 407.0
-margin_bottom = 202.0
-size_flags_horizontal = 3
-custom_styles/normal = SubResource( 62 )
-text = "February 6, 2043
-Hello, this is an automated texting service to provide updates on student loan repayments and dues. If you signed up for this service, please type 'YES'."
-autowrap = true
-
-[node name="Label2" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer"]
-margin_top = 217.0
-margin_right = 407.0
-margin_bottom = 258.0
-size_flags_horizontal = 9
-custom_styles/normal = SubResource( 63 )
-text = "February 6, 2043
-YES"
-align = 2
-valign = 1
-autowrap = true
-
-[node name="Label3" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer"]
-margin_top = 273.0
-margin_right = 407.0
-margin_bottom = 348.0
-size_flags_horizontal = 3
-custom_styles/normal = SubResource( 62 )
-text = "February 6, 2043
-Congratulations, you are on your way to a debt free life. Your current student loan debt is:
-'$46,759.05' with a yearly interest rate of 3.25%."
-autowrap = true
-
-[node name="Label4" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer"]
-margin_top = 363.0
-margin_right = 407.0
-margin_bottom = 404.0
-size_flags_horizontal = 3
-custom_styles/normal = SubResource( 62 )
-text = "April 12, 2043
----Payment of $12,055.50 submitted---"
-autowrap = true
-
-[node name="Label7" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer"]
-margin_top = 419.0
-margin_right = 407.0
-margin_bottom = 460.0
-size_flags_horizontal = 3
-custom_styles/normal = SubResource( 62 )
-text = "January 12, 2044
----Payment of $2,750.00 submitted---"
-autowrap = true
-
-[node name="Label5" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer"]
-margin_top = 475.0
-margin_right = 407.0
-margin_bottom = 516.0
-size_flags_horizontal = 3
-custom_styles/normal = SubResource( 62 )
-text = "July 24, 2044
----Payment of $762.42 submitted---"
-autowrap = true
-
-[node name="Label8" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer"]
-margin_top = 531.0
-margin_right = 407.0
-margin_bottom = 572.0
-size_flags_horizontal = 3
-custom_styles/normal = SubResource( 62 )
-text = "December 26, 2044
----Payment of $1,200.00 submitted---"
-autowrap = true
-
-[node name="Chatbox" type="PanelContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer"]
-margin_top = 587.0
-margin_right = 407.0
-margin_bottom = 667.0
-rect_min_size = Vector2( 0, 80 )
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2"]
-margin_left = 3.0
-margin_top = 3.0
-margin_right = 410.0
-margin_bottom = 27.0
+margin_bottom = 24.0
 size_flags_vertical = 0
 
-[node name="BackButton" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/HBoxContainer2"]
+[node name="BackButton" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/HBoxContainer2"]
 margin_right = 24.0
 margin_bottom = 24.0
 rect_min_size = Vector2( 24, 24 )
@@ -1471,7 +1418,7 @@ custom_styles/hover = SubResource( 20 )
 custom_styles/pressed = SubResource( 21 )
 custom_styles/normal = SubResource( 22 )
 
-[node name="Message2Title" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/HBoxContainer2"]
+[node name="Message2Title" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/HBoxContainer2"]
 margin_left = 239.0
 margin_right = 407.0
 margin_bottom = 24.0
@@ -1480,6 +1427,88 @@ size_flags_vertical = 1
 text = "Student Loans Association"
 align = 2
 valign = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer"]
+margin_top = 39.0
+margin_right = 407.0
+margin_bottom = 649.0
+rect_min_size = Vector2( 0, 610 )
+
+[node name="SingleMessages2" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/ScrollContainer"]
+margin_right = 407.0
+margin_bottom = 570.0
+rect_min_size = Vector2( 407, 570 )
+size_flags_vertical = 0
+custom_constants/separation = 15
+
+[node name="LabelForFormatting" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/ScrollContainer/SingleMessages2"]
+margin_right = 407.0
+margin_bottom = 229.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/ScrollContainer/SingleMessages2"]
+margin_top = 244.0
+margin_right = 365.0
+margin_bottom = 302.0
+size_flags_horizontal = 2
+custom_styles/normal = SubResource( 62 )
+text = "This is an automated texting service to provide updates
+on student loan repayments and dues.
+If you signed up for this service,  type 'YES'."
+
+[node name="Label2" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/ScrollContainer/SingleMessages2"]
+margin_left = 376.0
+margin_top = 317.0
+margin_right = 407.0
+margin_bottom = 341.0
+size_flags_horizontal = 8
+custom_styles/normal = SubResource( 63 )
+text = "YES"
+align = 2
+valign = 1
+
+[node name="Label3" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/ScrollContainer/SingleMessages2"]
+margin_top = 356.0
+margin_right = 366.0
+margin_bottom = 414.0
+size_flags_horizontal = 2
+custom_styles/normal = SubResource( 62 )
+text = "Congratulations, you are on your way to a debt free life. 
+Your current student loan debt is:
+'$46,759.05' with a yearly interest rate of 3.25%."
+
+[node name="Label4" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/ScrollContainer/SingleMessages2"]
+margin_top = 429.0
+margin_right = 258.0
+margin_bottom = 453.0
+size_flags_horizontal = 2
+custom_styles/normal = SubResource( 62 )
+text = "---Payment of $12,055.50 submitted---"
+
+[node name="Label7" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/ScrollContainer/SingleMessages2"]
+margin_top = 468.0
+margin_right = 250.0
+margin_bottom = 492.0
+size_flags_horizontal = 2
+custom_styles/normal = SubResource( 62 )
+text = "---Payment of $2,750.00 submitted---"
+
+[node name="Label5" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/ScrollContainer/SingleMessages2"]
+margin_top = 507.0
+margin_right = 238.0
+margin_bottom = 531.0
+size_flags_horizontal = 2
+custom_styles/normal = SubResource( 62 )
+text = "---Payment of $762.42 submitted---"
+
+[node name="Label8" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/ScrollContainer/SingleMessages2"]
+margin_top = 546.0
+margin_right = 250.0
+margin_bottom = 570.0
+size_flags_horizontal = 2
+custom_styles/normal = SubResource( 62 )
+text = "---Payment of $1,200.00 submitted---"
 
 [node name="Messages" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer"]
 visible = false
@@ -1632,13 +1661,14 @@ custom_styles/panel = SubResource( 67 )
 [connection signal="pressed" from="VideoRequest/Panel/Accept" to="VideoRequest" method="_on_Accept_pressed"]
 [connection signal="pressed" from="VideoRequest/Panel/Decline" to="VideoRequest" method="_on_Decline_pressed"]
 [connection signal="pressed" from="StartControl/VBoxContainer/VideoCall" to="VideoCallControl" method="_on_VideoCall_pressed"]
-[connection signal="pressed" from="StartControl/VBoxContainer/StartMessenger" to="MessengerControl" method="_on_Messenger_pressed"]
+[connection signal="pressed" from="StartControl/VBoxContainer/StartMessenger" to="MessengerControl" method="_on_StartMessenger_pressed"]
 [connection signal="pressed" from="StartControl/VBoxContainer/Email" to="EmailsControl" method="_on_Email_pressed"]
 [connection signal="pressed" from="StartControl/VBoxContainer/Logout" to="." method="_on_Logout_pressed"]
 [connection signal="value_changed" from="VolumeControl/Panel/VolumeSlider" to="VolumeControl" method="_on_VolumeSlider_value_changed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/TitleBar/CloseButton" to="MessengerControl" method="_on_CloseButton_pressed"]
-[connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/HBoxContainer/BackButton" to="MessengerControl" method="_on_BackButton_pressed"]
-[connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/HBoxContainer2/BackButton" to="MessengerControl" method="_on_BackButton_pressed"]
+[connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/HBoxContainer/BackButton" to="MessengerControl" method="_on_BackButton_pressed"]
+[connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/Button" to="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1" method="_on_Button_pressed"]
+[connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/HBoxContainer2/BackButton" to="MessengerControl" method="_on_BackButton_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message1" to="MessengerControl" method="_on_Message1_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message2" to="MessengerControl" method="_on_Message2_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

@@ -1,5 +1,6 @@
 extends Control
 
+
 func _ready():
 	$".".visible = false
 	$Wallpaper/VBoxContainer/PanelContainer/Messages.visible = true
@@ -22,15 +23,12 @@ func _on_CloseButton_pressed():
 	ClickSound.play()
 	$".".visible = false
 
+func _on_StartMessenger_pressed():
+	$".".visible = true
 
 func _on_MessengerButton_pressed():
 	ClickSound.play()
 	$".".visible = !visible
-
-
-func _on_Messenger_pressed():
-	ClickSound.play()
-	$".".visible = true
 
 
 func _on_BackButton_pressed():
