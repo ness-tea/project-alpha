@@ -1267,11 +1267,10 @@ size_flags_vertical = 3
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 420.0
-margin_bottom = 662.0
+margin_bottom = 665.0
 size_flags_vertical = 0
 
 [node name="Message1" type="PanelContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages"]
-visible = false
 margin_right = 413.0
 margin_bottom = 658.0
 size_flags_horizontal = 3
@@ -1320,30 +1319,30 @@ script = ExtResource( 4 )
 
 [node name="SingleMessages" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/ScrollContainer"]
 margin_right = 407.0
-margin_bottom = 570.0
-rect_min_size = Vector2( 407, 570 )
+margin_bottom = 550.0
+rect_min_size = Vector2( 407, 550 )
 size_flags_vertical = 0
 custom_constants/separation = 15
 
 [node name="LabelForFormatting" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/ScrollContainer/SingleMessages"]
 margin_right = 407.0
-margin_bottom = 397.0
+margin_bottom = 416.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="JMsg1" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/ScrollContainer/SingleMessages"]
-margin_top = 412.0
+margin_top = 431.0
 margin_right = 39.0
-margin_bottom = 436.0
+margin_bottom = 455.0
 size_flags_horizontal = 0
 custom_styles/normal = SubResource( 62 )
 text = "Hey!"
 
 [node name="JMsg2" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/ScrollContainer/SingleMessages"]
 margin_left = 298.0
-margin_top = 451.0
+margin_top = 470.0
 margin_right = 407.0
-margin_bottom = 475.0
+margin_bottom = 494.0
 size_flags_horizontal = 8
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_styles/normal = SubResource( 63 )
@@ -1352,9 +1351,9 @@ align = 2
 valign = 1
 
 [node name="JMsg3" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/ScrollContainer/SingleMessages"]
-margin_top = 490.0
+margin_top = 509.0
 margin_right = 360.0
-margin_bottom = 531.0
+margin_bottom = 550.0
 rect_min_size = Vector2( 360, 0 )
 size_flags_horizontal = 0
 custom_colors/font_color = Color( 1, 1, 1, 1 )
@@ -1363,10 +1362,11 @@ text = "I took Bexley to daycare, would you be able to take Aurora to the park w
 autowrap = true
 
 [node name="JMsg4" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/ScrollContainer/SingleMessages"]
+visible = false
 margin_left = 161.0
-margin_top = 546.0
+margin_top = 526.0
 margin_right = 407.0
-margin_bottom = 570.0
+margin_bottom = 550.0
 size_flags_horizontal = 8
 custom_styles/normal = SubResource( 63 )
 text = "No problem, I should be home soon!"
@@ -1383,13 +1383,14 @@ size_flags_vertical = 0
 [node name="Label" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/Button"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-text = "Yeah, for sure! I would love to :)"
 align = 1
 valign = 1
 
 [node name="Message2" type="PanelContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages"]
+visible = false
+margin_top = 662.0
 margin_right = 413.0
-margin_bottom = 655.0
+margin_bottom = 1317.0
 rect_min_size = Vector2( 0, 610 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -1437,7 +1438,7 @@ rect_min_size = Vector2( 0, 610 )
 [node name="SingleMessages2" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/ScrollContainer"]
 margin_right = 407.0
 margin_bottom = 570.0
-rect_min_size = Vector2( 407, 570 )
+rect_min_size = Vector2( 407, 550 )
 size_flags_vertical = 0
 custom_constants/separation = 15
 
