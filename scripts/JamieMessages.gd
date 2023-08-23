@@ -39,7 +39,7 @@ func _ready():
 		7:
 			_messageRepeater(4)
 			GlobalVar.jamieMessageShown+=1
-	changeButtonText(GlobalVar.jamieMessageShown)
+	changeButtonText()
 
 
 #Message repeater used for generating pre-existing messages when the user interacts with the messenger tool
@@ -61,19 +61,15 @@ func _on_Button_pressed():
 	$VBoxContainer2/Button.visible = false
 	if(GlobalVar.timelineDialogueNumber != 4):
 		if(GlobalVar.jamieMessageShown == 0):
-			changeButtonText(GlobalVar.jamieMessageShown)
 			_duplicatePlayerMessage()
 			newUserMessage.text = UM1
 		elif(GlobalVar.jamieMessageShown == 2):
-			changeButtonText(GlobalVar.jamieMessageShown)
 			_duplicatePlayerMessage()
 			newUserMessage.text = UM2
 		elif(GlobalVar.jamieMessageShown == 4):
-			changeButtonText(GlobalVar.jamieMessageShown)
 			_duplicatePlayerMessage()
 			newUserMessage.text = UM3
 		elif(GlobalVar.jamieMessageShown == 6):
-			changeButtonText(GlobalVar.jamieMessageShown)
 			_duplicatePlayerMessage()
 			newUserMessage.text = UM4
 		GlobalVar.jamieMessageShown+=1
@@ -85,13 +81,13 @@ func _duplicatePlayerMessage():
 
 
 #function used to change the text present on the button after it is clicked
-func changeButtonText(PlayerMessageCount):
-	match (PlayerMessageCount):
+func changeButtonText():
+	match (GlobalVar.jamieMessageShown):
 		0:
-			$VBoxContainer2/Button/Label.text = "Hello1"
-		1:
-			$VBoxContainer2/Button/Label.text = "Hello2"
+			$VBoxContainer2/Button/Label.text = "Yeah, for sure!"
 		2:
-			$VBoxContainer2/Button/Label.text = "Hello3"
-		3:
-			$VBoxContainer2/Button/Label.text = "Hello4"
+			$VBoxContainer2/Button/Label.text = "It's alright..."
+		4:
+			$VBoxContainer2/Button/Label.text = "It's just a lot"
+		6:
+			$VBoxContainer2/Button/Label.text = "Thanks Honey"
