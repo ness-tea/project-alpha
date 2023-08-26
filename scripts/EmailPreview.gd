@@ -44,13 +44,7 @@ func _on_Email6_pressed():
 func _on_EmailEnd1_pressed():
 	hide_email_previews()
 	$EmailEnd1Preview.visible = true
-	if(firstClickEE1 == false):
-		GlobalVar.gameEndCondition+=1
-	firstClickEE1 = true
 
 func _on_EmailEnd2_pressed():
 	hide_email_previews()
 	$EmailEnd2Preview.visible = true
-	if(firstClickEE2 == false):
-		GlobalVar.gameEndCondition+=1
-	firstClickEE2 = true
