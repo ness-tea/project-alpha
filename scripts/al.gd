@@ -55,3 +55,7 @@ func blackout_screen(_param):
 		yield(get_tree().create_timer(0.3), "timeout")
 	$AIGlitch1.visible = false
 	$AIGlitch2.visible = false
+	$BlackoutScreen.visible = true
+	yield(get_tree().create_timer(2), "timeout")
+	GlobalVar.gameEndCondition = true
+	get_tree().change_scene("res://scenes/login.tscn")
