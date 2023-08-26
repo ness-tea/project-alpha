@@ -1795,8 +1795,11 @@ SKIPPING TO ENCOUNTER 3"
 align = 1
 valign = 1
 
-[node name="BlackScreen" type="PanelContainer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
 visible = false
+
+[node name="BlackScreen" type="PanelContainer" parent="CanvasLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 67 )
