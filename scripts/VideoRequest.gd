@@ -14,7 +14,7 @@ func _ready():
 	else:
 		$Panel/Label.text = "Unknown is calling..."
 	visible = false
-	if(GlobalVar.timelineDialogueNumber == 2 or GlobalVar.timelineDialogueNumber == 3):
+	if(GlobalVar.timelineDialogueNumber == 2 or GlobalVar.timelineDialogueNumber == 3 or GlobalVar.timelineDialogueNumber == 4):
 		if firstRequest:
 			firstRequest = false
 			yield(get_tree().create_timer(5.0), "timeout")
