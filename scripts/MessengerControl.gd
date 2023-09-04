@@ -33,6 +33,8 @@ func _on_CloseButton_pressed():
 	GlobalVar.top_window = GlobalVar.Window.NONE
 	visible = false
 
+func _on_StartMessenger_pressed():
+	$".".visible = true
 
 func _on_MessengerButton_pressed():
 	ClickSound.play()
@@ -49,11 +51,11 @@ func _on_MessengerButton_pressed():
 			GlobalVar.top_window = GlobalVar.Window.NONE
 	print(GlobalVar._print_top_window())
 
+
 func _on_Messenger_pressed():
 	ClickSound.play()
 	visible = true
-
-
+  
 func _on_BackButton_pressed():
 	$Wallpaper/VBoxContainer/PanelContainer/SingleMessages.visible = false
 	$Wallpaper/VBoxContainer/PanelContainer/Messages.visible = true

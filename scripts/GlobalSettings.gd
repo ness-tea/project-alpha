@@ -5,6 +5,8 @@ extends Node
 var timelineDialogueNumber
 var masterVolume
 
+var jamieMessageShown = 0 #Includes Jamie and Player messages. Jamie = 1, Player = 2, Jamie = 3, etc.
+
 var emailRead = false
 var email2Read = false
 var email3Read = false
@@ -29,4 +31,4 @@ func _print_top_window():
 		Window.MESSENGER:
 			return "MESSENGER"
 		Window.VIDEO_CALL:
-			return "VIDEO CALL"		
+			return "VIDEO CALL"
