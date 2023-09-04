@@ -81,7 +81,7 @@ _global_script_class_icons={
 [application]
 
 config/name="project-alpha"
-run/main_scene="res://scenes/desktop.tscn"
+run/main_scene="res://scenes/login.tscn"
 config/icon="res://icon.png"
 
 [autoload]
