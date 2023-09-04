@@ -3,6 +3,7 @@ extends Control
 var projectAlClick = 0
 var projectAlClickTime = 0
 
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$AudioManager/BackgroundMusic.play()

@@ -85,9 +85,9 @@ func switch_to_projectAl(_param):
 
 func blackout_screen(_param):
 	for i in 3:
-		$"../BlackScreen".visible = false
+		$"../CanvasLayer".visible = false
 		yield(get_tree().create_timer(0.3), "timeout")
-		$"../BlackScreen".visible = true
+		$"../CanvasLayer".visible = true
 		yield(get_tree().create_timer(0.3), "timeout")
 	yield(get_tree().create_timer(2), "timeout")
 	get_tree().change_scene("res://scenes/login.tscn")

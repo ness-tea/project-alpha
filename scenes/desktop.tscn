@@ -485,9 +485,51 @@ margin_bottom = 632.0
 rect_min_size = Vector2( 0.018, 50 )
 script = ExtResource( 12 )
 
-[node name="Email" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
+[node name="EmailEnd1" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
 margin_right = 320.0
 margin_bottom = 75.0
+rect_min_size = Vector2( 0, 75 )
+custom_fonts/font = SubResource( 24 )
+custom_styles/focus = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+clip_text = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="EmailsControl/EmailsList/EmailsVBoxContainer/EmailEnd1"]
+margin_left = 8.0
+margin_top = 7.0
+margin_right = 312.0
+margin_bottom = 64.0
+text = "Re: Company X Disclosure
+
+Hi Sam, Thank you for your email going thro..."
+autowrap = true
+
+[node name="EmailEnd2" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
+margin_top = 79.0
+margin_right = 320.0
+margin_bottom = 154.0
+rect_min_size = Vector2( 0, 75 )
+custom_fonts/font = SubResource( 24 )
+custom_styles/focus = SubResource( 25 )
+custom_styles/normal = SubResource( 26 )
+clip_text = true
+expand_icon = true
+
+[node name="Label" type="Label" parent="EmailsControl/EmailsList/EmailsVBoxContainer/EmailEnd2"]
+margin_left = 8.0
+margin_top = 7.0
+margin_right = 312.0
+margin_bottom = 64.0
+text = "Re: I quit
+
+Your employment has ended effective imm..."
+autowrap = true
+
+[node name="Email" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
+margin_top = 158.0
+margin_right = 320.0
+margin_bottom = 233.0
 rect_min_size = Vector2( 0, 75 )
 custom_fonts/font = SubResource( 24 )
 custom_styles/focus = SubResource( 25 )
@@ -506,9 +548,9 @@ Your shipment for order WL456299002 has..."
 autowrap = true
 
 [node name="Email2" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
-margin_top = 79.0
+margin_top = 237.0
 margin_right = 320.0
-margin_bottom = 154.0
+margin_bottom = 312.0
 rect_min_size = Vector2( 0, 75 )
 custom_fonts/font = SubResource( 24 )
 custom_styles/focus = SubResource( 27 )
@@ -527,9 +569,9 @@ I'll sync up with you today on next steps. H..."
 autowrap = true
 
 [node name="Email3" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
-margin_top = 158.0
+margin_top = 316.0
 margin_right = 320.0
-margin_bottom = 233.0
+margin_bottom = 391.0
 rect_min_size = Vector2( 0, 75 )
 custom_fonts/font = SubResource( 24 )
 custom_styles/focus = SubResource( 29 )
@@ -548,9 +590,9 @@ Hey Team, As many of you have been made..."
 autowrap = true
 
 [node name="Email4" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
-margin_top = 237.0
+margin_top = 395.0
 margin_right = 320.0
-margin_bottom = 312.0
+margin_bottom = 470.0
 rect_min_size = Vector2( 0, 75 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 24 )
@@ -571,9 +613,9 @@ It is with a heavy heart that we are writing t..."
 autowrap = true
 
 [node name="Email5" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
-margin_top = 316.0
+margin_top = 474.0
 margin_right = 320.0
-margin_bottom = 391.0
+margin_bottom = 549.0
 rect_min_size = Vector2( 0, 75 )
 custom_fonts/font = SubResource( 24 )
 custom_styles/focus = SubResource( 33 )
@@ -593,9 +635,9 @@ This is a daily test report. You are getting th..."
 autowrap = true
 
 [node name="Email6" type="Button" parent="EmailsControl/EmailsList/EmailsVBoxContainer"]
-margin_top = 395.0
+margin_top = 553.0
 margin_right = 320.0
-margin_bottom = 470.0
+margin_bottom = 628.0
 rect_min_size = Vector2( 0, 75 )
 custom_fonts/font = SubResource( 24 )
 custom_styles/focus = SubResource( 34 )
@@ -622,6 +664,128 @@ margin_left = -584.0
 margin_top = 24.0
 custom_styles/panel = SubResource( 35 )
 script = ExtResource( 11 )
+
+[node name="EmailEnd1Preview" type="RichTextLabel" parent="EmailsControl/EmailPreview"]
+visible = false
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 568.0
+margin_bottom = 616.0
+custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
+bbcode_enabled = true
+bbcode_text = "Wednesday, April 25 2045   10:45 AM
+
+From: pweston@companyy.com
+
+Re: Company X Disclosure
+
+Hi Sam,
+
+Thank you for your email going through the inner workings and data of Company X's projects. We appreciate the honesty and the files sent to our team. We have our legal team currently looking into this.
+
+[u]_______________________________________________________[/u]
+
+Tuesday,  April 24 2045   9:59 AM
+
+To: pweston@companyy.com
+
+Company X Disclosure
+
+Hello,
+
+My name is Sam and I work as a tester at Company X. I am attaching a few gigabytes of data that include testing data, source code, and email chains from Company X executives.
+
+I hope you find all of this data useful.
+
+Thank You,
+Sam"
+text = "Wednesday, April 25 2045   10:45 AM
+
+From: pweston@companyy.com
+
+Re: Company X Disclosure
+
+Hi Sam,
+
+Thank you for your email going through the inner workings and data of Company X's projects. We appreciate the honesty and the files sent to our team. We have our legal team currently looking into this.
+
+_______________________________________________________
+
+Tuesday,  April 24 2045   9:59 AM
+
+To: pweston@companyy.com
+
+Company X Disclosure
+
+Hello,
+
+My name is Sam and I work as a tester at Company X. I am attaching a few gigabytes of data that include testing data, source code, and email chains from Company X executives.
+
+I hope you find all of this data useful.
+
+Thank You,
+Sam"
+
+[node name="EmailEnd2Preview" type="RichTextLabel" parent="EmailsControl/EmailPreview"]
+visible = false
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 568.0
+margin_bottom = 616.0
+custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
+bbcode_enabled = true
+bbcode_text = "Wednesday, April 25 2045   10:45 AM
+
+From: humanresources@companyx.ca
+
+Re: I quit
+
+Your employment has ended effective immediately.
+
+HR
+
+[u]_______________________________________________________[/u]
+
+Tuesday,  April 24 2045   9:59 AM
+
+To: humanresources@companyx.ca
+
+I quit
+
+Hello Helena,
+
+I quit. I hate this company and I think what we are doing is evil and useless. I do not even want to receive any more paycheques as I feel terrible even being in company X anymore. I have also sent all our data to Company Y and I hope they sue you for all you got.
+
+Good luck losers.
+
+Regards,
+Sam"
+text = "Wednesday, April 25 2045   10:45 AM
+
+From: humanresources@companyx.ca
+
+Re: I quit
+
+Your employment has ended effective immediately.
+
+HR
+
+_______________________________________________________
+
+Tuesday,  April 24 2045   9:59 AM
+
+To: humanresources@companyx.ca
+
+I quit
+
+Hello Helena,
+
+I quit. I hate this company and I think what we are doing is evil and useless. I do not even want to receive any more paycheques as I feel terrible even being in company X anymore. I have also sent all our data to Company Y and I hope they sue you for all you got.
+
+Good luck losers.
+
+Regards,
+Sam"
 
 [node name="EmailPreview" type="RichTextLabel" parent="EmailsControl/EmailPreview"]
 visible = false
@@ -1218,6 +1382,7 @@ min_value = -40.0
 max_value = 24.0
 
 [node name="MessengerControl" type="Control" parent="."]
+visible = false
 margin_left = 643.0
 margin_top = 114.0
 margin_right = 1070.0
@@ -1630,8 +1795,11 @@ SKIPPING TO ENCOUNTER 3"
 align = 1
 valign = 1
 
-[node name="BlackScreen" type="PanelContainer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 0
 visible = false
+
+[node name="BlackScreen" type="PanelContainer" parent="CanvasLayer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 67 )
@@ -1644,6 +1812,10 @@ custom_styles/panel = SubResource( 67 )
 [connection signal="pressed" from="TaskbarPanel/VideoCall/VideoCallButton" to="VideoCallControl" method="_on_VideoCallButton_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Volume/VolumeButton" to="VolumeControl" method="_on_VolumeButton_pressed"]
 [connection signal="pressed" from="EmailsControl/TitleBar/CloseButton" to="EmailsControl" method="_on_CloseButton_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/EmailEnd1" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_EmailEnd1_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/EmailEnd1" to="EmailsControl/EmailPreview" method="_on_EmailEnd1_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/EmailEnd2" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_EmailEnd2_pressed"]
+[connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/EmailEnd2" to="EmailsControl/EmailPreview" method="_on_EmailEnd2_pressed"]
 [connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_Email_pressed"]
 [connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email" to="EmailsControl/EmailPreview" method="_on_Email_pressed"]
 [connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/Email2" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_Email2_pressed"]

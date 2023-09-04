@@ -11,6 +11,13 @@ func _ready():
 	lastEmail = $Email6
 	readStyleBox = $Email6.get_stylebox("normal").duplicate()
 	
+	if(GlobalVar.timelineDialogueNumber == 4):
+		$EmailEnd1.visible = true
+		$EmailEnd2.visible = true
+	else:
+		$EmailEnd1.visible = false
+		$EmailEnd2.visible = false
+	
 	if (GlobalVar.emailRead):
 		mark_Email_Read($Email, $Email/Label)
 		
@@ -53,6 +60,17 @@ func _on_Email6_pressed():
 
 func _on_EmailsButton_pressed():
 	lastEmail.grab_focus()
+
+
+func _on_EmailEnd1_pressed():
+	lastEmail = $EmailEnd1
+	mark_Email_Read($EmailEnd1, $EmailEnd1/Label)
+
+
+func _on_EmailEnd2_pressed():
+	lastEmail = $EmailEnd2
+	mark_Email_Read($EmailEnd2, $EmailEnd2/Label)
+
 
 func mark_Email_Read(_email, _label):
 	_email.add_stylebox_override("normal", readStyleBox)

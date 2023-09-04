@@ -16,13 +16,13 @@ func _on_VolumeButton_pressed():
 	ClickSound.play()
 	visible = !visible
 
-#-40 t0 24
+#-80 t0 24
 func _on_VolumeSlider_value_changed(value):
 	AudioServer.set_bus_volume_db(masterBus,value)
 	GlobalVar.masterVolume = value
 
 
 func set_slider_position(position: float) -> void:
-	position = clamp(position,-40,24)
+	position = clamp(position,-80,24)
 	if volume != null:
 		volume.value = position

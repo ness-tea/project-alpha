@@ -18,4 +18,18 @@ func _ready():
 		GlobalVar.timelineDialogueNumber = 4
 		$UserImage.visible = false
 		$FamilyImage.visible = true
+	if(GlobalVar.gameEndCondition == true):
+		_end_Game()
+	else:
+		$StartPanelContainer/LoginButton.visible = true
+		$StartPanelContainer/LockedButton.visible = false
+		$EndGameCredits.visible = false
+	
 
+func _end_Game():
+	$UserImage.visible = false
+	$FamilyImage.visible = false
+	$LockedImage.visible = true
+	$StartPanelContainer/LoginButton.visible = false
+	$StartPanelContainer/LockedButton.visible = true
+	$EndGameCredits.visible = true

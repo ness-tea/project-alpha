@@ -772,7 +772,7 @@
 			"text": "and utilise my knowledge on these separate facets to construct conversations that will allow me to build beneficial relationships with people of interest"
 		},
 		{
-			"choice": "I thought you were a male?",
+			"choice": "I thought you were a female?",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -785,7 +785,7 @@
 			"text": "As an artificial intelligence that is being validated for Chapeau Noir, I have readied myself for social engineering of all kinds."
 		},
 		{
-			"character": "",
+			"character": "character-1682228433.json",
 			"event_id": "dialogic_010",
 			"options": [
 

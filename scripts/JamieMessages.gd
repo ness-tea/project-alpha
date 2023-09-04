@@ -8,6 +8,7 @@ var UM1 = "Yeah, for sure! I would love to :)"
 var UM2 = "It's alright, my manager is being terrible again"
 var UM3 = "It's just a lot of expectations.\n Maybe we can chat after work about it?"
 var UM4 = "Thanks Honey, I love you!"
+var UM5 = "I want a divorce"
 var JM1 = "How's work going?"
 var JM2 = "Oh no :( What is it this time?"
 var JM3 = "I'd love to :) Don't worry, you got this! <3"
@@ -39,7 +40,12 @@ func _ready():
 		7:
 			_messageRepeater(4)
 			GlobalVar.jamieMessageShown+=1
-	changeButtonText()
+	changeButtonText(GlobalVar.jamieMessageShown)
+	
+	if(GlobalVar.timelineDialogueNumber == 4):
+		$VBoxContainer2/Button.visible = false
+		_duplicatePlayerMessage()
+		newUserMessage.text = UM5
 
 
 #Message repeater used for generating pre-existing messages when the user interacts with the messenger tool
