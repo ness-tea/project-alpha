@@ -71,48 +71,50 @@ func _is_underlapping_top_window(event_pos):
 	return false
 
 func _input(event):
-	# Get position of input event in global space
-	var event_pos = event.global_position
-	var lastTopWindow = GlobalVar.top_window	
+	if (event.is_class("InputEventMouse")):
+		
+		# Get position of input event in global space
+		var event_pos = event.global_position
+		var lastTopWindow = GlobalVar.top_window	
 
-	# Check if input event is a mouse left click
-	if (event.is_action_pressed("ui_left_click")):
-		if (self.visible):
-			# Get title bar position in global space
-			var titlebar_pos = titlebar_node.get_global_position()
-			
-			# Calculate title bar rect based on title bar global position and title bar size
-			var titlebar_rect = Rect2(titlebar_pos.x, titlebar_pos.y, titlebar_size.x, titlebar_size.y)
-			var window_rect = Rect2(titlebar_pos.x, titlebar_pos.y, window_size.x, window_size.y)
+		# Check if input event is a mouse left click
+		if (event.is_action_pressed("ui_left_click")):
+			if (self.visible):
+				# Get title bar position in global space
+				var titlebar_pos = titlebar_node.get_global_position()
+				
+				# Calculate title bar rect based on title bar global position and title bar size
+				var titlebar_rect = Rect2(titlebar_pos.x, titlebar_pos.y, titlebar_size.x, titlebar_size.y)
+				var window_rect = Rect2(titlebar_pos.x, titlebar_pos.y, window_size.x, window_size.y)
 
-			# Check if input event position is within window rect AND
-			# that it's not within an underlapping region of the top-most window		
-			if (window_rect.has_point(event_pos) and !_is_underlapping_top_window(event_pos)):
-				status = GlobalVar.State.WINDOW_CLICKED
-				
-				# Set this window to current top window
-				_set_global_top_window()
-				
-				# Check if event position is within title bar rect
-				if (titlebar_rect.has_point(event_pos)):
-					status = GlobalVar.State.TITLEBAR_CLICKED
+				# Check if input event position is within window rect AND
+				# that it's not within an underlapping region of the top-most window		
+				if (window_rect.has_point(event_pos) and !_is_underlapping_top_window(event_pos)):
+					status = GlobalVar.State.WINDOW_CLICKED
 					
-					# Calculate the offset - to be used in repositioning window during dragging
-					offset = titlebar_pos - event_pos
-		
-	# Only set state to DRAGGING if title bar is clicked when mouse is in motion
-	if (status == GlobalVar.State.TITLEBAR_CLICKED) and (event.is_class("InputEventMouseMotion")):
-		status = GlobalVar.State.DRAGGING
-		
-	# Handling for changing a dragging window's position
-	if (status == GlobalVar.State.DRAGGING):
-		if (event.get_button_mask() != BUTTON_LEFT):
-			status = GlobalVar.State.RELEASED
-		else:
-			self.set_global_position(event_pos + offset)
+					# Set this window to current top window
+					_set_global_top_window()
+					
+					# Check if event position is within title bar rect
+					if (titlebar_rect.has_point(event_pos)):
+						status = GlobalVar.State.TITLEBAR_CLICKED
+						
+						# Calculate the offset - to be used in repositioning window during dragging
+						offset = titlebar_pos - event_pos
 			
-	if (lastTopWindow != GlobalVar.top_window):
-		print(GlobalVar._print_top_window())
+		# Only set state to DRAGGING if title bar is clicked when mouse is in motion
+		if (status == GlobalVar.State.TITLEBAR_CLICKED) and (event.is_class("InputEventMouseMotion")):
+			status = GlobalVar.State.DRAGGING
+			
+		# Handling for changing a dragging window's position
+		if (status == GlobalVar.State.DRAGGING):
+			if (event.get_button_mask() != BUTTON_LEFT):
+				status = GlobalVar.State.RELEASED
+			else:
+				self.set_global_position(event_pos + offset)
+				
+		if (lastTopWindow != GlobalVar.top_window):
+			print(GlobalVar._print_top_window())
 
 func _set_global_top_window():
 	GlobalVar.top_window = GlobalVar.Window.MESSENGER
