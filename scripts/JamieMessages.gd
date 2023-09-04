@@ -5,7 +5,7 @@ var newUserMessage: Label
 var newJamieMessage: Label
 
 var UM1 = "Yeah, for sure! I would love to :)"
-var UM2 = "It's alright...my manager is being terrible again"
+var UM2 = "It's alright, my manager is being terrible again"
 var UM3 = "It's just a lot of expectations.\n Maybe we can chat after work about it?"
 var UM4 = "Thanks Honey, I love you!"
 var UM5 = "I want a divorce"
@@ -55,6 +55,7 @@ func _messageRepeater(messageNum):
 		newUserMessage.text = UM_Num[n-1]
 		_duplicateJamieMessage()
 		newJamieMessage.text = JM_Num[n-1]
+		changeMessageTitle("Jamie", newJamieMessage.text)
 
 
 func _duplicateJamieMessage():
@@ -67,22 +68,19 @@ func _on_Button_pressed():
 	$VBoxContainer2/Button.visible = false
 	if(GlobalVar.timelineDialogueNumber != 4):
 		if(GlobalVar.jamieMessageShown == 0):
-			changeButtonText(GlobalVar.jamieMessageShown)
 			_duplicatePlayerMessage()
 			newUserMessage.text = UM1
 		elif(GlobalVar.jamieMessageShown == 2):
-			changeButtonText(GlobalVar.jamieMessageShown)
 			_duplicatePlayerMessage()
 			newUserMessage.text = UM2
 		elif(GlobalVar.jamieMessageShown == 4):
-			changeButtonText(GlobalVar.jamieMessageShown)
 			_duplicatePlayerMessage()
 			newUserMessage.text = UM3
 		elif(GlobalVar.jamieMessageShown == 6):
-			changeButtonText(GlobalVar.jamieMessageShown)
 			_duplicatePlayerMessage()
 			newUserMessage.text = UM4
 		GlobalVar.jamieMessageShown+=1
+		changeMessageTitle("Sam", newUserMessage.text)
 
 
 func _duplicatePlayerMessage():
@@ -91,13 +89,20 @@ func _duplicatePlayerMessage():
 
 
 #function used to change the text present on the button after it is clicked
-func changeButtonText(PlayerMessageCount):
-	match (PlayerMessageCount):
+func changeButtonText():
+	match (GlobalVar.jamieMessageShown):
 		0:
-			$VBoxContainer2/Button/Label.text = "Hello1"
-		1:
-			$VBoxContainer2/Button/Label.text = "Hello2"
+			$VBoxContainer2/Button/Label.text = UM1.substr(0,34) + " ..."
 		2:
-			$VBoxContainer2/Button/Label.text = "Hello3"
-		3:
-			$VBoxContainer2/Button/Label.text = "Hello4"
+			$VBoxContainer2/Button/Label.text = UM2.substr(0,34) + " ..."
+		4:
+			$VBoxContainer2/Button/Label.text = UM3.substr(0,34) + " ..."
+		6:
+			$VBoxContainer2/Button/Label.text = UM4.substr(0,34) + " ..."
+
+
+func changeMessageTitle(name, description):
+	#Changes message title name to Jamie or Sam
+	$"../../Messages/JamieMessages/HBoxContainer/VBoxContainer/MessageName".text = name
+	#Changes message title descrition to message text
+	$"../../Messages/JamieMessages/HBoxContainer/VBoxContainer/MessageDescr".text = description.substr(0,34)
