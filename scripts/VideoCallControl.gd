@@ -1,5 +1,14 @@
 extends Control
 
+var status = GlobalVar.State.NONE
+var offset = Vector2()
+var mouse_pos = Vector2()
+
+onready var titlebar_node = get_node("TitleBar/WindowTitle")
+onready var titlebar_size = titlebar_node.get_size()
+onready var window_node = get_node("Background")
+onready var window_size = window_node.get_size()
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	visible = false
@@ -81,17 +90,8 @@ func blackout_screen(_param):
 	yield(get_tree().create_timer(2), "timeout")
 	get_tree().change_scene("res://scenes/login.tscn")
 
-var status = GlobalVar.State.NONE
-var offset = Vector2()
-var mouse_pos = Vector2()
-
-onready var titlebar_node = get_node("TitleBar/WindowTitle")
-onready var titlebar_size = titlebar_node.get_size()
-onready var window_node = get_node("Background")
-onready var window_size = window_node.get_size()
-
 func _is_underlapping_top_window(event_pos):
-	if (GlobalVar.top_window != GlobalVar.Window.VIDEO_CALL and self.visible):	
+	if (GlobalVar.top_window != GlobalVar.Window.VIDEO_CALL):	
 		if ((GlobalVar.top_window_pos != null and GlobalVar.top_window_size != null) and
 			(event_pos.x > GlobalVar.top_window_pos.x and
 			event_pos.x < (GlobalVar.top_window_pos.x + GlobalVar.top_window_size.x) and
@@ -105,12 +105,11 @@ func _is_underlapping_top_window(event_pos):
 func _input(event):
 	# Get position of input event in global space
 	var event_pos = event.global_position
-	
+#	var lastTopWindow = GlobalVar.top_window
+
 	# Check if input event is a mouse left click
 	if (event.is_action_pressed("ui_left_click")):
-		if (GlobalVar.top_window != GlobalVar.Window.VIDEO_CALL and !self.visible):
-			return
-		else:
+		if (self.visible):
 			# Get title bar position in global space
 			var titlebar_pos = titlebar_node.get_global_position()
 			
@@ -148,3 +147,6 @@ func _input(event):
 			status = GlobalVar.State.RELEASED
 		else:
 			self.set_global_position(event_pos + offset)
+			
+#	if (lastTopWindow != GlobalVar.top_window):
+#		print(GlobalVar._print_top_window())
