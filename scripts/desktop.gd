@@ -7,7 +7,6 @@ var projectAlClickTime = 0
 func _ready():
 	$AudioManager/BackgroundMusic.play()
 
-
 func _process(delta):
 	if projectAlClick == 1:
 		projectAlClickTime += delta
@@ -33,3 +32,5 @@ func _on_ProjectAlProgram_pressed():
 #This button is used for testing purposes only. It is used to skip to the final dialogue with Al
 func _on_Button_pressed():
 	GlobalVar.timelineDialogueNumber = 3
+
+# Block mouse-clicks on window regions underlapping the top-most window.
