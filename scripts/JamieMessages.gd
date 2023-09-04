@@ -40,7 +40,7 @@ func _ready():
 		7:
 			_messageRepeater(4)
 			GlobalVar.jamieMessageShown+=1
-	changeButtonText(GlobalVar.jamieMessageShown)
+	changeButtonText()
 	
 	if(GlobalVar.timelineDialogueNumber == 4):
 		$VBoxContainer2/Button.visible = false
