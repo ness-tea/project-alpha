@@ -21,37 +21,30 @@ func _on_Message2_pressed():
 func _on_CloseButton_pressed():
 	ClickSound.play()
 	GlobalVar.top_window = GlobalVar.Window.NONE
-	print("Current top window - NONE")
-	$".".visible = false
+	visible = false
 
 
 func _on_MessengerButton_pressed():
 	ClickSound.play()
-	$".".visible = !visible
+	visible = !visible
 	
 	if (visible):
 		GlobalVar.top_window = GlobalVar.Window.MESSENGER
 		GlobalVar.top_window_pos = window_node.get_global_position()
 		GlobalVar.top_window_size = window_size
-		print("Current top window - Messenger")
 	else:
 		GlobalVar.top_window = GlobalVar.Window.NONE
-		print("Current top window - NONE")
-
 
 func _on_Messenger_pressed():
 	ClickSound.play()
-	$".".visible = true
+	visible = true
 
 
 func _on_BackButton_pressed():
 	$Wallpaper/VBoxContainer/PanelContainer/SingleMessages.visible = false
 	$Wallpaper/VBoxContainer/PanelContainer/Messages.visible = true
 
-# Window Dragging functionality
-enum State {NONE, WINDOW_CLICKED, TITLEBAR_CLICKED, DRAGGING, RELEASED}
-
-var status = State.NONE
+var status = GlobalVar.State.NONE
 var offset = Vector2()
 var mouse_pos = Vector2()
 
@@ -79,7 +72,6 @@ func _input(event):
 	
 	# Check if input event is a mouse left click
 	if (event.is_action_pressed("ui_left_click")):
-		
 		if (GlobalVar.top_window != GlobalVar.Window.MESSENGER and !self.visible):
 			return
 		else:
@@ -93,7 +85,7 @@ func _input(event):
 			# Check if input event position is within window rect AND
 			# that it's not within an underlapping region of the top-most window		
 			if (window_rect.has_point(event_pos) and !_is_underlapping_top_window(event_pos)):
-				status = State.WINDOW_CLICKED
+				status = GlobalVar.State.WINDOW_CLICKED
 				
 				# Set this window to current top window
 				GlobalVar.top_window = GlobalVar.Window.MESSENGER
@@ -102,7 +94,7 @@ func _input(event):
 				
 				# Check if event position is within title bar rect
 				if (titlebar_rect.has_point(event_pos)):
-					status = State.TITLEBAR_CLICKED
+					status = GlobalVar.State.TITLEBAR_CLICKED
 					
 					# Calculate the offset - to be used in repositioning window during dragging
 					offset = titlebar_pos - event_pos
@@ -111,12 +103,12 @@ func _input(event):
 				raise()	
 		
 	# Only set state to DRAGGING if title bar is clicked when mouse is in motion
-	if (status == State.TITLEBAR_CLICKED) and (event.is_class("InputEventMouseMotion")):
-		status = State.DRAGGING
+	if (status == GlobalVar.State.TITLEBAR_CLICKED) and (event.is_class("InputEventMouseMotion")):
+		status = GlobalVar.State.DRAGGING
 		
 	# Handling for changing a dragging window's position
-	if (status == State.DRAGGING):
+	if (status == GlobalVar.State.DRAGGING):
 		if (event.get_button_mask() != BUTTON_LEFT):
-			status = State.RELEASED
+			status = GlobalVar.State.RELEASED
 		else:
 			self.set_global_position(event_pos + offset)

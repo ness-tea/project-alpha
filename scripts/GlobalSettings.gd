@@ -9,6 +9,8 @@ var emailRead = false
 var email2Read = false
 var email3Read = false
 
+# Window handling
+enum State {NONE, WINDOW_CLICKED, TITLEBAR_CLICKED, DRAGGING, RELEASED}
 enum Window {NONE, EMAILS, MESSENGER, VIDEO_CALL}
 var top_window = Window.NONE
 var top_window_pos
@@ -17,12 +19,14 @@ var top_window_size
 func _ready():
 	pass # Replace with function body.
 
+# Debugging Helpers
 func _print_top_window():
-	if (top_window == Window.NONE):
-		return "NONE"
-	if (top_window == Window.EMAILS):
-		return "EMAIL"
-	if (top_window == Window.MESSENGER):
-		return "MESSENGER"
-	if (top_window == Window.VIDEO_CALL):
-		return "VIDEO CALL"		
+	match top_window:
+		Window.NONE:
+			return "NONE"
+		Window.EMAILS:
+			return "EMAIL"
+		Window.MESSENGER:
+			return "MESSENGER"
+		Window.VIDEO_CALL:
+			return "VIDEO CALL"		

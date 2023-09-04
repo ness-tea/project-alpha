@@ -9,9 +9,17 @@ func _on_VideoCallButton_pressed():
 	ClickSound.play()
 	visible = !self.visible
 
+	if (visible):
+		GlobalVar.top_window = GlobalVar.Window.VIDEO_CALL
+		GlobalVar.top_window_pos = window_node.get_global_position()
+		GlobalVar.top_window_size = window_size
+	else:
+		GlobalVar.top_window = GlobalVar.Window.NONE
+
 
 func _on_Close_pressed():
 	ClickSound.play()
+	GlobalVar.top_window = GlobalVar.Window.NONE
 	visible = false
 
 
@@ -73,10 +81,7 @@ func blackout_screen(_param):
 	yield(get_tree().create_timer(2), "timeout")
 	get_tree().change_scene("res://scenes/login.tscn")
 
-# Window Dragging functionality
-enum State {NONE, WINDOW_CLICKED, TITLEBAR_CLICKED, DRAGGING, RELEASED}
-
-var status = State.NONE
+var status = GlobalVar.State.NONE
 var offset = Vector2()
 var mouse_pos = Vector2()
 
@@ -103,7 +108,6 @@ func _input(event):
 	
 	# Check if input event is a mouse left click
 	if (event.is_action_pressed("ui_left_click")):
-		
 		if (GlobalVar.top_window != GlobalVar.Window.VIDEO_CALL and !self.visible):
 			return
 		else:
@@ -117,7 +121,7 @@ func _input(event):
 			# Check if input event position is within window rect AND
 			# that it's not within an underlapping region of the top-most window		
 			if (window_rect.has_point(event_pos) and !_is_underlapping_top_window(event_pos)):
-				status = State.WINDOW_CLICKED
+				status = GlobalVar.State.WINDOW_CLICKED
 				
 				# Set this window to current top window
 				GlobalVar.top_window = GlobalVar.Window.VIDEO_CALL
@@ -126,7 +130,7 @@ func _input(event):
 				
 				# Check if event position is within title bar rect
 				if (titlebar_rect.has_point(event_pos)):
-					status = State.TITLEBAR_CLICKED
+					status = GlobalVar.State.TITLEBAR_CLICKED
 					
 					# Calculate the offset - to be used in repositioning window during dragging
 					offset = titlebar_pos - event_pos
@@ -135,12 +139,12 @@ func _input(event):
 				raise()	
 			
 	# Only set state to DRAGGING if title bar is clicked when mouse is in motion
-	if (status == State.TITLEBAR_CLICKED) and (event.is_class("InputEventMouseMotion")):
-		status = State.DRAGGING
+	if (status == GlobalVar.State.TITLEBAR_CLICKED) and (event.is_class("InputEventMouseMotion")):
+		status = GlobalVar.State.DRAGGING
 		
 	# Handling for changing a dragging window's position
-	if (status == State.DRAGGING):
+	if (status == GlobalVar.State.DRAGGING):
 		if (event.get_button_mask() != BUTTON_LEFT):
-			status = State.RELEASED
+			status = GlobalVar.State.RELEASED
 		else:
 			self.set_global_position(event_pos + offset)
