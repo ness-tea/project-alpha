@@ -36,14 +36,18 @@ func _on_CloseButton_pressed():
 
 func _on_MessengerButton_pressed():
 	ClickSound.play()
-	visible = !visible
 	
-	if (visible):
-		GlobalVar.top_window = GlobalVar.Window.MESSENGER
-		GlobalVar.top_window_pos = window_node.get_global_position()
-		GlobalVar.top_window_size = window_size
+	if (GlobalVar.top_window != GlobalVar.Window.NONE and GlobalVar.top_window != GlobalVar.Window.MESSENGER):
+		visible = true
+		_set_global_top_window()
 	else:
-		GlobalVar.top_window = GlobalVar.Window.NONE
+		visible = !visible
+		
+		if (visible):
+			_set_global_top_window()
+		else:
+			GlobalVar.top_window = GlobalVar.Window.NONE
+	print(GlobalVar._print_top_window())
 
 func _on_Messenger_pressed():
 	ClickSound.play()
@@ -69,7 +73,7 @@ func _is_underlapping_top_window(event_pos):
 func _input(event):
 	# Get position of input event in global space
 	var event_pos = event.global_position
-#	var lastTopWindow = GlobalVar.top_window	
+	var lastTopWindow = GlobalVar.top_window	
 
 	# Check if input event is a mouse left click
 	if (event.is_action_pressed("ui_left_click")):
@@ -87,9 +91,7 @@ func _input(event):
 				status = GlobalVar.State.WINDOW_CLICKED
 				
 				# Set this window to current top window
-				GlobalVar.top_window = GlobalVar.Window.MESSENGER
-				GlobalVar.top_window_pos = window_node.get_global_position()
-				GlobalVar.top_window_size = window_size
+				_set_global_top_window()
 				
 				# Check if event position is within title bar rect
 				if (titlebar_rect.has_point(event_pos)):
@@ -97,9 +99,6 @@ func _input(event):
 					
 					# Calculate the offset - to be used in repositioning window during dragging
 					offset = titlebar_pos - event_pos
-
-				# If any part of the window is clicked, put it into focus
-				raise()	
 		
 	# Only set state to DRAGGING if title bar is clicked when mouse is in motion
 	if (status == GlobalVar.State.TITLEBAR_CLICKED) and (event.is_class("InputEventMouseMotion")):
@@ -112,5 +111,13 @@ func _input(event):
 		else:
 			self.set_global_position(event_pos + offset)
 			
-#	if (lastTopWindow != GlobalVar.top_window):
-#		print(GlobalVar._print_top_window())
+	if (lastTopWindow != GlobalVar.top_window):
+		print(GlobalVar._print_top_window())
+
+func _set_global_top_window():
+	GlobalVar.top_window = GlobalVar.Window.MESSENGER
+	GlobalVar.top_window_pos = window_node.get_global_position()
+	GlobalVar.top_window_size = window_size
+	
+	# Raise window to highest z-index
+	raise()
