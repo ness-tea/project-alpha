@@ -7,7 +7,6 @@ var projectAlClickTime = 0
 func _ready():
 	$AudioManager/BackgroundMusic.play()
 
-
 func _process(delta):
 	if projectAlClick == 1:
 		projectAlClickTime += delta
