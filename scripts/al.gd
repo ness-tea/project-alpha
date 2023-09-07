@@ -5,7 +5,9 @@ var encounterEnd = Dialogic.get_variable("encounterEnd")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$AudioManager/BackgroundMusic.play()
+	if(GlobalVar.timelineDialogueNumber != 4):
+		$AudioManager/BackgroundMusic.play()
+
 	if(GlobalVar.timelineDialogueNumber == 1):
 		GlobalVar.timelineDialogueNumber = 2
 		var alDialog1 = Dialogic.start("FirstEncounterWithAl")
@@ -24,8 +26,8 @@ func _ready():
 		else:
 			var alDialog1 = Dialogic.start("SecondEncounterWithAl")
 			dialogic_after_dialog_set(alDialog1)
-		
 	elif(GlobalVar.timelineDialogueNumber == 4):
+		$AudioManager/EvilBackgroundMusic.play()
 		var alDialog1 = Dialogic.start("ThirdEncounterWithAl")
 		add_child(alDialog1)
 		alDialog1.connect("timeline_end", self, "blackout_screen")

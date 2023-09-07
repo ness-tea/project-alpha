@@ -1,4 +1,4 @@
-[gd_scene load_steps=101 format=2]
+[gd_scene load_steps=108 format=2]
 
 [ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
 [ext_resource path="res://fonts/Inconsolota/Inconsolata-SemiBold.ttf" type="DynamicFontData" id=2]
@@ -21,6 +21,8 @@
 [ext_resource path="res://scripts/StartControl.gd" type="Script" id=19]
 [ext_resource path="res://scripts/MessengerControl.gd" type="Script" id=20]
 [ext_resource path="res://scripts/VolumeControl.gd" type="Script" id=21]
+[ext_resource path="res://art/desktop/Music Icon.png" type="Texture" id=22]
+[ext_resource path="res://art/desktop/Music Hover.png" type="Texture" id=23]
 [ext_resource path="res://art/GameCover.jpg" type="Texture" id=24]
 [ext_resource path="res://scripts/ProjectAlProgramIcon.gd" type="Script" id=25]
 [ext_resource path="res://music/Delusion.mp3" type="AudioStream" id=26]
@@ -33,6 +35,7 @@
 [ext_resource path="res://art/desktop/Sound_Icon_Hover.png" type="Texture" id=33]
 [ext_resource path="res://art/desktop/Messenger_Icon_Hover.png" type="Texture" id=34]
 [ext_resource path="res://art/desktop/Video_Icon_Hover.png" type="Texture" id=35]
+[ext_resource path="res://scripts/MusicControl.gd" type="Script" id=36]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 1 )
@@ -112,6 +115,20 @@ region_rect = Rect2( 0, 0, 256, 256 )
 texture = ExtResource( 30 )
 region_rect = Rect2( 0, 0, 256, 256 )
 modulate_color = Color( 1, 1, 1, 0.607843 )
+
+[sub_resource type="StyleBoxEmpty" id=69]
+
+[sub_resource type="StyleBoxTexture" id=70]
+texture = ExtResource( 23 )
+region_rect = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="StyleBoxTexture" id=71]
+texture = ExtResource( 22 )
+region_rect = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="StyleBoxTexture" id=72]
+texture = ExtResource( 22 )
+region_rect = Rect2( 0, 0, 256, 256 )
 
 [sub_resource type="StyleBoxFlat" id=18]
 bg_color = Color( 0.87451, 0.87451, 0.894118, 0.87451 )
@@ -306,14 +323,18 @@ margin_bottom = 40.0
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="AudioManager"]
 stream = ExtResource( 26 )
 volume_db = -30.0
+mix_target = 1
+bus = "Music"
 
 [node name="VideoCallPlayer" type="AudioStreamPlayer" parent="AudioManager"]
 stream = ExtResource( 27 )
 volume_db = -30.0
+bus = "Sounds"
 
 [node name="ShutDown" type="AudioStreamPlayer" parent="AudioManager"]
 stream = ExtResource( 28 )
 volume_db = -10.0
+bus = "Sounds"
 
 [node name="Wallpaper" type="PanelContainer" parent="."]
 anchor_right = 1.0
@@ -437,6 +458,20 @@ margin_bottom = 48.0
 custom_styles/hover = SubResource( 15 )
 custom_styles/pressed = SubResource( 16 )
 custom_styles/normal = SubResource( 17 )
+
+[node name="Music" type="PanelContainer" parent="TaskbarPanel"]
+margin_left = 1658.0
+margin_top = 7.0
+margin_right = 1706.0
+margin_bottom = 55.0
+custom_styles/panel = SubResource( 69 )
+
+[node name="Button" type="Button" parent="TaskbarPanel/Music"]
+margin_right = 48.0
+margin_bottom = 48.0
+custom_styles/hover = SubResource( 70 )
+custom_styles/pressed = SubResource( 71 )
+custom_styles/normal = SubResource( 72 )
 
 [node name="EmailsControl" type="Control" parent="."]
 visible = false
@@ -1353,8 +1388,30 @@ margin_right = 87.0
 margin_bottom = 27.0
 text = "Logout"
 
+[node name="MusicControl" type="Control" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -248.0
+margin_top = -228.0
+margin_right = -230.0
+margin_bottom = -67.0
+script = ExtResource( 36 )
+
+[node name="Panel" type="Panel" parent="MusicControl"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="MusicSlider" type="VSlider" parent="MusicControl/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 7.0
+margin_bottom = -9.0
+min_value = -40.0
+max_value = 24.0
+
 [node name="VolumeControl" type="Control" parent="."]
-visible = false
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -1811,6 +1868,7 @@ custom_styles/panel = SubResource( 67 )
 [connection signal="pressed" from="TaskbarPanel/Messenger/MessengerButton" to="MessengerControl" method="_on_MessengerButton_pressed"]
 [connection signal="pressed" from="TaskbarPanel/VideoCall/VideoCallButton" to="VideoCallControl" method="_on_VideoCallButton_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Volume/VolumeButton" to="VolumeControl" method="_on_VolumeButton_pressed"]
+[connection signal="pressed" from="TaskbarPanel/Music/Button" to="MusicControl" method="_on_Button_pressed"]
 [connection signal="pressed" from="EmailsControl/TitleBar/CloseButton" to="EmailsControl" method="_on_CloseButton_pressed"]
 [connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/EmailEnd1" to="EmailsControl/EmailsList/EmailsVBoxContainer" method="_on_EmailEnd1_pressed"]
 [connection signal="pressed" from="EmailsControl/EmailsList/EmailsVBoxContainer/EmailEnd1" to="EmailsControl/EmailPreview" method="_on_EmailEnd1_pressed"]
@@ -1837,6 +1895,7 @@ custom_styles/panel = SubResource( 67 )
 [connection signal="pressed" from="StartControl/VBoxContainer/StartMessenger" to="MessengerControl" method="_on_StartMessenger_pressed"]
 [connection signal="pressed" from="StartControl/VBoxContainer/Email" to="EmailsControl" method="_on_Email_pressed"]
 [connection signal="pressed" from="StartControl/VBoxContainer/Logout" to="." method="_on_Logout_pressed"]
+[connection signal="value_changed" from="MusicControl/Panel/MusicSlider" to="MusicControl" method="_on_MusicSlider_value_changed"]
 [connection signal="value_changed" from="VolumeControl/Panel/VolumeSlider" to="VolumeControl" method="_on_VolumeSlider_value_changed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/TitleBar/CloseButton" to="MessengerControl" method="_on_CloseButton_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/HBoxContainer/BackButton" to="MessengerControl" method="_on_BackButton_pressed"]

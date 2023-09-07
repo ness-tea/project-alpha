@@ -3,7 +3,8 @@ extends Node
 #Global settings page to keep data saved
 
 var timelineDialogueNumber
-var masterVolume
+var soundVolume
+var musicVolume
 
 #gameEndCondition is used for checking conditions so the game ends
 var gameEndCondition = false

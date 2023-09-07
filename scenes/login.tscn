@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
 [ext_resource path="res://art/Power-Symbol.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://scripts/login.gd" type="Script" id=5]
 [ext_resource path="res://Sounds/bong_001.tres" type="AudioStream" id=6]
 [ext_resource path="res://fonts/Oxygen/Oxygen-Light.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://music/Delusion.mp3" type="AudioStream" id=8]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 1 )
@@ -62,9 +63,11 @@ script = ExtResource( 5 )
 
 [node name="ClickLoginSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
-bus = "ClickLogin"
+bus = "Sounds"
 
 [node name="Background Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+bus = "Music"
 
 [node name="Background" type="PanelContainer" parent="."]
 anchor_right = 1.0
