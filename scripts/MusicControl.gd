@@ -2,6 +2,7 @@ extends Control
 
 onready var musicVolume: VSlider = $Panel/MusicSlider
 var musicBus = AudioServer.get_bus_index("Music")
+var musicMuted: bool
 
 
 # Called when the node enters the scene tree for the first time.
@@ -20,10 +21,15 @@ func _on_Button_pressed():
 func _on_MusicSlider_value_changed(value):
 	AudioServer.set_bus_volume_db(musicBus,value)
 	GlobalVar.musicVolume = value
+	if (GlobalVar.musicVolume <= -60):
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Music"), true)
+		musicMuted = true
+	elif(musicMuted == true && GlobalVar.musicVolume > -60):
+		AudioServer.set_bus_mute(AudioServer.get_bus_index("Music"), false)
+		musicMuted = false
 
 
 func set_slider_position(position: float) -> void:
-	position = clamp(position,-80,24)
+	position = clamp(position,-85,24)
 	if musicVolume != null:
 		musicVolume.value = position
-

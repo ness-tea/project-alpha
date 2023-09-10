@@ -1408,7 +1408,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 7.0
 margin_bottom = -9.0
-min_value = -40.0
+min_value = -60.0
 max_value = 24.0
 
 [node name="VolumeControl" type="Control" parent="."]
@@ -1435,7 +1435,7 @@ margin_left = -8.0
 margin_top = 7.0
 margin_right = 8.0
 margin_bottom = -9.0
-min_value = -40.0
+min_value = -60.0
 max_value = 24.0
 
 [node name="MessengerControl" type="Control" parent="."]
