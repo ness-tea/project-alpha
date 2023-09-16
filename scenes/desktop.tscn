@@ -1,4 +1,4 @@
-[gd_scene load_steps=108 format=2]
+[gd_scene load_steps=109 format=2]
 
 [ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
 [ext_resource path="res://fonts/Inconsolota/Inconsolata-SemiBold.ttf" type="DynamicFontData" id=2]
@@ -186,6 +186,13 @@ bg_color = Color( 0.45098, 0.517647, 0.576471, 1 )
 bg_color = Color( 0.45098, 0.517647, 0.576471, 1 )
 
 [sub_resource type="StyleBoxEmpty" id=35]
+
+[sub_resource type="StyleBoxFlat" id=73]
+bg_color = Color( 0, 0.356863, 0.513726, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxFlat" id=36]
 bg_color = Color( 0.0745098, 0.0862745, 0.172549, 0.764706 )
@@ -474,7 +481,6 @@ custom_styles/pressed = SubResource( 71 )
 custom_styles/normal = SubResource( 72 )
 
 [node name="EmailsControl" type="Control" parent="."]
-visible = false
 margin_left = 40.0
 margin_top = 48.0
 margin_right = 944.0
@@ -1128,6 +1134,13 @@ Please sync with your supervisor, Martin Anderson, on your onboarding steps.
 We're looking forward to working with you!
 
 Company X"
+
+[node name="EmailNotif" type="Panel" parent="."]
+margin_left = 117.0
+margin_top = 1023.0
+margin_right = 130.0
+margin_bottom = 1036.0
+custom_styles/panel = SubResource( 73 )
 
 [node name="VideoCallControl" type="Control" parent="."]
 visible = false
@@ -1788,6 +1801,15 @@ text = "I took Bexley to daycare already. Can you take Max..."
 valign = 1
 clip_text = true
 
+[node name="MessengerNotif" type="Panel" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message1"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -29.0
+margin_top = 8.0
+margin_right = -12.0
+margin_bottom = 25.0
+custom_styles/panel = SubResource( 73 )
+
 [node name="Message2" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages"]
 margin_top = 64.0
 margin_right = 413.0
@@ -1836,6 +1858,13 @@ size_flags_vertical = 3
 text = "This is the fourth time attempting to reach you..."
 valign = 1
 clip_text = true
+
+[node name="MessengerNotif" type="Panel" parent="."]
+margin_left = 247.0
+margin_top = 1023.0
+margin_right = 260.0
+margin_bottom = 1036.0
+custom_styles/panel = SubResource( 73 )
 
 [node name="Button" type="Button" parent="."]
 margin_left = 1611.0

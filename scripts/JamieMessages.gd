@@ -25,21 +25,25 @@ func _ready():
 		1:
 			_messageRepeater(1)
 			GlobalVar.jamieMessageShown+=1
+			messengerNotification()
 		2:
 			_messageRepeater(1)
 		3:
 			_messageRepeater(2)
 			GlobalVar.jamieMessageShown+=1
+			messengerNotification()
 		4:
 			_messageRepeater(2)
 		5:
 			_messageRepeater(3)
 			GlobalVar.jamieMessageShown+=1
+			messengerNotification()
 		6:
 			_messageRepeater(3)
 		7:
 			_messageRepeater(4)
 			GlobalVar.jamieMessageShown+=1
+			messengerNotification()
 	changeButtonText(GlobalVar.jamieMessageShown)
 	
 	if(GlobalVar.timelineDialogueNumber == 4):
@@ -101,3 +105,8 @@ func changeButtonText(PlayerMessageCount):
 			$VBoxContainer2/Button/Label.text = "Hello3"
 		3:
 			$VBoxContainer2/Button/Label.text = "Hello4"
+
+
+func messengerNotification():
+	$"../../../../../../MessengerNotif".visible = true
+	$"../../Messages/Message1/MessengerNotif".visible = true
