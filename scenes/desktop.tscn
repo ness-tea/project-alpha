@@ -1502,10 +1502,11 @@ size_flags_vertical = 3
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 420.0
-margin_bottom = 665.0
+margin_bottom = 7.0
 size_flags_vertical = 0
 
 [node name="Message1" type="PanelContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages"]
+visible = false
 margin_right = 413.0
 margin_bottom = 658.0
 size_flags_horizontal = 3
@@ -1747,13 +1748,12 @@ custom_styles/normal = SubResource( 62 )
 text = "---Payment of $1,200.00 submitted---"
 
 [node name="Messages" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer"]
-visible = false
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 420.0
 margin_bottom = 680.0
 
-[node name="Message1" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages"]
+[node name="JamieMessages" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages"]
 margin_right = 413.0
 margin_bottom = 60.0
 rect_min_size = Vector2( 0, 60 )
@@ -1762,7 +1762,7 @@ custom_styles/hover = SubResource( 59 )
 custom_styles/pressed = SubResource( 60 )
 custom_styles/normal = SubResource( 61 )
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message1"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/JamieMessages"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 5.0
@@ -1771,18 +1771,18 @@ margin_right = -5.0
 margin_bottom = -5.0
 custom_constants/separation = 10
 
-[node name="Portrait" type="Panel" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message1/HBoxContainer"]
+[node name="Portrait" type="Panel" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/JamieMessages/HBoxContainer"]
 margin_right = 50.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 50, 50 )
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message1/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/JamieMessages/HBoxContainer"]
 margin_left = 60.0
 margin_right = 403.0
 margin_bottom = 50.0
 size_flags_horizontal = 3
 
-[node name="Message" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message1/HBoxContainer/VBoxContainer"]
+[node name="MessageName" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/JamieMessages/HBoxContainer/VBoxContainer"]
 margin_right = 343.0
 margin_bottom = 23.0
 size_flags_horizontal = 3
@@ -1791,7 +1791,7 @@ text = "Jamie"
 valign = 1
 clip_text = true
 
-[node name="Message2" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message1/HBoxContainer/VBoxContainer"]
+[node name="MessageDescr" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/JamieMessages/HBoxContainer/VBoxContainer"]
 margin_top = 27.0
 margin_right = 343.0
 margin_bottom = 50.0
@@ -1800,6 +1800,7 @@ size_flags_vertical = 3
 text = "I took Bexley to daycare already. Can you take Max..."
 valign = 1
 clip_text = true
+
 
 [node name="MessengerNotif" type="Panel" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message1"]
 anchor_left = 1.0
@@ -1810,7 +1811,8 @@ margin_right = -12.0
 margin_bottom = 25.0
 custom_styles/panel = SubResource( 73 )
 
-[node name="Message2" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages"]
+[node name="LoanMessages" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages"]
+
 margin_top = 64.0
 margin_right = 413.0
 margin_bottom = 124.0
@@ -1820,7 +1822,7 @@ custom_styles/hover = SubResource( 59 )
 custom_styles/pressed = SubResource( 60 )
 custom_styles/normal = SubResource( 61 )
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message2"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/LoanMessages"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 5.0
@@ -1829,18 +1831,18 @@ margin_right = -5.0
 margin_bottom = -5.0
 custom_constants/separation = 10
 
-[node name="Portrait" type="Panel" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message2/HBoxContainer"]
+[node name="Portrait" type="Panel" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/LoanMessages/HBoxContainer"]
 margin_right = 50.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 50, 50 )
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message2/HBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/LoanMessages/HBoxContainer"]
 margin_left = 60.0
 margin_right = 403.0
 margin_bottom = 50.0
 size_flags_horizontal = 3
 
-[node name="Message" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message2/HBoxContainer/VBoxContainer"]
+[node name="MessageName" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/LoanMessages/HBoxContainer/VBoxContainer"]
 margin_right = 343.0
 margin_bottom = 23.0
 size_flags_horizontal = 3
@@ -1849,7 +1851,7 @@ text = "Student Loans Association"
 valign = 1
 clip_text = true
 
-[node name="Message2" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message2/HBoxContainer/VBoxContainer"]
+[node name="MessageDescr" type="Label" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/LoanMessages/HBoxContainer/VBoxContainer"]
 margin_top = 27.0
 margin_right = 343.0
 margin_bottom = 50.0
@@ -1930,6 +1932,6 @@ custom_styles/panel = SubResource( 67 )
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/HBoxContainer/BackButton" to="MessengerControl" method="_on_BackButton_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1/VBoxContainer2/Button" to="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1" method="_on_Button_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/HBoxContainer2/BackButton" to="MessengerControl" method="_on_BackButton_pressed"]
-[connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message1" to="MessengerControl" method="_on_Message1_pressed"]
-[connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message2" to="MessengerControl" method="_on_Message2_pressed"]
+[connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/JamieMessages" to="MessengerControl" method="_on_Message1_pressed"]
+[connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/LoanMessages" to="MessengerControl" method="_on_Message2_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
