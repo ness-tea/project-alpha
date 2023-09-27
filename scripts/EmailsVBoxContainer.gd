@@ -11,6 +11,7 @@ func _ready():
 	lastEmail = $Email6
 	readStyleBox = $Email6.get_stylebox("normal").duplicate()
 	
+	
 	if(GlobalVar.timelineDialogueNumber == 4):
 		$EmailEnd1.visible = true
 		$EmailEnd2.visible = true
@@ -32,19 +33,16 @@ func _ready():
 func _on_Email_pressed():
 	GlobalVar.emailRead = true
 	lastEmail = $Email
-	emailNotif()
 	mark_Email_Read($Email, $Email/Label)
 
 func _on_Email2_pressed():
 	GlobalVar.email2Read = true
 	lastEmail = $Email2
-	emailNotif()
 	mark_Email_Read($Email2, $Email2/Label)
 
 func _on_Email3_pressed():
 	GlobalVar.email3Read = true
 	lastEmail = $Email3	
-	emailNotif()
 	mark_Email_Read($Email3, $Email3/Label)
 
 func _on_Email4_pressed():
@@ -80,6 +78,7 @@ func _on_EmailEnd2_pressed():
 func mark_Email_Read(_email, _label):
 	_email.add_stylebox_override("normal", readStyleBox)
 	_label.add_color_override("font_color", Color("#101010"))
+	emailNotif()
 
 
 func emailNotif():

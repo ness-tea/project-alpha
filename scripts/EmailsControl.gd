@@ -46,9 +46,7 @@ func _is_underlapping_top_window(event_pos):
 			event_pos.x < (GlobalVar.top_window_pos.x + GlobalVar.top_window_size.x) and
 			event_pos.y > GlobalVar.top_window_pos.y and
 			event_pos.y < (GlobalVar.top_window_pos.y + GlobalVar.top_window_size.y))):
-			
 			return true
-		
 	return false
 
 func _input(event):

@@ -22,7 +22,7 @@ func _on_Message1_pressed():
 	$Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message1.visible = true
 	$Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2.visible = false
 	$"../MessengerNotif".visible = false
-	$Wallpaper/VBoxContainer/PanelContainer/Messages/Message1/MessengerNotif.visible = false
+	$Wallpaper/VBoxContainer/PanelContainer/Messages/JamieMessages/MessengerNotif.visible = false
 
 func _on_Message2_pressed():
 	$Wallpaper/VBoxContainer/PanelContainer/Messages.visible = false

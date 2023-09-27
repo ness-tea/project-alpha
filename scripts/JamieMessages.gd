@@ -43,10 +43,8 @@ func _ready():
 		7:
 			_messageRepeater(4)
 			GlobalVar.jamieMessageShown+=1
-  messengerNotification()
-	changeButtonText(GlobalVar.jamieMessageShown)
-
-	
+	messengerNotification()
+	changeButtonText()
 	if(GlobalVar.timelineDialogueNumber == 4):
 		$VBoxContainer2/Button.visible = false
 		_duplicatePlayerMessage()
@@ -108,8 +106,7 @@ func changeButtonText():
 #function used to turn on the notification for messenger
 func messengerNotification():
 	$"../../../../../../MessengerNotif".visible = true
-	$"../../Messages/Message1/MessengerNotif".visible = true
-
+	$"../../Messages/JamieMessages/MessengerNotif".visible = true
 
 func changeMessageTitle(name, description):
 	#Changes message title name to Jamie or Sam

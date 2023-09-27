@@ -1452,7 +1452,6 @@ min_value = -60.0
 max_value = 24.0
 
 [node name="MessengerControl" type="Control" parent="."]
-visible = false
 margin_left = 643.0
 margin_top = 114.0
 margin_right = 1070.0
@@ -1762,6 +1761,13 @@ custom_styles/hover = SubResource( 59 )
 custom_styles/pressed = SubResource( 60 )
 custom_styles/normal = SubResource( 61 )
 
+[node name="MessengerNotif" type="Panel" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/JamieMessages"]
+margin_left = 384.0
+margin_top = 6.0
+margin_right = 404.0
+margin_bottom = 26.0
+custom_styles/panel = SubResource( 73 )
+
 [node name="HBoxContainer" type="HBoxContainer" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/JamieMessages"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -1801,18 +1807,7 @@ text = "I took Bexley to daycare already. Can you take Max..."
 valign = 1
 clip_text = true
 
-
-[node name="MessengerNotif" type="Panel" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/Message1"]
-anchor_left = 1.0
-anchor_right = 1.0
-margin_left = -29.0
-margin_top = 8.0
-margin_right = -12.0
-margin_bottom = 25.0
-custom_styles/panel = SubResource( 73 )
-
 [node name="LoanMessages" type="Button" parent="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages"]
-
 margin_top = 64.0
 margin_right = 413.0
 margin_bottom = 124.0
