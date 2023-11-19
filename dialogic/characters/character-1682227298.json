@@ -22,6 +22,10 @@
 		{
 			"name": "Smug",
 			"path": "res://art/characters/Martin_smug.png"
+		},
+		{
+			"name": "Glitched",
+			"path": "res://art/characters/Al_glitch3_dark.png"
 		}
 	],
 	"scale": 30,

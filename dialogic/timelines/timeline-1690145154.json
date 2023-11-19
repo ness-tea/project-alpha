@@ -12,7 +12,7 @@
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_002",
 			"mirror_portrait": false,
-			"portrait": "Default",
+			"portrait": "Glitched",
 			"portrait_definition": "",
 			"position": {
 				"0": false,
@@ -27,7 +27,7 @@
 		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": true,
-			"wait_seconds": 5
+			"wait_seconds": 3
 		},
 		{
 			"event_id": "dialogic_022",
