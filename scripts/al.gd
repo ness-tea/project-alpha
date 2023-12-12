@@ -42,7 +42,7 @@ func after_dialog(_param):
 
 
 func blackout_screen(_param):
-	for m in 3:
+	"""for m in 3:
 		$BlackoutScreen.visible = true
 		yield(get_tree().create_timer(0.3), "timeout")
 		$AIGlitch1.visible = true
@@ -56,7 +56,15 @@ func blackout_screen(_param):
 		$BlackoutScreen.visible = false
 		yield(get_tree().create_timer(0.3), "timeout")
 	$AIGlitch1.visible = false
-	$AIGlitch2.visible = false
+	$AIGlitch2.visible = false"""
+	
+	$AudioManager/CreepyLaugh.play()
+	for m in 2:
+		$BlackoutScreen.visible = true
+		yield(get_tree().create_timer(0.4), "timeout")
+		$BlackoutScreen.visible = false
+		yield(get_tree().create_timer(0.52), "timeout")
+		
 	$BlackoutScreen.visible = true
 	yield(get_tree().create_timer(2), "timeout")
 	GlobalVar.gameEndCondition = true
