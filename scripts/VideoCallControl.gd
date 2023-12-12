@@ -81,14 +81,17 @@ func after_dialog(_param):
 
 func switch_to_projectAl(_param):
 	get_tree().change_scene("res://scenes/al.tscn")
-	
 
 func blackout_screen(_param):
-	for i in 3:
+	$"../AudioManager/CreepyLaugh".play()
+	for i in 2:
 		$"../CanvasLayer".visible = false
 		yield(get_tree().create_timer(0.3), "timeout")
 		$"../CanvasLayer".visible = true
 		yield(get_tree().create_timer(0.3), "timeout")
+	$"../CanvasLayer".visible = false
+	yield(get_tree().create_timer(1.1), "timeout")
+	$"../CanvasLayer".visible = true
 	yield(get_tree().create_timer(2), "timeout")
 	get_tree().change_scene("res://scenes/login.tscn")
 
@@ -99,9 +102,7 @@ func _is_underlapping_top_window(event_pos):
 			event_pos.x < (GlobalVar.top_window_pos.x + GlobalVar.top_window_size.x) and
 			event_pos.y > GlobalVar.top_window_pos.y and
 			event_pos.y < (GlobalVar.top_window_pos.y + GlobalVar.top_window_size.y))):
-			
 			return true
-				
 	return false
 
 func _input(event):
@@ -141,12 +142,14 @@ func _input(event):
 			status = GlobalVar.State.DRAGGING
 			
 		# Handling for changing a dragging window's position
+		""" REMOVED DRAGGING OF WINDOW DUE TO INABILITY TO CHANGE DIALOGIC PORTRAIT POSITION
+		
 		if (status == GlobalVar.State.DRAGGING):
 			if (event.get_button_mask() != BUTTON_LEFT):
 				status = GlobalVar.State.RELEASED
 			else:
 				self.set_global_position(event_pos + offset)
-				
+		"""
 		if (lastTopWindow != GlobalVar.top_window):
 			print(GlobalVar._print_top_window())
 
