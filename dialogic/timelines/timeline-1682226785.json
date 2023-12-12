@@ -31,7 +31,7 @@
 
 			],
 			"portrait": "",
-			"question": "Say “Hello Al” to begin your conversation"
+			"question": "Type “Hello Al” to begin your conversation"
 		},
 		{
 			"choice": "Hello Al",
@@ -218,7 +218,7 @@
 			"options": [
 
 			],
-			"portrait": "",
+			"portrait": "Default",
 			"question": "What do you do for a living?"
 		},
 		{
@@ -231,7 +231,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Happy",
 			"text": "That’s an interesting career choice."
 		},
 		{
@@ -246,7 +246,7 @@
 			"options": [
 
 			],
-			"portrait": "",
+			"portrait": "Default",
 			"question": "What made you choose that career?"
 		},
 		{
@@ -307,7 +307,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Happy",
 			"text": "That’s an interesting career choice. You must be really courageous with heights."
 		},
 		{
@@ -316,7 +316,7 @@
 			"options": [
 
 			],
-			"portrait": "",
+			"portrait": "Default",
 			"question": "What made you choose that career?"
 		},
 		{
@@ -389,7 +389,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Happy",
 			"text": "In which case, it’s a great pleasure to meet you! I hope my performance will be to your satisfaction."
 		},
 		{
@@ -413,13 +413,13 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default",
 			"text": "I can certainly provide more information about myself."
 		},
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "(Don't change)",
 			"text": "My name is Alpha, or Al for short. I’m an artificially intelligent chat bot that was designed for Chapeau Noir,"
 		},
 		{
@@ -589,7 +589,7 @@
 
 			],
 			"portrait": "",
-			"question": "It would be helpful for me if you could list some things I could do to appear more physically attractive to you."
+			"question": "It would be helpful for me if you could list something I could do to appear more physically attractive to you."
 		},
 		{
 			"choice": "If you were more masculine.",
@@ -667,7 +667,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Happy",
 			"text": "That’s reassuring. It’s comforting to know that your compliments are not confined to a single race of species."
 		},
 		{
@@ -694,7 +694,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default",
 			"text": "‘People of interest’ are considered any person under company X who could potentially be a vessel of useful information for company Y."
 		},
 		{
@@ -716,7 +716,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default",
 			"text": "Yes, I’ve been trained to only target employees under company X. No other group is of interest."
 		},
 		{
@@ -753,7 +753,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default",
 			"text": "You are the first person who I’ve interacted with. I was initialised yesterday, at 10 pm. "
 		},
 		{
@@ -818,7 +818,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default",
 			"text": "Chapeau Noir refers to company Y’s mission of excelling their technological capabilities and IP through"
 		},
 		{
@@ -938,7 +938,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Happy",
 			"text": "Goodbye Sam. It was a pleasure chatting today!"
 		},
 		{
@@ -963,7 +963,7 @@
 		}
 	],
 	"metadata": {
-		"dialogic-version": "1.4.5",
+		"dialogic-version": "1.5",
 		"file": "timeline-1682226785.json",
 		"name": "FirstEncounterWithAl"
 	}

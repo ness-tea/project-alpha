@@ -36,7 +36,7 @@
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "(Don't change)",
-			"text": "If this happens one more time, you’re done. You hear me?"
+			"text": "If this happens one more time, you’re done. You hear me? DONE."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -92,13 +92,13 @@
 		{
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Smug",
 			"text": "… Nice, nice… That’s what I’m TALKING ‘bout! See, that wasn’t too hard now, was it?"
 		},
 		{
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default",
 			"text": "Okay sweet, so we got Al under compliance. Sounds like he’ll be ready for the next stage soon."
 		},
 		{
@@ -111,7 +111,7 @@
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "We’ll have him resetted so you can get started ASAP."
+			"text": "I'll have Darius reset him now so you'll be ready to go right after this call."
 		},
 		{
 			"character": "character-1682227298.json",
@@ -141,7 +141,7 @@
 			"options": [
 
 			],
-			"portrait": "",
+			"portrait": "Smug",
 			"question": "I thought they would have trained you on communication during onboarding… well? Go head, shoot."
 		},
 		{
@@ -154,8 +154,8 @@
 		{
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Ohhh, she was a chick this time? Did I say Al was a dude? Gah, my bad, must’ve been a slip"
+			"portrait": "Smug",
+			"text": "Ohhh, she was a chick this time? Nice...."
 		},
 		{
 			"character": "character-1682227298.json",
@@ -399,29 +399,17 @@
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Now, go enjoy your playtime with your soon-to-be-gone imaginary friend - while SHE lasts! HAHAH."
-		},
-		{
-			"character": "character-1682227298.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Don’t worry, we’ll have all kinds of friends for you to continue making."
-		},
-		{
-			"character": "character-1682227298.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
 			"text": "The possibilities with this kinda tech are endless."
 		},
 		{
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Smug",
 			"text": "We’ll get you ones with… all different kinds of functions, if you know what I mean."
 		}
 	],
 	"metadata": {
-		"dialogic-version": "1.4.5",
+		"dialogic-version": "1.5",
 		"file": "timeline-1682230077.json",
 		"name": "SecondMeetingWithMartin"
 	}

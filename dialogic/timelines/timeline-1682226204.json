@@ -80,7 +80,7 @@
 		{
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "(Don't change)",
 			"text": "Okay - dude, all I hear is YAP YAP."
 		},
 		{
@@ -99,7 +99,7 @@
 		{
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "(Don't change)",
 			"text": "Okay - dude, all I hear is YAP YAP."
 		},
 		{
@@ -228,7 +228,7 @@
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Martin cuts you off mid-sentence."
+			"text": "--Martin cuts you off mid-sentence--"
 		},
 		{
 			"character": "character-1682227298.json",
@@ -276,7 +276,7 @@
 		}
 	],
 	"metadata": {
-		"dialogic-version": "1.4.5",
+		"dialogic-version": "1.5",
 		"file": "timeline-1682226204.json",
 		"name": "FirstMeetingWithMartin"
 	}

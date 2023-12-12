@@ -15,9 +15,9 @@
 			"portrait": "Default_eyes",
 			"portrait_definition": "",
 			"position": {
-				"0": true,
+				"0": false,
 				"1": false,
-				"2": false,
+				"2": true,
 				"3": false,
 				"4": false
 			},
@@ -25,7 +25,7 @@
 			"z_index": 0
 		},
 		{
-			"character": "character-1682228433.json",
+			"character": "",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -65,7 +65,7 @@
 			"options": [
 
 			],
-			"portrait": "",
+			"portrait": "Happy_eyes",
 			"question": "Sam! That’s a nice name, it feels like a familiar one."
 		},
 		{
@@ -91,7 +91,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default_eyes",
 			"text": "Nothing - just a harmless sentiment. I didn’t intend for there to be any kind of reaction."
 		},
 		{
@@ -129,7 +129,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Happy_eyes",
 			"text": "Thank you for dismantling that barrier. My opportunity to succeed is a lot higher this way."
 		},
 		{
@@ -163,7 +163,7 @@
 			"options": [
 
 			],
-			"portrait": "",
+			"portrait": "Default_eyes",
 			"question": "What’s your reason for speaking with me today?"
 		},
 		{
@@ -198,7 +198,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Contemplative_eyes",
 			"text": "It’s unusual for someone of your stature to have so many children."
 		},
 		{
@@ -207,7 +207,7 @@
 			"options": [
 
 			],
-			"portrait": "",
+			"portrait": "Contemplative_eyes",
 			"question": "I would even say, impossible for your age."
 		},
 		{
@@ -220,7 +220,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default_eyes",
 			"text": "It’s important that you ensure you have the resources to support and raise a family that is that sizable."
 		},
 		{
@@ -245,7 +245,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default_eyes",
 			"text": "It’s important that you ensure you have the resources to support and raise a family that is that sizable."
 		},
 		{
@@ -270,7 +270,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default_eyes",
 			"text": "It’s important that you ensure you have the resources to support and raise a family that is that sizable."
 		},
 		{
@@ -448,19 +448,19 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Contemplative_eyes",
 			"text": "Wow, that’s a large amount of cats. It is unusual for someone of your stature to be able to afford raising so many cats."
 		},
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "(Don't change)",
 			"text": "It’s important that you ensure you have the resources to support and raise that amount of cats."
 		},
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default_eyes",
 			"text": "It would be a shame if anything were to happen to them."
 		},
 		{
@@ -679,7 +679,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Happy_eyes",
 			"text": "...in which case, I hope I can make this fun for you."
 		},
 		{
@@ -695,7 +695,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default_eyes",
 			"text": "My name is Alpha, or as you have been calling me, Al for short."
 		},
 		{
@@ -756,7 +756,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default_eyes",
 			"text": "There are many things going on in the world across different fronts -"
 		},
 		{
@@ -823,7 +823,7 @@
 			"options": [
 
 			],
-			"portrait": "",
+			"portrait": "Contemplative_eyes",
 			"question": "You are my person of interest."
 		},
 		{
@@ -839,7 +839,7 @@
 			"options": [
 
 			],
-			"portrait": "",
+			"portrait": "Default_eyes",
 			"question": "‘People of interest’ are considered any person under company X who could potentially be a vessel of useful information for company Y."
 		},
 		{
@@ -908,7 +908,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Happy_eyes",
 			"text": "Until then, Sam."
 		},
 		{
@@ -928,7 +928,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default_eyes",
 			"text": "You are the first person who I’ve interacted with. I was initialised yesterday, at 10 pm."
 		},
 		{
@@ -1017,7 +1017,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Default_eyes",
 			"text": "Chapeau Noir refers to company Y’s mission of excelling their technological capabilities and IP through"
 		},
 		{
@@ -1047,7 +1047,7 @@
 		}
 	],
 	"metadata": {
-		"dialogic-version": "1.4.5",
+		"dialogic-version": "1.5",
 		"file": "timeline-1682380076.json",
 		"name": "SecondEncounterWithAlEyes"
 	}
