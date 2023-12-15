@@ -28,12 +28,13 @@ func _on_VideoCallButton_pressed():
 			GlobalVar.top_window = GlobalVar.Window.NONE
 	print(GlobalVar._print_top_window())
 
+
 func _on_Close_pressed():
 	ClickSound.play()
 	GlobalVar.top_window = GlobalVar.Window.NONE
 	visible = false
 
-
+#on accpetance of call, the user will go into a specific dialogic timeline
 func _on_Accept_pressed():
 	ClickSound.play()
 	visible = true
@@ -82,6 +83,7 @@ func after_dialog(_param):
 func switch_to_projectAl(_param):
 	get_tree().change_scene("res://scenes/al.tscn")
 
+#Screen blacks out for "glitch" effect
 func blackout_screen(_param):
 	$"../AudioManager/CreepyLaugh".play()
 	for i in 2:
@@ -150,8 +152,7 @@ func _input(event):
 			else:
 				self.set_global_position(event_pos + offset)
 		"""
-		if (lastTopWindow != GlobalVar.top_window):
-			print(GlobalVar._print_top_window())
+
 
 func _set_global_top_window():
 	GlobalVar.top_window = GlobalVar.Window.VIDEO_CALL
