@@ -141,7 +141,7 @@
 			"value": ""
 		},
 		{
-			"choice": "I didn't tell it anything",
+			"choice": "Maybe you did something, I'm just the tester",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",

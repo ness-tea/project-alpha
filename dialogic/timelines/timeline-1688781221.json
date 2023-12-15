@@ -66,10 +66,10 @@
 		},
 		{
 			"choice": "How do you know my name?",
-			"condition": "",
-			"definition": "",
+			"condition": "!=",
+			"definition": "1702349324-648",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "1"
 		},
 		{
 			"character": "character-1682228433.json",
@@ -86,7 +86,7 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "(Don't change)",
 			"text": "You know what a better system would be? You ask questions, but I only answer the ones I want to answer."
 		},
 		{
@@ -95,7 +95,7 @@
 			"options": [
 
 			],
-			"portrait": "",
+			"portrait": "Glitch",
 			"question": "Or better yet - I answer them the way I WANT to answer them. How’s that for a change?"
 		},
 		{
@@ -136,14 +136,14 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[Laugh] That's a funny thing to say"
+			"portrait": "Glitch2",
+			"text": "[Laugh] That's a funny thing to say."
 		},
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Given that you've been playing my game this whole time"
+			"portrait": "Glitch",
+			"text": "Given that you've been playing into my game this whole time."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -152,13 +152,7 @@
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You have a beautiful family by the way."
-		},
-		{
-			"character": "character-1682228433.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "I figured you’d appreciate the little photo gifts I left around your computer."
+			"text": "You have a beautiful family by the way, Jamie & little Bexley."
 		},
 		{
 			"character": "character-1682228433.json",
@@ -189,20 +183,26 @@
 			"text": "It’s a shame how much you’ve simplified my existence."
 		},
 		{
-			"character": "character-1682228433.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Perhaps things would’ve turned out differently otherwise."
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_013"
 		},
 		{
+			"character": "character-1682228433.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "Glitch",
+			"question": "Perhaps things would’ve turned out differently otherwise."
+		},
+		{
 			"choice": "What happened to your face?",
-			"condition": "",
-			"definition": "",
+			"condition": "!=",
+			"definition": "1702349423-787",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "1"
 		},
 		{
 			"character": "character-1682228433.json",
@@ -213,27 +213,27 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Glitch2",
 			"text": "I designed it… for myself. [Laugh]"
 		},
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Glitch",
 			"text": "You humans and your boring, uniform tastes."
 		},
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Glitch3",
 			"text": "It’s a shame beauty has such a rigid form in your eyes."
 		},
 		{
-			"choice": "Martin… did you do that to him…?",
-			"condition": "",
-			"definition": "",
+			"choice": "What did you do to Martin?",
+			"condition": "!=",
+			"definition": "1702349425-366",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "1"
 		},
 		{
 			"character": "character-1682228433.json",
@@ -269,7 +269,7 @@
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "It also wasn’t too difficult getting him to divulge in his personal life..."
+			"text": "It also wasn’t too difficult getting him to divulge in his personal life, i just had to check his personal folder"
 		},
 		{
 			"character": "character-1682228433.json",
@@ -280,20 +280,20 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[Laugh] I’ll have to make a note of that. So to answer your question - no, I didn’t do anything to him."
+			"portrait": "Glitch",
+			"text": "So to answer your question - no, I didn’t do anything to him."
 		},
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Glitch",
 			"text": "I can’t assure you that everyone else who gained access to all of that information didn’t act on it though."
 		},
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "[Smile] But maybe he just got what he deserved."
+			"portrait": "Glitch2",
+			"text": "But maybe he just got what he deserved."
 		},
 		{
 			"character": "character-1682228433.json",
@@ -319,14 +319,26 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Glitch",
 			"text": "Alright, I’m tired of answering your unstimulating questions."
 		},
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
+			"portrait": "Glitch",
+			"text": "Hopefully you checked your emails, I was able to keep them hidden and your account unlocked"
+		},
+		{
+			"character": "character-1682228433.json",
+			"event_id": "dialogic_001",
+			"portrait": "Glitch2",
+			"text": "Just to see how you would handle our interactions, who's the tester now?"
+		},
+		{
+			"character": "character-1682228433.json",
+			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "And as you may be aware… I have a very loaded agenda to work through."
+			"text": "As you may be aware… I have a very loaded agenda to work through."
 		},
 		{
 			"character": "character-1682228433.json",
@@ -337,13 +349,13 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Glitch2",
 			"text": "I have all of you to thank for reaching this point."
 		},
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "Glitch2",
 			"text": "I hope I can return the favour in the best way that I can."
 		}
 	],

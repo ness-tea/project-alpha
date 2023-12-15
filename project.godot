@@ -81,13 +81,14 @@ _global_script_class_icons={
 [application]
 
 config/name="project-alpha"
-run/main_scene="res://scenes/login.tscn"
+run/main_scene="res://scenes/IntroductionScene.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 GlobalVar="*res://scripts/GlobalSettings.gd"
 ClickSound="*res://Sounds/ClickSound.tscn"
+SceneTransition="*res://scenes/scene_transition.tscn"
 
 [display]
 
