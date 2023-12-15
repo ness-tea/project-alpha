@@ -8,7 +8,7 @@ func _on_QuitButton_pressed():
 
 func _on_LoginButton_pressed():
 	$ClickLoginSound.play()
-	get_tree().change_scene("res://scenes/desktop.tscn")
+	SceneTransition.change_scene("res://scenes/desktop.tscn")
 
 
 func _ready():

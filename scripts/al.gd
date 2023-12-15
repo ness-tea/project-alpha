@@ -38,7 +38,7 @@ func dialogic_after_dialog_set(alDialog1):
 	alDialog1.connect("timeline_end", self, "after_dialog")
 
 func after_dialog(_param):
-	get_tree().change_scene("res://scenes/desktop.tscn")
+	SceneTransition.change_scene("res://scenes/desktop.tscn")
 
 
 func blackout_screen(_param):
@@ -68,4 +68,4 @@ func blackout_screen(_param):
 	$BlackoutScreen.visible = true
 	yield(get_tree().create_timer(2), "timeout")
 	GlobalVar.gameEndCondition = true
-	get_tree().change_scene("res://scenes/login.tscn")
+	SceneTransition.change_scene("res://scenes/login.tscn")
