@@ -6,7 +6,7 @@
 		},
 		{
 			"animation": "[Default]",
-			"animation_length": 0,
+			"animation_length": 0.5,
 			"change_mirror_portrait": false,
 			"change_z_index": false,
 			"character": "character-1682227298.json",

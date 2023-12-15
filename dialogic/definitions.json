@@ -22,12 +22,6 @@
 			"value": "0"
 		},
 		{
-			"id": "1682230598-648",
-			"name": "declined",
-			"type": 0,
-			"value": "0"
-		},
-		{
 			"id": "1683077088-648",
 			"name": "ProjectAlDesktopIcon",
 			"type": 0,
@@ -80,6 +74,30 @@
 			"name": "encounterEnd",
 			"type": 0,
 			"value": ""
+		},
+		{
+			"id": "1702349423-787",
+			"name": "AOQ2",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1682230598-648",
+			"name": "declined",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1702349324-648",
+			"name": "AOQ1",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1702349425-366",
+			"name": "AOQ3",
+			"type": 0,
+			"value": "0"
 		}
 	]
 }
