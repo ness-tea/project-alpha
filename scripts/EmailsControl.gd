@@ -21,7 +21,6 @@ func _on_CloseButton_pressed():
 
 func _on_EmailsButton_pressed():
 	ClickSound.play()
-	
 	if (GlobalVar.top_window != GlobalVar.Window.NONE and GlobalVar.top_window != GlobalVar.Window.EMAILS):
 		visible = true
 		_set_global_top_window()
@@ -91,9 +90,6 @@ func _input(event):
 				status = GlobalVar.State.RELEASED
 			else:
 				self.set_global_position(event_pos + offset)
-				
-		if (lastTopWindow != GlobalVar.top_window):
-			print(GlobalVar._print_top_window())
 
 func _set_global_top_window():
 	GlobalVar.top_window = GlobalVar.Window.EMAILS
