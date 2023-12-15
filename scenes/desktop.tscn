@@ -1901,13 +1901,14 @@ margin_right = 260.0
 margin_bottom = 1036.0
 custom_styles/panel = SubResource( 73 )
 
-[node name="Button" type="Button" parent="."]
+[node name="Testing Button" type="Button" parent="."]
+visible = false
 margin_left = 1611.0
 margin_top = 37.0
 margin_right = 1881.0
 margin_bottom = 100.0
 
-[node name="Label" type="Label" parent="Button"]
+[node name="Label" type="Label" parent="Testing Button"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 text = "FOR TESTING PURPOSES
@@ -1967,4 +1968,4 @@ custom_styles/panel = SubResource( 67 )
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/SingleMessages/Message2/VBoxContainer/HBoxContainer2/BackButton" to="MessengerControl" method="_on_BackButton_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/JamieMessages" to="MessengerControl" method="_on_Message1_pressed"]
 [connection signal="pressed" from="MessengerControl/Wallpaper/VBoxContainer/PanelContainer/Messages/LoanMessages" to="MessengerControl" method="_on_Message2_pressed"]
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Testing Button" to="." method="_on_Button_pressed"]
