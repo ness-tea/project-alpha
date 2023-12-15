@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=2]
+[gd_scene load_steps=111 format=2]
 
 [ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
 [ext_resource path="res://fonts/Inconsolota/Inconsolata-SemiBold.ttf" type="DynamicFontData" id=2]
@@ -36,6 +36,8 @@
 [ext_resource path="res://art/desktop/Messenger_Icon_Hover.png" type="Texture" id=34]
 [ext_resource path="res://art/desktop/Video_Icon_Hover.png" type="Texture" id=35]
 [ext_resource path="res://scripts/MusicControl.gd" type="Script" id=36]
+[ext_resource path="res://Sounds/Laugh Women.tres" type="AudioStream" id=37]
+[ext_resource path="res://scripts/emailTimeLabel.gd" type="Script" id=38]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 1 )
@@ -188,7 +190,7 @@ bg_color = Color( 0.45098, 0.517647, 0.576471, 1 )
 [sub_resource type="StyleBoxEmpty" id=35]
 
 [sub_resource type="StyleBoxFlat" id=73]
-bg_color = Color( 0, 0.356863, 0.513726, 1 )
+bg_color = Color( 0, 0.270588, 0.368627, 1 )
 corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
@@ -343,9 +345,18 @@ stream = ExtResource( 28 )
 volume_db = -10.0
 bus = "Sounds"
 
+[node name="CreepyLaugh" type="AudioStreamPlayer" parent="AudioManager"]
+stream = ExtResource( 37 )
+bus = "Sounds"
+
 [node name="Wallpaper" type="PanelContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="Wallpaper" type="PanelContainer" parent="Wallpaper"]
+margin_right = 1920.0
+margin_bottom = 1080.0
 custom_styles/panel = SubResource( 1 )
 
 [node name="ProjectAlProgram" type="Button" parent="."]
@@ -436,14 +447,15 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -80.0
+margin_left = -120.0
 margin_top = -64.0
 custom_styles/panel = SubResource( 13 )
 
 [node name="TimeLabel" type="Label" parent="TaskbarPanel/Time"]
 margin_top = 25.0
-margin_right = 80.0
+margin_right = 120.0
 margin_bottom = 39.0
+text = "TIME"
 align = 1
 valign = 1
 script = ExtResource( 5 )
@@ -481,6 +493,7 @@ custom_styles/pressed = SubResource( 71 )
 custom_styles/normal = SubResource( 72 )
 
 [node name="EmailsControl" type="Control" parent="."]
+visible = false
 margin_left = 40.0
 margin_top = 48.0
 margin_right = 944.0
@@ -714,7 +727,7 @@ margin_right = 568.0
 margin_bottom = 616.0
 custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
 bbcode_enabled = true
-bbcode_text = "Wednesday, April 25 2045   10:45 AM
+bbcode_text = "Wednesday, April 25 2045   
 
 From: pweston@companyy.com
 
@@ -726,7 +739,7 @@ Thank you for your email going through the inner workings and data of Company X'
 
 [u]_______________________________________________________[/u]
 
-Tuesday,  April 24 2045   9:59 AM
+Tuesday,  April 24 2045   9:59
 
 To: pweston@companyy.com
 
@@ -740,7 +753,7 @@ I hope you find all of this data useful.
 
 Thank You,
 Sam"
-text = "Wednesday, April 25 2045   10:45 AM
+text = "Wednesday, April 25 2045   
 
 From: pweston@companyy.com
 
@@ -752,7 +765,7 @@ Thank you for your email going through the inner workings and data of Company X'
 
 _______________________________________________________
 
-Tuesday,  April 24 2045   9:59 AM
+Tuesday,  April 24 2045   9:59
 
 To: pweston@companyy.com
 
@@ -766,6 +779,14 @@ I hope you find all of this data useful.
 
 Thank You,
 Sam"
+
+[node name="Label" type="Label" parent="EmailsControl/EmailPreview/EmailEnd1Preview"]
+margin_left = 181.0
+margin_right = 243.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "TIME"
+script = ExtResource( 38 )
 
 [node name="EmailEnd2Preview" type="RichTextLabel" parent="EmailsControl/EmailPreview"]
 visible = false
@@ -775,7 +796,7 @@ margin_right = 568.0
 margin_bottom = 616.0
 custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
 bbcode_enabled = true
-bbcode_text = "Wednesday, April 25 2045   10:45 AM
+bbcode_text = "Wednesday, April 25 2045  
 
 From: humanresources@companyx.ca
 
@@ -787,7 +808,7 @@ HR
 
 [u]_______________________________________________________[/u]
 
-Tuesday,  April 24 2045   9:59 AM
+Tuesday,  April 24 2045   9:59
 
 To: humanresources@companyx.ca
 
@@ -801,7 +822,7 @@ Good luck losers.
 
 Regards,
 Sam"
-text = "Wednesday, April 25 2045   10:45 AM
+text = "Wednesday, April 25 2045  
 
 From: humanresources@companyx.ca
 
@@ -813,7 +834,7 @@ HR
 
 _______________________________________________________
 
-Tuesday,  April 24 2045   9:59 AM
+Tuesday,  April 24 2045   9:59
 
 To: humanresources@companyx.ca
 
@@ -828,6 +849,14 @@ Good luck losers.
 Regards,
 Sam"
 
+[node name="Label" type="Label" parent="EmailsControl/EmailPreview/EmailEnd2Preview"]
+margin_left = 181.0
+margin_right = 246.0
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "TIME"
+script = ExtResource( 38 )
+
 [node name="EmailPreview" type="RichTextLabel" parent="EmailsControl/EmailPreview"]
 visible = false
 margin_left = 16.0
@@ -836,7 +865,7 @@ margin_right = 568.0
 margin_bottom = 616.0
 custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
 bbcode_enabled = true
-bbcode_text = "Wednesday, April 25 2045   11:08 AM
+bbcode_text = "Wednesday, April 25 2045   11:08
 
 From: deliverynotifications@feddex.ca
 
@@ -850,7 +879,7 @@ Please also note that due to recent influxes in order volumes due to remote oper
 
 Thanks,
 FeddEx Delivery Services Team"
-text = "Wednesday, April 25 2045   11:08 AM
+text = "Wednesday, April 25 2045   11:08
 
 From: deliverynotifications@feddex.ca
 
@@ -873,7 +902,7 @@ margin_right = 568.0
 margin_bottom = 616.0
 custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
 bbcode_enabled = true
-bbcode_text = "Wednesday, April 25 2045   10:45 AM
+bbcode_text = "Wednesday, April 25 2045   10:45
 
 From: martin.anderson@companyx.ca
 
@@ -883,7 +912,7 @@ ill sync up with you today on next steps. have your notes ready, we don't have m
 
 [u]_______________________________________________________[/u]
 
-Tuesday,  April 24 2045   9:59 AM
+Tuesday,  April 24 2045   9:59
 
 To: martin.anderson@companyx.ca
 
@@ -900,7 +929,7 @@ Sam
 
 [u]_______________________________________________________[/u]
 
-Monday, April 23 2045   10:23 AM
+Monday, April 23 2045   10:23
 
 To: martin.anderson@companyx.ca
 
@@ -917,7 +946,7 @@ Looking forward to working with you!
 Thanks,
 Sam
 "
-text = "Wednesday, April 25 2045   10:45 AM
+text = "Wednesday, April 25 2045   10:45
 
 From: martin.anderson@companyx.ca
 
@@ -927,7 +956,7 @@ ill sync up with you today on next steps. have your notes ready, we don't have m
 
 _______________________________________________________
 
-Tuesday,  April 24 2045   9:59 AM
+Tuesday,  April 24 2045   9:59
 
 To: martin.anderson@companyx.ca
 
@@ -944,7 +973,7 @@ Sam
 
 _______________________________________________________
 
-Monday, April 23 2045   10:23 AM
+Monday, April 23 2045   10:23
 
 To: martin.anderson@companyx.ca
 
@@ -970,7 +999,7 @@ margin_right = 568.0
 margin_bottom = 616.0
 custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
 bbcode_enabled = true
-bbcode_text = "Tuesday, April 24 2045   02:20 PM
+bbcode_text = "Tuesday, April 24 2045   14:20
 
 From: colin.anderson@companyx.ca
 
@@ -989,7 +1018,7 @@ We hope the team will continue to stand together and adamantly advocate for our 
 All The Best,
 Colin
 CEO, Leadership Team, Company X"
-text = "Tuesday, April 24 2045   02:20 PM
+text = "Tuesday, April 24 2045   14:20
 
 From: colin.anderson@companyx.ca
 
@@ -1017,7 +1046,7 @@ margin_right = 568.0
 margin_bottom = 616.0
 custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
 bbcode_enabled = true
-bbcode_text = "Tuesday, April 24 2045   01:36 PM
+bbcode_text = "Tuesday, April 24 2045   13:36
 
 From: luna.stone@companyx.ca
 
@@ -1034,7 +1063,7 @@ We wish you all the best, Dylan, on wherever your career takes you next.
 Warm Regards,
 Luna
 Human Resources, Company X"
-text = "Tuesday, April 24 2045   01:36 PM
+text = "Tuesday, April 24 2045   13:36
 
 From: luna.stone@companyx.ca
 
@@ -1060,7 +1089,7 @@ margin_right = 576.0
 margin_bottom = 616.0
 custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
 bbcode_enabled = true
-bbcode_text = "Tuesday, April 24 2045   9:16 AM
+bbcode_text = "Tuesday, April 24 2045   9:16
 
 From: testreports@companyx.ca
 
@@ -1078,7 +1107,7 @@ Project Al
 
 Best,
 Calcifer"
-text = "Tuesday, April 24 2045   9:16 AM
+text = "Tuesday, April 24 2045   9:16
 
 From: testreports@companyx.ca
 
@@ -1104,7 +1133,7 @@ margin_right = 568.0
 margin_bottom = 616.0
 custom_colors/default_color = Color( 0.14902, 0.14902, 0.14902, 1 )
 bbcode_enabled = true
-bbcode_text = "Monday, April 23 2045   8:59 AM
+bbcode_text = "Monday, April 23 2045   8:59
 
 From: testreports@companyx.ca
 
@@ -1119,7 +1148,7 @@ Please sync with your supervisor, Martin Anderson, on your onboarding steps.
 We're looking forward to working with you!
 
 Company X"
-text = "Monday, April 23 2045   8:59 AM
+text = "Monday, April 23 2045   8:59
 
 From: testreports@companyx.ca
 
@@ -1144,8 +1173,14 @@ custom_styles/panel = SubResource( 73 )
 
 [node name="VideoCallControl" type="Control" parent="."]
 visible = false
-margin_right = 1920.0
-margin_bottom = 964.64
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -898.5
+margin_top = -518.0
+margin_right = 898.5
+margin_bottom = 459.0
 script = ExtResource( 13 )
 
 [node name="Background" type="Panel" parent="VideoCallControl"]
@@ -1402,6 +1437,7 @@ margin_bottom = 27.0
 text = "Logout"
 
 [node name="MusicControl" type="Control" parent="."]
+visible = false
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -1425,6 +1461,7 @@ min_value = -60.0
 max_value = 24.0
 
 [node name="VolumeControl" type="Control" parent="."]
+visible = false
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -1452,6 +1489,7 @@ min_value = -60.0
 max_value = 24.0
 
 [node name="MessengerControl" type="Control" parent="."]
+visible = false
 margin_left = 643.0
 margin_top = 114.0
 margin_right = 1070.0
