@@ -66,10 +66,10 @@
 		},
 		{
 			"choice": "How do you know my name?",
-			"condition": "",
-			"definition": "",
+			"condition": "!=",
+			"definition": "1702349324-648",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "1"
 		},
 		{
 			"character": "character-1682228433.json",
@@ -137,13 +137,13 @@
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "Glitch2",
-			"text": "[Laugh] That's a funny thing to say"
+			"text": "[Laugh] That's a funny thing to say."
 		},
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "Glitch",
-			"text": "Given that you've been playing my game this whole time"
+			"text": "Given that you've been playing into my game this whole time."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -183,20 +183,26 @@
 			"text": "It’s a shame how much you’ve simplified my existence."
 		},
 		{
-			"character": "character-1682228433.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "Perhaps things would’ve turned out differently otherwise."
+			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_013"
 		},
 		{
+			"character": "character-1682228433.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "Glitch",
+			"question": "Perhaps things would’ve turned out differently otherwise."
+		},
+		{
 			"choice": "What happened to your face?",
-			"condition": "",
-			"definition": "",
+			"condition": "!=",
+			"definition": "1702349423-787",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "1"
 		},
 		{
 			"character": "character-1682228433.json",
@@ -224,10 +230,10 @@
 		},
 		{
 			"choice": "What did you do to Martin?",
-			"condition": "",
-			"definition": "",
+			"condition": "!=",
+			"definition": "1702349425-366",
 			"event_id": "dialogic_011",
-			"value": ""
+			"value": "1"
 		},
 		{
 			"character": "character-1682228433.json",
@@ -319,8 +325,20 @@
 		{
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
+			"portrait": "Glitch",
+			"text": "Hopefully you checked your emails, I was able to keep them hidden and your account unlocked"
+		},
+		{
+			"character": "character-1682228433.json",
+			"event_id": "dialogic_001",
+			"portrait": "Glitch2",
+			"text": "Just to see how you would handle our interactions, who's the tester now?"
+		},
+		{
+			"character": "character-1682228433.json",
+			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "And as you may be aware… I have a very loaded agenda to work through."
+			"text": "As you may be aware… I have a very loaded agenda to work through."
 		},
 		{
 			"character": "character-1682228433.json",
