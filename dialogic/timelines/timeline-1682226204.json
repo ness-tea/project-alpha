@@ -153,7 +153,7 @@
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "Angry",
-			"text": "... Your mic is picking up my voice. Stop %$#@ing around here - we need to act fast."
+			"text": "... Your mic is picking up my voice. Stop screwing around here - we need to act fast."
 		},
 		{
 			"event_id": "dialogic_013"
@@ -246,7 +246,7 @@
 			"character": "character-1682227298.json",
 			"event_id": "dialogic_001",
 			"portrait": "Smug",
-			"text": "Looks like my webcam alarms are going off... so it's about time for me to check up on what's happening with the LADIES..."
+			"text": "Looks like my webcam alarms are going off, so it's about time for me to check up on what's happening with the LADIES..."
 		},
 		{
 			"character": "character-1682227298.json",
@@ -265,7 +265,7 @@
 			"value": ""
 		},
 		{
-			"choice": "Umm... (was that supposed to be a joke?)",
+			"choice": "Umm... ",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
