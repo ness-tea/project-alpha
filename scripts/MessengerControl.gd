@@ -51,7 +51,6 @@ func _on_MessengerButton_pressed():
 			_set_global_top_window()
 		else:
 			GlobalVar.top_window = GlobalVar.Window.NONE
-	print(GlobalVar._print_top_window())
 
 
 func _on_Messenger_pressed():
@@ -79,8 +78,7 @@ func _input(event):
 		
 		# Get position of input event in global space
 		var event_pos = event.global_position
-		var lastTopWindow = GlobalVar.top_window	
-
+		
 		# Check if input event is a mouse left click
 		if (event.is_action_pressed("ui_left_click")):
 			if (self.visible):

@@ -32,11 +32,11 @@ func _on_EmailsButton_pressed():
 		else:
 			GlobalVar.top_window = GlobalVar.Window.NONE
 			
-	print(GlobalVar._print_top_window())
 
 func _on_Email_pressed():
 	ClickSound.play()
 	visible = true
+
 
 func _is_underlapping_top_window(event_pos):
 	if (GlobalVar.top_window != GlobalVar.Window.EMAILS):
@@ -53,7 +53,6 @@ func _input(event):
 		
 		# Get position of input event in global space
 		var event_pos = event.global_position
-		var lastTopWindow = GlobalVar.top_window
 		
 		# Check if input event is a mouse left click
 		if (event.is_action_pressed("ui_left_click")):

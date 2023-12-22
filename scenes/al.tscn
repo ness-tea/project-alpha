@@ -40,6 +40,7 @@ margin_bottom = 40.0
 
 [node name="BackgroundMusic" type="AudioStreamPlayer" parent="AudioManager"]
 stream = ExtResource( 2 )
+volume_db = -30.0
 bus = "Music"
 
 [node name="CreepyLaugh" type="AudioStreamPlayer" parent="AudioManager"]

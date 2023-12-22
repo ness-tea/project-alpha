@@ -1,4 +1,4 @@
-[gd_scene load_steps=111 format=2]
+[gd_scene load_steps=116 format=2]
 
 [ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
 [ext_resource path="res://fonts/Inconsolota/Inconsolata-SemiBold.ttf" type="DynamicFontData" id=2]
@@ -23,7 +23,7 @@
 [ext_resource path="res://scripts/VolumeControl.gd" type="Script" id=21]
 [ext_resource path="res://art/desktop/Music Icon.png" type="Texture" id=22]
 [ext_resource path="res://art/desktop/Music Hover.png" type="Texture" id=23]
-[ext_resource path="res://art/GameCover.jpg" type="Texture" id=24]
+[ext_resource path="res://art/desktop/BlackHat.png" type="Texture" id=24]
 [ext_resource path="res://scripts/ProjectAlProgramIcon.gd" type="Script" id=25]
 [ext_resource path="res://music/Delusion.mp3" type="AudioStream" id=26]
 [ext_resource path="res://Sounds/confirmation_002.tres" type="AudioStream" id=27]
@@ -43,9 +43,23 @@
 texture = ExtResource( 1 )
 region_rect = Rect2( 0, 0, 1680, 1050 )
 
-[sub_resource type="StyleBoxTexture" id=65]
+[sub_resource type="StyleBoxFlat" id=79]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=80]
+bg_color = Color( 0.74902, 0.74902, 0.74902, 0.470588 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.690196, 0.690196, 0.690196, 0.588235 )
+
+[sub_resource type="StyleBoxFlat" id=78]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxTexture" id=77]
 texture = ExtResource( 24 )
-region_rect = Rect2( 0, 0, 3968, 3968 )
+region_rect = Rect2( 0, 0, 256, 256 )
 
 [sub_resource type="StyleBoxFlat" id=66]
 bg_color = Color( 0.168627, 0.168627, 0.168627, 1 )
@@ -320,6 +334,49 @@ bg_color = Color( 0.190606, 0.1817, 0.214355, 1 )
 [sub_resource type="StyleBoxFlat" id=67]
 bg_color = Color( 0, 0, 0, 1 )
 
+[sub_resource type="Animation" id=74]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Back/Front:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.788235 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Back/Front:rect_size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 12, 32 ) ]
+}
+
+[sub_resource type="Animation" id=75]
+resource_name = "loading_bar"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Back/Front:rect_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 12, 32 ), Vector2( 574, 32 ) ]
+}
+
 [node name="Control" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -367,8 +424,31 @@ margin_bottom = 159.0
 rect_min_size = Vector2( 100, 100 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/normal = SubResource( 65 )
+custom_styles/hover = SubResource( 79 )
+custom_styles/pressed = SubResource( 80 )
+custom_styles/normal = SubResource( 78 )
 script = ExtResource( 25 )
+
+[node name="Image" type="PanelContainer" parent="ProjectAlProgram"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -44.0
+margin_right = 44.0
+margin_bottom = 88.0
+mouse_filter = 1
+custom_styles/panel = SubResource( 77 )
+
+[node name="Label" type="Label" parent="ProjectAlProgram"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -22.0
+margin_bottom = -8.0
+mouse_filter = 1
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Chapeau Noir"
+align = 1
+uppercase = true
 
 [node name="TaskbarPanel" type="Panel" parent="."]
 anchor_top = 1.0
@@ -1457,7 +1537,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 7.0
 margin_bottom = -9.0
-min_value = -60.0
+min_value = -32.0
 max_value = 24.0
 
 [node name="VolumeControl" type="Control" parent="."]
@@ -1485,7 +1565,7 @@ margin_left = -8.0
 margin_top = 7.0
 margin_right = 8.0
 margin_bottom = -9.0
-min_value = -60.0
+min_value = -32.0
 max_value = 24.0
 
 [node name="MessengerControl" type="Control" parent="."]
@@ -1925,6 +2005,32 @@ visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 custom_styles/panel = SubResource( 67 )
+
+[node name="LoadingBar" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="Back" type="ColorRect" parent="LoadingBar"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -288.0
+margin_top = -16.0
+margin_right = 288.0
+margin_bottom = 16.0
+color = Color( 0.623529, 0.623529, 0.623529, 0.552941 )
+
+[node name="Front" type="ColorRect" parent="LoadingBar/Back"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_right = 13.0
+margin_bottom = 32.0
+color = Color( 1, 1, 1, 0.788235 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="LoadingBar"]
+anims/RESET = SubResource( 74 )
+anims/loading_bar = SubResource( 75 )
 
 [connection signal="pressed" from="ProjectAlProgram" to="." method="_on_ProjectAlProgram_pressed"]
 [connection signal="pressed" from="TaskbarPanel/Start/StartButton" to="StartControl" method="_on_StartButton_pressed"]

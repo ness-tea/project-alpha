@@ -82,7 +82,7 @@ _global_script_class_icons={
 
 config/name="project-alpha"
 run/main_scene="res://scenes/IntroductionScene.tscn"
-config/icon="res://icon.png"
+config/icon="res://art/GameCover.jpg"
 
 [autoload]
 
