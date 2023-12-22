@@ -21,15 +21,15 @@ func _on_Button_pressed():
 func _on_MusicSlider_value_changed(value):
 	AudioServer.set_bus_volume_db(musicBus,value)
 	GlobalVar.musicVolume = value
-	if (GlobalVar.musicVolume <= -60):
+	if (GlobalVar.musicVolume <= -30):
 		AudioServer.set_bus_mute(AudioServer.get_bus_index("Music"), true)
 		musicMuted = true
-	elif(musicMuted == true && GlobalVar.musicVolume > -60):
+	elif(musicMuted == true && GlobalVar.musicVolume > -32):
 		AudioServer.set_bus_mute(AudioServer.get_bus_index("Music"), false)
 		musicMuted = false
 
 
 func set_slider_position(position: float) -> void:
-	position = clamp(position,-85,24)
+	position = clamp(position,-30,24)
 	if musicVolume != null:
 		musicVolume.value = position
