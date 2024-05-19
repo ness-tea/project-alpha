@@ -15,7 +15,7 @@ func _ready():
 	if(GlobalVar.timelineDialogueNumber == 4):
 		$EmailEnd1.visible = true
 		$EmailEnd2.visible = true
-		$"../../../EmailNotif".visible = true
+		$"../../../TaskbarPanel/EmailNotif".visible = true
 	else:
 		$EmailEnd1.visible = false
 		$EmailEnd2.visible = false
@@ -83,6 +83,6 @@ func mark_Email_Read(_email, _label):
 
 func emailNotif():
 	if($EmailEnd1.visible == false && (GlobalVar.emailRead == true && GlobalVar.email2Read == true && GlobalVar.email3Read == true)):
-		$"../../../EmailNotif".visible = false
+		$"../../../TaskbarPanel/EmailNotif".visible = false
 	if(GlobalVar.emailEnd1Read == true && GlobalVar.emailEnd2Read == true):
-		$"../../../EmailNotif".visible = false
+		$"../../../TaskbarPanel/EmailNotif".visible = false

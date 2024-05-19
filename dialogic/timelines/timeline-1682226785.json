@@ -695,7 +695,7 @@
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "Default",
-			"text": "‘People of interest’ are considered any person under company X who could potentially be a vessel of useful information for company Y."
+			"text": "‘People of interest’ are considered any person under company Y who could potentially be a vessel of useful information for company X."
 		},
 		{
 			"character": "character-1682228433.json",
@@ -707,7 +707,7 @@
 			"question": "They are those who I aim to strengthen relationships with in hopes of building trust and rapport to gain an advantageous position"
 		},
 		{
-			"choice": "Are ‘people of interest’ constrained to employees under company X?",
+			"choice": "Are ‘people of interest’ constrained to employees under company Y?",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -717,7 +717,7 @@
 			"character": "character-1682228433.json",
 			"event_id": "dialogic_001",
 			"portrait": "Default",
-			"text": "Yes, I’ve been trained to only target employees under company X. No other group is of interest."
+			"text": "Yes, I’ve been trained to only target employees under company Y. No other group is of interest."
 		},
 		{
 			"choice": "Thanks Al, let’s move on.",
@@ -963,7 +963,7 @@
 		}
 	],
 	"metadata": {
-		"dialogic-version": "1.5",
+		"dialogic-version": "1.5.1",
 		"file": "timeline-1682226785.json",
 		"name": "FirstEncounterWithAl"
 	}
