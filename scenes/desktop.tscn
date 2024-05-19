@@ -1,4 +1,4 @@
-[gd_scene load_steps=116 format=2]
+[gd_scene load_steps=119 format=2]
 
 [ext_resource path="res://art/login_ui/MainMenuBackground.jpg" type="Texture" id=1]
 [ext_resource path="res://fonts/Inconsolota/Inconsolata-SemiBold.ttf" type="DynamicFontData" id=2]
@@ -146,6 +146,13 @@ region_rect = Rect2( 0, 0, 256, 256 )
 texture = ExtResource( 22 )
 region_rect = Rect2( 0, 0, 256, 256 )
 
+[sub_resource type="StyleBoxFlat" id=73]
+bg_color = Color( 0, 0.270588, 0.368627, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
 [sub_resource type="StyleBoxFlat" id=18]
 bg_color = Color( 0.87451, 0.87451, 0.894118, 0.87451 )
 
@@ -202,13 +209,6 @@ bg_color = Color( 0.45098, 0.517647, 0.576471, 1 )
 bg_color = Color( 0.45098, 0.517647, 0.576471, 1 )
 
 [sub_resource type="StyleBoxEmpty" id=35]
-
-[sub_resource type="StyleBoxFlat" id=73]
-bg_color = Color( 0, 0.270588, 0.368627, 1 )
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
 
 [sub_resource type="StyleBoxFlat" id=36]
 bg_color = Color( 0.0745098, 0.0862745, 0.172549, 0.764706 )
@@ -333,6 +333,15 @@ bg_color = Color( 0.190606, 0.1817, 0.214355, 1 )
 
 [sub_resource type="StyleBoxFlat" id=67]
 bg_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="DynamicFontData" id=81]
+font_path = "res://fonts/Inconsolota/Inconsolata-Black.ttf"
+
+[sub_resource type="DynamicFont" id=82]
+size = 27
+font_data = SubResource( 81 )
+
+[sub_resource type="StyleBoxEmpty" id=83]
 
 [sub_resource type="Animation" id=74]
 length = 0.001
@@ -545,9 +554,9 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -193.0
+margin_left = -192.0
 margin_top = -57.0
-margin_right = -145.0
+margin_right = -144.0
 margin_bottom = -9.0
 custom_styles/panel = SubResource( 14 )
 
@@ -559,11 +568,16 @@ custom_styles/pressed = SubResource( 16 )
 custom_styles/normal = SubResource( 17 )
 
 [node name="Music" type="PanelContainer" parent="TaskbarPanel"]
-margin_left = 1658.0
-margin_top = 7.0
-margin_right = 1706.0
-margin_bottom = 55.0
+anchor_left = 0.8875
+anchor_top = 0.859375
+anchor_right = 0.8875
+anchor_bottom = 0.859375
+margin_left = -48.0
+margin_top = -48.0
 custom_styles/panel = SubResource( 69 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
 
 [node name="Button" type="Button" parent="TaskbarPanel/Music"]
 margin_right = 48.0
@@ -571,6 +585,20 @@ margin_bottom = 48.0
 custom_styles/hover = SubResource( 70 )
 custom_styles/pressed = SubResource( 71 )
 custom_styles/normal = SubResource( 72 )
+
+[node name="EmailNotif" type="Panel" parent="TaskbarPanel"]
+margin_left = 117.0
+margin_top = 7.0
+margin_right = 130.0
+margin_bottom = 20.0
+custom_styles/panel = SubResource( 73 )
+
+[node name="MessengerNotif" type="Panel" parent="TaskbarPanel"]
+margin_left = 247.0
+margin_top = 7.0
+margin_right = 260.0
+margin_bottom = 20.0
+custom_styles/panel = SubResource( 73 )
 
 [node name="EmailsControl" type="Control" parent="."]
 visible = false
@@ -1243,13 +1271,6 @@ Please sync with your supervisor, Martin Anderson, on your onboarding steps.
 We're looking forward to working with you!
 
 Company X"
-
-[node name="EmailNotif" type="Panel" parent="."]
-margin_left = 117.0
-margin_top = 1023.0
-margin_right = 130.0
-margin_bottom = 1036.0
-custom_styles/panel = SubResource( 73 )
 
 [node name="VideoCallControl" type="Control" parent="."]
 visible = false
@@ -1974,13 +1995,6 @@ text = "This is the fourth time attempting to reach you..."
 valign = 1
 clip_text = true
 
-[node name="MessengerNotif" type="Panel" parent="."]
-margin_left = 247.0
-margin_top = 1023.0
-margin_right = 260.0
-margin_bottom = 1036.0
-custom_styles/panel = SubResource( 73 )
-
 [node name="Testing Button" type="Button" parent="."]
 visible = false
 margin_left = 1611.0
@@ -2009,13 +2023,26 @@ custom_styles/panel = SubResource( 67 )
 [node name="LoadingBar" type="CanvasLayer" parent="."]
 visible = false
 
+[node name="RichTextLabel" type="RichTextLabel" parent="LoadingBar"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -119.0
+margin_top = -38.0
+margin_right = 119.0
+margin_bottom = 24.0
+custom_fonts/normal_font = SubResource( 82 )
+custom_styles/normal = SubResource( 83 )
+text = "Loading Files"
+
 [node name="Back" type="ColorRect" parent="LoadingBar"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -288.0
-margin_top = -16.0
+margin_top = 1.0
 margin_right = 288.0
 margin_bottom = 16.0
 color = Color( 0.623529, 0.623529, 0.623529, 0.552941 )
@@ -2024,8 +2051,8 @@ color = Color( 0.623529, 0.623529, 0.623529, 0.552941 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 1.0
-margin_right = 13.0
-margin_bottom = 32.0
+margin_right = -563.0
+margin_bottom = 17.0
 color = Color( 1, 1, 1, 0.788235 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="LoadingBar"]

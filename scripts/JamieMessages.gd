@@ -105,7 +105,7 @@ func changeButtonText():
 
 #function used to turn on the notification for messenger
 func messengerNotification():
-	$"../../../../../../MessengerNotif".visible = true
+	$"../../../../../../TaskbarPanel/MessengerNotif".visible = true
 	$"../../Messages/JamieMessages/MessengerNotif".visible = true
 
 func changeMessageTitle(name, description):
